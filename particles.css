@@ -22,7 +22,9 @@
         height: 75px;
 }
 .home_button a{
-        text-deoration: none;
+        text-decoration: none;
+        color: #f2f2f2;
+        font-size: 25px;
 }
 .home_button a:hover{
         text-deoration: underline;
