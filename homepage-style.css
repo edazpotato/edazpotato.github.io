@@ -4,10 +4,10 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 170px;
-  border-radius: 0px 0px 5px 5px;
   display: flex;
   flex-direction: column;
   min-height: 150px;
+  padding: 30px;
 }
 
 /* Links inside the navbar */
