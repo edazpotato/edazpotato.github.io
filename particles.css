@@ -20,6 +20,9 @@
         display: block;
         width: 130px;
         height: 75px;
+        display: flex;
+        flex-direction: column;
+        min-height: 0px;
 }
 .home_button a{
         text-decoration: none;
@@ -27,5 +30,7 @@
         font-size: 25px;
 }
 .home_button a:hover{
-        text-deoration: underline;
+        text-decoration: underline;
+        color: #f2f2f3;
+        font-size: 27px;
 }
