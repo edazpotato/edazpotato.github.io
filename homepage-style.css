@@ -27,6 +27,7 @@
 
 /* Main content */
 .main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  float: right; /* Add a float to avoid content overlay */
+  font-size: 18px;
 }
 
