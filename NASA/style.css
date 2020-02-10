@@ -1,0 +1,15 @@
+#dailyImg {
+	width: 50%;
+	float: left;
+}
+#desc {
+	width: 30%;
+	float: left;
+	padding: 30px;
+	font-size: 25px;
+}
+#titleSpace {
+	text-decoration: underline;
+	text-align: center;
+	font-size: 40px;
+}
