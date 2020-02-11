@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 		document.title = titleText;
 		document.getElementById("titleSpace").innerHTML = titleText;
 		document.getElementById("credit").innerHTML = creditText;
-    document.getElementById("postLink").setAttribute("href" imgSrc);
+    document.getElementById("postLink").setAttribute("href", imgSrc);
 	}
 	//somehing
 	var getJSON = function(url, callback) {
