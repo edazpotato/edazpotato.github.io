@@ -14,18 +14,18 @@ window.addEventListener("load", () => {
 		xhr.open("GET", url, true);
 		xhr.responseType = "json";
 		xhr.onload = function() {
-		  var status = xhr.status;
-		  if (status === 200) {
-			callback(null, xhr.response);
-		  } else {
-			callback(status, xhr.response);
-		  }
+			var status = xhr.status;
+			if (status === 200) {
+				callback(null, xhr.response);
+			} else {
+				callback(status, xhr.response);
+			}
 		};
 		xhr.send();
 	};
 	getJSON("https://api.nasa.gov/planetary/apod?api_key=hmtsujfQhwO6bMIVzbMVuUasBTDWBnvfUMBRN2Tc", (err, data) => {
 		if (err !== null) {
-			console.log("Something went wrong: " + err);
+			console.error("Something went wrong: " + err);
 		} else {
 			updateElements(data);
 		}
