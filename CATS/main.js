@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
 		document.getElementById("Img").src = imgSrc;
 		document.title = titleText;
 		document.getElementById("titleSpace").innerHTML = titleText;
-		document.getElementById("credit").innerHTML = "Thanks to <a href=\"https://random.cat\">random.cat</a> for the cat images!";
+		document.getElementById("desc").innerHTML = "Thanks to <a href=\"https://random.cat\">random.cat</a> for the cat images!";
 	}
 	//something
 	var getJSON = function(url, callback) {
