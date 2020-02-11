@@ -1,3 +1,4 @@
+/* eslint no-console: ["error", { allow: ["warn", "error"] }] */
 window.addEventListener("load", () => {
 	function updateElements(data) {
 		var hdSrc = data.hdurl;
