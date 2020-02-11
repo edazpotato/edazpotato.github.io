@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
 	function updateElements(data) {
 		var hdSrc = data.hdurl;
 		var titleText = data.title;
@@ -11,8 +11,8 @@ window.addEventListener('load', () => {
 	//somehing
 	var getJSON = function(url, callback) {
 		var xhr = new XMLHttpRequest();
-		xhr.open('GET', url, true);
-		xhr.responseType = 'json';
+		xhr.open("GET", url, true);
+		xhr.responseType = "json";
 		xhr.onload = function() {
 		  var status = xhr.status;
 		  if (status === 200) {
@@ -23,12 +23,11 @@ window.addEventListener('load', () => {
 		};
 		xhr.send();
 	};
-	getJSON('https://api.nasa.gov/planetary/apod?api_key=hmtsujfQhwO6bMIVzbMVuUasBTDWBnvfUMBRN2Tc', (err, data) => {
-		  if (err !== null) {
-			alert('Something went wrong: ' + err);
-		  } else {
+	getJSON("https://api.nasa.gov/planetary/apod?api_key=hmtsujfQhwO6bMIVzbMVuUasBTDWBnvfUMBRN2Tc", (err, data) => {
+		if (err !== null) {
+			console.log("Something went wrong: " + err);
+		} else {
 			updateElements(data);
-		  }
+		}
 	});
 });
-//window.addEventListener('load', () => {alert('hi')});
