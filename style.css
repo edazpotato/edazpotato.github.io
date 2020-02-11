@@ -21,10 +21,10 @@ body {
     margin: 0;
     border: 0;
     border-bottom: 2px solid #ecf0f1;
+    cursor: grab;
 }
 a {
     color: #3498db;
-    cursor: grab;
 }
 a:hover {
     color: #2980b9;
