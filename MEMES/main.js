@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
 	function updateElements(data) {
 		var imgSrc = data.url;
 		var titleText = data.title;
-		var creditText = "That meme was from r/"+data.subbredit+"!";
+		var creditText = "That meme was from r/"+data.subreddit+"!";
     var postUrl = data.postLink;
 		document.getElementById("memeImg").src = imgSrc;
 		document.title = titleText;
