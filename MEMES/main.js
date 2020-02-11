@@ -4,12 +4,12 @@ window.addEventListener("load", () => {
 		var imgSrc = data.url;
 		var titleText = data.title;
 		var creditText = "That meme was from r/"+data.subreddit+"!";
-    		var postUrl = data.postLink;
+    		var postLink = data.postLink;
 		document.getElementById("memeImg").src = imgSrc;
 		document.title = titleText;
 		document.getElementById("titleSpace").innerHTML = titleText;
 		document.getElementById("credit").innerHTML = creditText;
-    document.getElementById("postLink").setAttribute("href", imgSrc);
+    		document.getElementById("postLink").setAttribute("href", postLink);
 	}
 	//somehing
 	var getJSON = function(url, callback) {
