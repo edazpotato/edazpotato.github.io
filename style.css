@@ -17,6 +17,12 @@ body {
     font-family: "Lucida Console", Arial, Sans-serif;
     font-size: 2.5em;
 }
+a {
+    color: #3498db;
+}
+a:hover {
+    color: #2980b9;
+} 
 .middle {
     position: absolute;
     top: 50%;
