@@ -21,9 +21,11 @@ body {
 }
 a {
     color: #3498db;
+    cursor: grab;
 }
 a:hover {
     color: #2980b9;
+    cursor: grabbing;
 } 
 .middle {
     position: absolute;
