@@ -7,6 +7,16 @@
 body {
     background: #333;   
 }
+.header {
+    width: 100%;
+}
+.banner {
+    color: white;
+    background-color: #e74c3c;
+    font-weight: bold;
+    font-family: "Lucida Console", Arial, Sans-serif;
+    font-size: 2.5em;
+}
 .middle {
     position: absolute;
     top: 50%;
