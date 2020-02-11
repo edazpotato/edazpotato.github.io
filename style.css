@@ -24,6 +24,7 @@ body {
     border-bottom: 2px solid #ecf0f1;
     cursor: grab;
     padding-right: 0;
+    bottom: 0.01em;
 }
 a {
     color: #3498db;
