@@ -2,16 +2,16 @@
 window.addEventListener("load", () => {
 	function updateElements(data) {
 		var imgSrc = data.img;
+		var imgAltText = data.alt;
 		var titleText = data.title;
 		var creditText = "Todays comic from <a href=\"https://xkcd.com\">XKCD.com</a>";
-    var postLink = "https://xkcd.com/"+data.num;
-    var imgAltText = data.alt;
+		var postLink = "https://xkcd.com/"+data.num;
 		document.getElementById("Img").src = imgSrc;
-    document.getElementById("Img").alt = imgAltText;
+		document.getElementById("Img").alt = imgAltText;
 		document.title = titleText;
 		document.getElementById("titleSpace").innerHTML = titleText;
 		document.getElementById("desc").innerHTML = creditText;
-    document.getElementById("postLink").setAttribute("href", postLink);
+		document.getElementById("postLink").setAttribute("href", postLink);
 	}
 	//somehing
 	var getJSON = function(url, callback) {
