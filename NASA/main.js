@@ -1,10 +1,10 @@
 /* eslint no-console: ["error", { allow: ["warn", "error"] }] */
 window.addEventListener("load", () => {
 	function updateElements(data) {
-		var hdSrc = data.hdurl;
+		var src = data.url;
 		var titleText = data.title;
 		var descText = data.explanation;
-		document.getElementById("dailyImg").src = hdSrc;
+		document.getElementById("dailyImg").src = src;
 		document.title = titleText;
 		document.getElementById("titleSpace").innerHTML = titleText;
 		document.getElementById("desc").innerHTML = descText;
