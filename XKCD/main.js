@@ -28,7 +28,7 @@ window.addEventListener("load", () => {
 		};
 		xhr.send();
 	};
-	getJSON("https://xkcd.com/info.0.json", (err, data) => {
+	getJSON("https://xkcd.now.sh/?comic=latest", (err, data) => {
 		if (err !== null) {
 			console.error("Something went wrong: " + err);
 		} else {
