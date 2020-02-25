@@ -4,7 +4,8 @@ window.addEventListener("load", () => {
 		var src = data.url;
 		var titleText = data.title;
 		var descText = data.explanation;
-		document.getElementById("dailyImg").src = src;
+		if(data.media_type === "image") document.getElementById("dailyImg").src = src;
+		if(data.media_type === "video") document.getElementById("dailyImg").src = src;
 		document.title = titleText;
 		document.getElementById("titleSpace").innerHTML = titleText;
 		document.getElementById("desc").innerHTML = descText;
