@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
 	xhr.send();
 	
 	xhr.onload = function() {
-	  console.log(`Loaded: ${xhr.status} ${xhr.response}`);
+	  console.log(`Loaded: ${xhr.status} ${JSON.stringify(xhr.response)}`);
 	  updateElements(xhr.response)
 	};
 
