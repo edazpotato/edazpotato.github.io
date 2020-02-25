@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
 	let xhr = new XMLHttpRequest();
 	xhr.open("GET", url);
 	xhr.responseType = "json";
-	xhr.setRequestHeader("x-api-key", 'f13319fb-96d3-4712-80e3-bf9401f77b62');
+	xhr.setRequestHeader("x-api-key", "f13319fb-96d3-4712-80e3-bf9401f77b62");
 	xhr.send();
 	
 	xhr.onload = function() {
