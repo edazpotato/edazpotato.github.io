@@ -1,10 +1,6 @@
 /* eslint no-console: ["error", { allow: ["warn", "error"] }] */
 window.addEventListener("load", () => {
 	function updateElements(data) {
-		if(data.media_type === "video"){
-			document.getElementById("dailyImg").outerHTML = document.getElementById("dailyImg").outerHTML.replace(/img/g,"video");
-
-		}
 		var hdSrc = data.hdurl;
 		var src = data.url;
 		var titleText = data.title;
