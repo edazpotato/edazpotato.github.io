@@ -1,5 +1,9 @@
-const navbar = document.getElementById("navbar");
+const navbarDiv = document.getElementsByClassName("topnav")[0];
 var items = [
+  {
+    "name": "home",
+    "link": "/"
+  },
   {
     "name": "MEME's from reddit",
     "link": "/MEMES"
@@ -23,5 +27,7 @@ var items = [
 ];
 var navbar = "";
 for (const item of items) {
-  navbar += `<a href="${item.link}>${item.name}</a>"`;
+  navbar += "\n<a href=\""item.link"\">"item.name"</a>";
 }
+navbarDiv.innerHTML = navbar;
+
