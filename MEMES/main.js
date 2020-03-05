@@ -1,6 +1,5 @@
 /* eslint no-console: ["error", { allow: ["warn", "error"] }] */
-window.addEventListener("load", () => {
-	function loadAndUpdate(){
+function loadAndUpdate(){
 		function updateElements(data) {
 			var imgSrc = data.url;
 			var titleText = data.title;
@@ -35,5 +34,6 @@ window.addEventListener("load", () => {
 			}
 		});
 	};
+window.addEventListener("load", () => {
 	loadAndUpdate();
 });
