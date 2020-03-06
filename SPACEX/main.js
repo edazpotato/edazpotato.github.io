@@ -22,7 +22,7 @@ function loadAndUpdate() {
         
         
     }
-    //somehing
+    //something
     getJSON("https://api.spacexdata.com/v3/launches/next", (err, data) => {
         if (err !== null) {
             console.error("Something went wrong: " + err);
