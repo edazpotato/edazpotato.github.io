@@ -15,7 +15,7 @@ function loadAndUpdate() {
         var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
     }
     function updateElements(data) {
-        document.getElementById("flightNumber").innerText = data.flightNumber;
+        document.getElementById("flightNumber").innerText = data.flight_number;
         document.getElementById("launchSiteName").innerText = data.launch_site.site_name_long;
         var formattedTime = formatUnixTime(data.launch_date_unix);
         document.getElementById("flightDate").innerText = formattedTime;
