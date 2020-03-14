@@ -1,6 +1,6 @@
 async function getPlayerUUID(playerName) {
   let url = "https://api.mojang.com/users/profiles/minecraft/"+playerName;
-  let response = await fetch(url);
+  let response = await fetch(url, "jsonp");
 
   if (response.ok) {
     let json = await response.json();
@@ -14,7 +14,7 @@ async function getHyixelPlayerStats(uuid, key) {
   url += "uuid="+uuid;
   url += "&";
   url += "key="+key;
-  let response = await fetch(url);
+  let response = await fetch(url, "jsonp");
 
   if (response.ok) {
     let json = await response.json();
