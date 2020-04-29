@@ -39,14 +39,14 @@ canvas {
 	align-items: center;
 	padding: 20px 30px;
 	z-index: 2;
-	background: #121212;
+	background: var(--bg-colour);
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 	transition: 0.3s;
 	text-align: center;
 	border-radius: 4px;
 }
 h1 {
-	color: #FFFFFF;
+	color: var(--primary-colour);
 	margin: 0;
 	font-size: 2em;
 }
@@ -65,7 +65,7 @@ p {
 	font-size: 1em;
 	padding: .1em;
 	margin: 5px 0;
-	color: #FFFFFF;
+	color: var(--primary-colour);
 	width: 150px;
 }
 #scripts {
@@ -88,7 +88,7 @@ p {
 	opacity: 38%;
 }
 .secret-text {
-	color: #FFFFFF;
+	color: var(--primary-colour);
 	z-index: 3;
 	opacity: 0%;
 	transition: opacity 3s;
