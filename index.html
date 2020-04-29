@@ -1,52 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="Itr">
-  <head data-cast-api-enabled="true">
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158683694-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-158683694-1');
-      </script>
-      <meta name="google-site-verification" content="7XUVT0nHj9OHE9_hb4bzQeLxan_eDupguI68VKv1Zqo" />
-      <meta name="author" content="EdazPotato">
-      <meta name="description" content="EdazPotato's offical website!">
-      <meta name="keywords" content="edaz,potato,edazpotato,offical,website,youtube,minecraft,discord,twitter,github,tutorials,coding">
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>Edaz Potato</title>
-      <link rel="stylesheet" href="./style.css" type="text/css"/>
-      <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-      <!--<script defer src="/assets/fontawsome/js/all.js"></script>-->
-      <script defer src="https://kit.fontawesome.com/1d95bbfa9b.js" crossorigin="anonymous"></script>
+  <head>
+      <script src="particles.js"></script>
   </head>
   <body>
-    <a href="https://www.github.com/edazpotato/edazpotato.github.io" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-    <div class="topnav">
-      <a class="active" href="/">Home</a>
-      <a href="/NASA">Pictures from NASA</a>
-      <a href="/MEMES">MEMEs from REDDIT!</a>
-      <a href="/CATS">Cats</a>
-      <a href="/XKCD">Todays XKCD</a>
+    <div id="particlesJS"></div>
+    <div id="content"></div>
+    <div id="footer">
+      <script>
+        var pjsConfig = {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":200,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":300,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true}
+        particlesJS.load("particlesJS", pjsConfig);
+      </script>
     </div>
-    <div class="card middle">
-        <div class="front">
-            <img  src="assets/images/edazpotato.png" alt="Edaz Potato image"/>
-        </div>
-        <div class="back">
-            <div class="back-content middle">
-                <h2>Edaz Potato</h2>
-                <span>Youtuber</span>
-                <div class="sm">
-                    <a rel="noreferrer" href="https://www.twitter.com/EdazPotato" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a rel="noreferrer" href="https://www.youtube.com/channel/UCK1ME1J0XNbN31bCOV9UjKw" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a rel="noreferrer" href="https://www.github.com/EdazPotato" target="_blank"><i class="fab fa-github"></i></a>
-                    <a rel="noreferrer" href="https://discord.gg/tG2Q333" target="_blank"><i class="fab fa-discord"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+  </body>
 </html>
