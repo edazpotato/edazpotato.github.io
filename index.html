@@ -68,7 +68,6 @@
         border-radius: 4px;
       }
       h1 {
-        opacity: 87%;
         color: #FFFFFF;
         margin: 0;
         font-size: 2em;
@@ -80,13 +79,11 @@
       }
       .icon {
         height: 3vh;
-        opacity: 60%;
       }
       .icon.black {
         filter: invert(1)
       }
       p {
-        opacity: 60%;
         font-size: 1em;
         padding: .1em;
         margin: 5px 0;
@@ -99,10 +96,18 @@
       .row {
         display: flex;
       }
-
       .col {
         flex: 33.33%;
         padding: 5px;
+      }
+      .high {
+        opacity: 87%;
+      }
+      .med {
+        opacity: 60%;
+      }
+      .dis {
+        opacity: 38%;
       }
     </style>
   </head>
@@ -111,11 +116,11 @@
     <div id="wrapper">
       <div id="content">
         <img class="avatar" alt="discord avatar" src="https://cdn.discordapp.com/avatars/569414372959584256/b9400027735c8b05e5e9e9ca5bca505c.png?size=2048">
-        <h1>Edazpotato</h1>
-        <p>I make videos, websites, and other random things</p>
+        <h1 class="high">Edazpotato</h1>
+        <p class="med">I make videos, websites, and other random things</p>
         <div class="row">
-          <a class="col" href="https://edazpotato.github.io/redir/discord" aria-label="Discord invite"><img class="black icon" alt="Discord icon" src="/images/discord.png"></a>
-          <a class="col" href="https://edazpotato.github.io/redir/twitter" aria-label="Twitter profile"><img class="black icon" alt="Twitter icon" src="/images/twitter.png"></a>
+          <a class="col" href="https://edazpotato.github.io/redir/discord" aria-label="Discord invite"><img class="black icon high" alt="Discord icon" src="/images/discord.png"></a>
+          <a class="col" href="https://edazpotato.github.io/redir/twitter" aria-label="Twitter profile"><img class="black icon high" alt="Twitter icon" src="/images/twitter.png"></a>
         </div>
       </div>
     </div>
