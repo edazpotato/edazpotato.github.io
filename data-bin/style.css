@@ -90,7 +90,7 @@ p {
 	opacity: 38%;
 }
 .secret-text {
-	align-self: flex-end;
+	/*align-self: flex-end;*/
 	color: var(--primary-color);
 	z-index: 3;
 	opacity: 0%;
@@ -160,9 +160,9 @@ input:checked + .slider:before {
 }
 
 .slider.round {
-  border-radius: 34px;
+	border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+	border-radius: 50%;
 }
