@@ -95,6 +95,14 @@
       #bottom {
         display: none;
       }
+      .row {
+        display: flex;
+      }
+
+      .col {
+        flex: 33.33%;
+        padding: 5px;
+      }
     </style>
   </head>
   <body>
@@ -104,7 +112,10 @@
         <img class="avatar" alt="discord avatar" src="https://cdn.discordapp.com/avatars/569414372959584256/b9400027735c8b05e5e9e9ca5bca505c.png?size=2048">
         <h1>Edazpotato</h1>
         <p>I make videos, websites, and other random things</p>
-        <a href="https://edazpotato.github.io/redir/discord" aria-label="Discord invite"><img class="black icon" alt="Discord icon" src="/images/discord.png"></a><a href="https://edazpotato.github.io/redir/twitter" aria-label="Twitter profile"><img class="black icon" alt="Twitter icon" src="/images/twitter.png"></a>
+        <div class="row">
+          <a class="col" href="https://edazpotato.github.io/redir/discord" aria-label="Discord invite"><img class="black icon" alt="Discord icon" src="/images/discord.png"></a>
+          <a class="col" href="https://edazpotato.github.io/redir/twitter" aria-label="Twitter profile"><img class="black icon" alt="Twitter icon" src="/images/twitter.png"></a>
+        </div>
       </div>
     </div>
     <div id="bottom">
