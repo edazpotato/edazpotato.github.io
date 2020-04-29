@@ -90,6 +90,7 @@ p {
 	opacity: 38%;
 }
 .secret-text {
+	align-self: flex-end;
 	color: var(--primary-color);
 	z-index: 3;
 	opacity: 0%;
