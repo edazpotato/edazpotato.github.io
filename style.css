@@ -1,0 +1,89 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	box-sizing: border-box;
+}
+canvas {
+	display: block;
+}
+#particlesJS {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #eb4d4b;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+#wrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 30px;
+	z-index: 2;
+	background: #121212;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+	text-align: center;
+	border-radius: 4px;
+}
+h1 {
+	color: #FFFFFF;
+	margin: 0;
+	font-size: 2em;
+}
+.avatar {
+	border-radius: 50%;
+	height: 12vh;
+	margin: 10px 0 15px 0;
+}
+.icon {
+	height: 3vh;
+}
+.icon.black {
+	filter: invert(1)
+}
+p {
+	font-size: 1em;
+	padding: .1em;
+	margin: 5px 0;
+	color: #FFFFFF;
+	width: 150px;
+}
+#scripts {
+	display: none;
+}
+.row {
+	display: flex;
+}
+.col {
+	flex: 33.33%;
+	padding: 5px;
+}
+.high {
+	opacity: 87%;
+}
+.med {
+	opacity: 60%;
+}
+.dis {
+	opacity: 38%;
+}
+.secret-text {
+	color: #FFFFFF;
+	z-index: 3;
+	opacity: 0%;
+	transition: opacity 3s;
+}
+.secret-text:hover {
+	opacity: 87%;
+	transition: opacity 3s;
+}
