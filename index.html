@@ -48,22 +48,44 @@
         background-size: cover;
         background-position: 50% 50%;
       }
-      #content {
+      .wrapper {
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
       }
+      #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+        z-index: 2;
+        background: #fff;
+        box-shadow: 0 0 15px 1px rgba(0,0,0,0.4);
+        transition: 0.3s;
+        text-align: center;
+        border-radius: 4px;
+      }
     </style>
   </head>
   <body>
     <div id="particlesJS"></div>
-    <div id="content"></div>
-    <div id="scripts">
+    <div id="wrapper">
+      <div id="content">
+        <img class="avatar" alt="discord avatar" src="https://cdn.discordapp.com/avatars/102102717165506560/f936683cb16d65020f3a7f4893a7418c.png?size=2048">
+        <h1>Edazpotato</h1>
+        <p>I make videos, websites, and other random things</p>
+        <a href="https://edazpotato.github.io/redir/discord" aria-label="Discord invite"><img class="icon" alt="Twitter icon" src="/imges/twitter.png"></a><a href="https://edazpotato.github.io/redir/twitter" aria-label="Twitter profile"><img class="icon" alt="Twitter icon" src="/imges/discord.png"></a>
+      </div>
+    </div>
+    <div id="bottom">
       <script>
         particlesJS.load("particlesJS", "/pjs-config.json");
       </script>
+      <p>
+        Yes, i did copy <a href="https://i-love.pink">Ravy</a>'s design for this page
+      </p>
     </div>
   </body>
 </html>
