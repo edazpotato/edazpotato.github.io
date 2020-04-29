@@ -109,6 +109,15 @@
       .dis {
         opacity: 38%;
       }
+      .secret-text {
+        z-index: 100;
+        opacity: 0%;
+        transition: opacity 3s;
+      }
+      .secret-text:hover {
+        opacity: 100%;
+        transition: opacity 3s;
+      }
     </style>
   </head>
   <body>
@@ -129,7 +138,7 @@
       <script>
         particlesJS.load("particlesJS", "/pjs-config.json");
       </script>
-      <p>
+      <p class="secret-text">
         Yes, i did "borrow" <a href="https://i-love.pink">Ravy</a>'s design for this page
       </p>
     </div>
