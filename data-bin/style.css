@@ -54,14 +54,13 @@ h1 {
 	font-size: 2em;
 }
 .avatar {
-	border-radius: 50%;
+	border-radius: 48%;
 	height: 12vh;
 	margin: 10px 0 15px 0;
 	border: 1px solid var(--secondary-color);
 	transition: border 2s;
 }
 .avatar:hover, .avatar:focus {
-	border-radius: 48%;
 	border: 3px dotted var(--secondary-color);
 	transition: border 2s;
 }
