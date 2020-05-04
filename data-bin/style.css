@@ -57,11 +57,11 @@ h1 {
 	border-radius: 48%;
 	height: 12vh;
 	margin: 10px 0 15px 0;
-	border: 2px dotted var(--secondary-color);
+	border: 2px solid var(--bg-color);
 	transition: border 1s;
 }
 .avatar:hover, .avatar:focus {
-	border: 2px dotted var(--primary-color);
+	border: 2px solid var(--primary-color);
 	transition: border 1s;
 }
 .icon {
