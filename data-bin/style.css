@@ -91,7 +91,6 @@ p {
 	opacity: 38%;
 }
 .secret-text {
-	align-self: flex-end;
 	color: var(--primary-color);
 	z-index: 3;
 	opacity: 0%;
@@ -102,13 +101,14 @@ p {
 	transition: opacity 3s;
 }
 a {
-	color: var(--secondary-color);
-	border-bottom: 1vh solid var(--secondary-color);
-	transition: border 2s;
+	color: var(--primary-color);
+	text-decoration: none;
+	transition: color 2s;
 }
 a:hover, a:focus {
-	border-bottom: 0;
-	transition: border 2s;
+	color: var(--secondary-color);
+	text-decoration: underline;
+	transition: color 2s;
 }
 /* slider */
 .theme-switch-wrapper {
