@@ -57,11 +57,13 @@ h1 {
 	border-radius: 50%;
 	height: 12vh;
 	margin: 10px 0 15px 0;
-	transition: border-radius 2s;
+	border: 1px solid var(--secondary-color);
+	transition: border 2s;
 }
 .avatar:hover, .avatar:focus {
-	border-radius: 25%;
-	transition: border-radius 2s;
+	border-radius: 48%;
+	border: 3px dotted var(--secondary-color);
+	transition: border 2s;
 }
 .icon {
 	height: 3vh;
