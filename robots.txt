@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /CUBS/
+
+Sitemap: https://edazpotato.js.org/sitemap.xml
