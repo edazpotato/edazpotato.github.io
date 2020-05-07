@@ -65,6 +65,7 @@ h1 {
 .avatar:hover, .avatar:focus {
 	border: 2px solid var(--primary-color);
 	transition: border 1s;
+	animation: avatar-wobbbble 5s ease-in-out alternate infinite;
 }
 .icon {
 	height: 3vh;
