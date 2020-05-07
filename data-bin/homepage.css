@@ -65,7 +65,7 @@ h1 {
 .avatar:hover, .avatar:focus {
 	border: 2px solid var(--primary-color);
 	transition: border 1s;
-	animation: avatar-wobbbble 5s ease-in-out alternate infinite;
+	animation: avatar-wobbbble 2s ease-in-out alternate infinite;
 }
 .icon {
 	height: 3vh;
@@ -179,9 +179,9 @@ input:checked + .slider:before {
 }
 @keyframes avatar-wobbbble {
   50% {
-    border-radius: 750px 550px 350px 750px / 350px 750px 550px 450px;
+    border-radius: 750px 550px 250px 750px / 250px 750px 550px 450px;
   }
   100% {
-    border-radius: 750px 250px 750px 250px / 250px 750px 250px 750px;
+    border-radius: 850px 250px 750px 250px / 250px 750px 250px 850px;
   }
 }
