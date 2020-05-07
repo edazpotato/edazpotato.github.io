@@ -60,12 +60,12 @@ h1 {
 	margin: 10px 0 15px 0;
 	border: 2px solid var(--bg-color);
 	transition: border 1s;
-	animation: avatar-wobbbble 15s ease-in-out alternate infinite;
+	animation: avatar-wobbbble 10s ease-in-out alternate infinite;
 }
 .avatar:hover, .avatar:focus {
 	border: 2px solid var(--primary-color);
 	transition: border 1s;
-	animation: avatar-wobbbble 2s ease-in-out alternate infinite;
+	animation: avatar-wobbbble 5s ease-out alternate infinite;
 }
 .icon {
 	height: 3vh;
