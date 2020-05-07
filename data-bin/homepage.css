@@ -55,11 +55,12 @@ h1 {
 	font-size: 2em;
 }
 .avatar {
-	border-radius: 48%;
+	border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
 	height: 12vh;
 	margin: 10px 0 15px 0;
 	border: 2px solid var(--bg-color);
 	transition: border 1s;
+	animation: avatar-wobbbble 15s ease-in-out alternate infinite;
 }
 .avatar:hover, .avatar:focus {
 	border: 2px solid var(--primary-color);
@@ -174,4 +175,12 @@ input:checked + .slider:before {
 
 .slider.round:before {
 	border-radius: 50%;
+}
+@keyframes avatar-wobbbble {
+  50% {
+    border-radius: 750px 550px 350px 750px / 350px 750px 550px 450px;
+  }
+  100% {
+    border-radius: 750px 250px 750px 250px / 250px 750px 250px 750px;
+  }
 }
