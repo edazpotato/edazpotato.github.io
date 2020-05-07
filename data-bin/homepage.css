@@ -56,7 +56,7 @@ h1 {
 }
 .avatar {
 	border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
-	height: 12vh;
+	height: 14vh;
 	margin: 10px 0 15px 0;
 	border: 2px solid var(--bg-color);
 	transition: border 1s;
@@ -67,7 +67,7 @@ h1 {
 	transition: border 1s;
 }
 .icon {
-	height: 3vh;
+	height: 4vh;
 }
 .icon.black {
 	filter: invert(var(--invert))
