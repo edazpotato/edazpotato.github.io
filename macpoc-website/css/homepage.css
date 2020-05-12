@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+.container {
+	margin: 5vh;
+}
+.spacer {
+	height: 7vh
+}
+.center-text {
+	text-align: center;
+}
+.big-text{
+	font-size: 15vh;
+}
+.middle-text {
+	font-size: 7vh;
+}
+.small-text {
+	font-size: 5vh;
+}
+.li-line {
+	margin-top: 5px;
+	height: 0px;
+	width: 30%;
+	border: 1px solid black
+}
+.reports {
+	margin: 7vh;
+	/*border: 2px solid black;*/
+}
+#reports {
+	margin: 2vh;
+	padding: 2vh;
+	border: 2px solid black;
+}
+a {
+	color: #1DA3DB;
+	text-decoration: none;
+	border-bottom: 2px dotted #1DA3DB;
+	transition: color 0.5s, border 0.5s;
+}
+a:hover, a:active {
+	color: #18E589;
+	border-bottom: 2px dotted #18E589;
+}
+a:visited {
+	color: #5FC1EA;
+}
+header {
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.header-item {
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+.header-logo {
+	height: 10vh;
+}
+.navigation {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	background-color: #191919;
+	padding-bottom: 2vh;
+}
+.navigation-link {
+	font-size: 5vh;
+	margin: 1vh;
+}
+
+.dark-blue {
+	color: #1227A6;
+}
+.light-blue {
+	color: #229BCD;
+}
