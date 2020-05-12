@@ -3,7 +3,7 @@ var reportsElement = document.getElementById("reports");
 getReports();
 
 function getReports() {
-	fetch("/investors/reports/reports.json")
+	fetch("/macpoc-website/investors/reports/reports.json")
 		.then(response => response.json())
 		.then(json => {
 			doTheThings(json);
