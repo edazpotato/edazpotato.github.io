@@ -16,6 +16,8 @@ body {
 }
 .row {
   display: flex;
+  align-content: center;
+  justify-content: center;
   height: 100%;
 }
 .col {
