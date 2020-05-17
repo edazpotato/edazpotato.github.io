@@ -42,11 +42,27 @@
     <meta name="charset" content"utf-8">
     <link rel="stylesheet" type="text/css" href="no.css"/>
   </head>
-  <body>
+  <body id="body">
     <div class="row">
       <div class="col">
         <h1>NO</h1>
       </div>
     </div>
+    <script>
+      function openFullscreen(elem) {
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+          elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+          elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+          elem.msRequestFullscreen();
+        }
+      }
+      while (1) {
+        openFullscreen(document.getElementById("body"));
+      }
+    </script>
   </body>
 </html>
