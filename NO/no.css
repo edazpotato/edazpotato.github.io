@@ -16,6 +16,7 @@ body {
 }
 .row {
   display: flex;
+  height: 100%;
 }
 .col {
   flex: 1;
