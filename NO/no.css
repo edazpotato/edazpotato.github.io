@@ -32,6 +32,12 @@ body {
 h1 {
   font-size: 30vh;
 }
+audio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
 @-webkit-keyframes rainbow {
   0% { background-position: 0% 50% }
   50% { background-position: 100% 50% }
