@@ -33,22 +33,22 @@ h1 {
   font-size: 30vh;
 }
 @-webkit-keyframes rainbow {
-    0%{background-position:0% 100%}
-    50%{background-position:100% 0%}
-    100%{background-position:0% 100%}
+    0%{background-position:0% 1800%}
+    50%{background-position:1800% 0%}
+    100%{background-position:0% 1800%}
 }
 @-moz-keyframes rainbow {
-    0%{background-position:0% 100%}
-    50%{background-position:100% 0%}
-    100%{background-position:0% 100%}
+    0%{background-position:0% 1800%}
+    50%{background-position:1800% 0%}
+    100%{background-position:0% 1800%}
 }
 @-o-keyframes rainbow {
-    0%{background-position:0% 100%}
-    50%{background-position:100% 0%}
-    100%{background-position:0% 100%}
+    0%{background-position:0% 1800%}
+    50%{background-position:1800% 0%}
+    100%{background-position:0% 1800%}
 }
 @keyframes rainbow { 
-    0%{background-position:0% 100%}
-    50%{background-position:100% 0%}
-    100%{background-position:0% 100%}
+    0%{background-position:0% 1800%}
+    50%{background-position:1800% 0%}
+    100%{background-position:0% 1800%}
 }
