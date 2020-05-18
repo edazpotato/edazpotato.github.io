@@ -1,3 +1,8 @@
+document.getElementsByTagName("audio")[0].addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+
 /**
  * document.exitFullScreen() polyfill
  * @author Chris Ferdinandi
