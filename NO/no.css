@@ -9,10 +9,10 @@ html, body {
 body {
   background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
   background-size: 1800% 1800%;
-  -webkit-animation: rainbow 30s ease infinite;
-  -z-animation: rainbow 30s ease infinite;
-  -o-animation: rainbow 30s ease infinite;
-  animation: rainbow 30s ease infinite;
+  -webkit-animation: rainbow 60s ease infinite;
+  -z-animation: rainbow 60s ease infinite;
+  -o-animation: rainbow 60s ease infinite;
+  animation: rainbow 60s ease infinite;
 }
 .row {
   display: flex;
@@ -33,22 +33,30 @@ h1 {
   font-size: 30vh;
 }
 @-webkit-keyframes rainbow {
-    0%{background-position:0% 1800%}
-    50%{background-position:1800% 0%}
-    100%{background-position:0% 1800%}
+    0%{background-position:0% 0%}
+    40%{background-position:1800% 0%}
+    60%{background-position:1800% 1800%}
+    80%{background-position:0% 1800%}
+    100%{background-position:0% 0%}
 }
 @-moz-keyframes rainbow {
-    0%{background-position:0% 1800%}
-    50%{background-position:1800% 0%}
-    100%{background-position:0% 1800%}
+    0%{background-position:0% 0%}
+    40%{background-position:1800% 0%}
+    60%{background-position:1800% 1800%}
+    80%{background-position:0% 1800%}
+    100%{background-position:0% 0%}
 }
 @-o-keyframes rainbow {
-    0%{background-position:0% 1800%}
-    50%{background-position:1800% 0%}
-    100%{background-position:0% 1800%}
+    0%{background-position:0% 0%}
+    40%{background-position:1800% 0%}
+    60%{background-position:1800% 1800%}
+    80%{background-position:0% 1800%}
+    100%{background-position:0% 0%}
 }
 @keyframes rainbow { 
-    0%{background-position:0% 1800%}
-    50%{background-position:1800% 0%}
-    100%{background-position:0% 1800%}
+    0%{background-position:0% 0%}
+    40%{background-position:1800% 0%}
+    60%{background-position:1800% 1800%}
+    80%{background-position:0% 1800%}
+    100%{background-position:0% 0%}
 }
