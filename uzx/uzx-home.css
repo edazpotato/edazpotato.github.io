@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: sans-serif;
 }
 html, body {
   height: 100%;
@@ -17,12 +18,10 @@ body {
 h1 {
   color: #ffffff;
   font-size: 30vh;
-  font-family: sans-serif;
 }
 h3 {
   color: #ffffff;
   font-size: 10vh;
-  font-family: sans-serif;
 }
 .btn {
   text-decoration: none;
