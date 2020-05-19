@@ -17,6 +17,9 @@
 .bottom {
   justify-self: flex-end;
 }
+.spaced {
+  justify-content: space-around;
+}
 @media (max-width: 400px) {
   .row {
     display: block;
