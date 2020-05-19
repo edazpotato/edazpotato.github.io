@@ -3,6 +3,7 @@
   padding: 0;
   border: 0;
   font-family: sans-serif;
+  transition-duration: 0.4s;
 }
 html, body {
   height: 100%;
@@ -34,7 +35,6 @@ h3 {
   padding-top: 4vh;
   padding-bottom: 4vh;
   padding: 1vh;
-  transition-duration: 0.4s;
 }
 .btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
