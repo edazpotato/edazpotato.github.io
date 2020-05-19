@@ -28,17 +28,17 @@ h3 {
   text-decoration: none;
   color: #ffffff;
   background: #ef492f;
-  background: linear-gradient(135deg, #ef492f 0%,#ef2d9b 100%);
+  background-color: linear-gradient(135deg, #ef492f 0%,#ef2d9b 100%);
   border-radius: 2vh;
   font-size: 3vh;
   margin: 2vh;
   padding: 1vh;
-  transition: background 1s;
+  transition: background-color 1s;
 }
 .btn:hover {
   background: #ef492f;
-  background: linear-gradient(135deg, #ef2d9b 0%, #ef492f 100%);
-  transition: background 1s;
+  background-color: linear-gradient(135deg, #ef2d9b 0%, #ef492f 100%);
+  transition: background-color 1s;
 }
 @-webkit-keyframes rainbow {
   0% { background-position: 0% 50% }
