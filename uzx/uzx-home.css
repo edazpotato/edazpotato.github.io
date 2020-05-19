@@ -27,8 +27,9 @@ h3 {
 .btn {
   text-decoration: none;
   color: #ffffff;
-  background: rgb(222,0,92);
-  background: radial-gradient(circle, rgba(222,0,92,1) 0%, rgba(184,0,222,1) 50%, rgba(0,212,255,1) 100%);
+  background: #ef492f;
+  background: linear-gradient(135deg, #ef492f 0%,#ef2d9b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef492f', endColorstr='#ef2d9b',GradientType=1 );
   border-radius: 15px;
   font-size: 2vh;
   margin: 2vh;
