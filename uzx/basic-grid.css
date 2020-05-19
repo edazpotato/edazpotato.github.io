@@ -1,0 +1,21 @@
+/* Basic grid library by EdazPotato */
+/* Feel free to use it, but make sure to credit me! */
+/* MIT licence applies */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.vert {
+  flex-direction: column;
+}
+.col {
+  flex: 1;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
+}
