@@ -7,15 +7,18 @@
   justify-content: center;
   height: 100%;
 }
-.vert {
-  flex-direction: column;
-}
 .col {
   flex: 1;
   text-align: center;
 }
+.vert {
+  flex-direction: column;
+}
+.bottom {
+  justify-self: flex-end;
+}
 @media (max-width: 400px) {
-  .flex-grid {
+  .row {
     display: block;
   }
 }
