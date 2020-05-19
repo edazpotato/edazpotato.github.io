@@ -2,7 +2,6 @@
 /* Feel free to use it, but make sure to credit me! */
 /* MIT licence applies */
 .row {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
