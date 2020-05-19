@@ -32,6 +32,8 @@ h3 {
   border-radius: 2vh;
   font-size: 5vh;
   margin: 2vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
   padding: 1vh;
   transition-duration: 0.4s;
 }
