@@ -27,8 +27,8 @@ h3 {
 .btn {
   text-decoration: none;
   color: #ffffff;
-  background: #ef492f;
-  background-color: linear-gradient(135deg, #ef492f 0%,#ef2d9b 100%);
+  background-color: #ef492f;
+  background: linear-gradient(135deg, #ef492f 0%,#ef2d9b 100%);
   border-radius: 2vh;
   font-size: 3vh;
   margin: 2vh;
