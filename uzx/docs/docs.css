@@ -12,7 +12,7 @@ html, body {
 }
 
 header, footer {
-  margin: 2vh;
+  padding: 4vh;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #595047;
 }
