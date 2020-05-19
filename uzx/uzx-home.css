@@ -39,6 +39,9 @@ h3 {
 .btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+.spacer {
+  width: 5vh;
+}
 @-webkit-keyframes rainbow {
   0% { background-position: 0% 50% }
   50% { background-position: 100% 50% }
