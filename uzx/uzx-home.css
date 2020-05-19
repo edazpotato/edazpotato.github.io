@@ -25,7 +25,7 @@ h3 {
   font-family: sans-serif;
 }
 .btn {
-  margin: 2vh;
+  margin: 4vh;
 }
 @-webkit-keyframes rainbow {
   0% { background-position: 0% 50% }
