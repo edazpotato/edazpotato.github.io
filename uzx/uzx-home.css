@@ -27,8 +27,10 @@ h3 {
 .btn {
   background: rgb(222,0,92);
   background: radial-gradient(circle, rgba(222,0,92,1) 0%, rgba(184,0,222,1) 50%, rgba(0,212,255,1) 100%);
+  border-radius: 15px;
   font-size: 4vh;
-  margin: 4vh;
+  margin: 1vh;
+  padding: 4vh;
 }
 @-webkit-keyframes rainbow {
   0% { background-position: 0% 50% }
