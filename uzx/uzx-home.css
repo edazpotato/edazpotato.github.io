@@ -14,21 +14,6 @@ body {
   -o-animation: rainbow 10s ease infinite;
   animation: rainbow 10s ease infinite;
 }
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.col {
-  flex: 1;
-  text-align: center;
-}
-@media (max-width: 400px) {
-  .flex-grid {
-    display: block;
-  }
-}
 h1 {
   color: #ffffff;
   font-size: 30vh;
