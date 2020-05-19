@@ -41,6 +41,7 @@ h3 {
 }
 .spacer {
   width: 5vh;
+  height: 5vh;
 }
 @-webkit-keyframes rainbow {
   0% { background-position: 0% 50% }
