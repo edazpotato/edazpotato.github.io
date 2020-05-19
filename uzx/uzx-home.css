@@ -29,9 +29,8 @@ h3 {
   color: #ffffff;
   background: #ef492f;
   background: linear-gradient(135deg, #ef492f 0%,#ef2d9b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef492f', endColorstr='#ef2d9b',GradientType=1 );
   border-radius: 15px;
-  font-size: 2vh;
+  font-size: 3vh;
   margin: 2vh;
   padding: 1vh;
 }
