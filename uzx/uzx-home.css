@@ -33,6 +33,12 @@ h3 {
   font-size: 3vh;
   margin: 2vh;
   padding: 1vh;
+  transition: background 1s;
+}
+.btn:hover {
+  background: #ef492f;
+  background: linear-gradient(135deg, #ef2d9b 0%, #ef492f 100%);
+  transition: background 1s;
 }
 @-webkit-keyframes rainbow {
   0% { background-position: 0% 50% }
