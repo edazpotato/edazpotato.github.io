@@ -7,6 +7,10 @@ html, body {
   border: 0;
 }
 
+.container {
+  height: 100%
+}
+
 header, footer {
   margin: 2vh;
   color: #ffffff;
