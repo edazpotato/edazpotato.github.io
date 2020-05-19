@@ -25,6 +25,8 @@ h3 {
   font-family: sans-serif;
 }
 .btn {
+  text-decoration: none;
+  color: #ffffff;
   background: rgb(222,0,92);
   background: radial-gradient(circle, rgba(222,0,92,1) 0%, rgba(184,0,222,1) 50%, rgba(0,212,255,1) 100%);
   border-radius: 15px;
