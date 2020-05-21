@@ -14,9 +14,14 @@
     window.$docsify = {
       el: "#main",
       loadSidebar: true,
-      coverpage: true
+      coverpage: true,
+      plugins: [
+        EditOnGithubPlugin.create(docBase, docEditBase, title)
+      ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- plugins -->
+  <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
 </body>
 </html>
