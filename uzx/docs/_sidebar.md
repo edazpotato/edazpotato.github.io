@@ -1,4 +1,4 @@
-- Getting started
+- [Getting started](/ "Home")
   - [invite](start/invite.md "Invite")
   - [setup](start/setup.md "Setup")
 
