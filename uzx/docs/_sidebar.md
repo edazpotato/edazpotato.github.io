@@ -1,7 +1,8 @@
 - Getting started
-  - [invite](start/invite "Invite")
-  - [setup](start/setup "Setup")
+  - [invite](start/invite.md "Invite")
+  - [setup](start/setup.md "Setup")
 
 - Reference
-  - [Commands](ref/commands "Commands reference")
-  - [Other fetures](ref/other "Other fetures")
+  - [Commands](ref/commands.md "Commands reference")
+  - [Prefixes](ref/prefixes.md "Prefix info")
+  - [Other fetures](ref/other.md "Other fetures")
