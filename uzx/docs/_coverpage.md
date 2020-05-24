@@ -5,8 +5,8 @@
 > The discord bot you waited for.
 
 - Fast
-- No statically built html files
-- Multiple themes
+- Reliable
+- **HUGE** ammount of commands!
 
 [Invite](#)
 [Get Started](#main)
