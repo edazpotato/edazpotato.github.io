@@ -1,5 +1,5 @@
-- [Home](/README.md "Home")
 - Getting started
+  - [Home](/README.md "Home")
   - [invite](start/invite.md "Invite")
   - [setup](start/setup.md "Setup")
 
