@@ -89,6 +89,9 @@ p {
 	flex: 33.33%;
 	padding: 5px;
 }
+.warap {
+	flex-wrap: wrap;
+}
 .high {
 	opacity: 87%;
 }
