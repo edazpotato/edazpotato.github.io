@@ -20,7 +20,7 @@ function addGlobalStyle(csscode){
 } 
 if (epilepsyEnabled() == true) {
 	addGlobalStyle(css);
-} else {
+}else {
 	addGlobalStyle(css2);
 }
 
