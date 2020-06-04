@@ -5,10 +5,11 @@ var css2 = "";
 function epilepsyEnabled(){
 	var field = 'epilepsy';
 	var url = window.location.href;
-	if(url.indexOf('?' + field + '=') != -1);
+	if(url.indexOf('?' + field + '=') != -1) {
 	    return true;
-	else if(url.indexOf('&' + field + '=') != -1);
+	}else if(url.indexOf('&' + field + '=') != -1){
 	    return true;
+	}
 	return false;
 }
 function addGlobalStyle(csscode){
