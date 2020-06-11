@@ -4,9 +4,9 @@
 
 > The discord bot you waited for.
 
-- Fast
-- Reliable
-- **HUGE** ammount of commands!
+- Blazing fast
+- Always online
+- **ALL** the commands!
 
 [Invite](https://edazpotato.github.io/uzx/invite/)
 [Get Started](#main)
