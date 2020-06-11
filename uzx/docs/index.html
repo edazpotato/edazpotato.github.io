@@ -11,15 +11,42 @@
 </head>
 <body>
   <div data-app id="main">Please wait...</div>
-  <script>
-    window.$docsify = {
-      el: "#main",
-      loadSidebar: true,
-      coverpage: true
-    }
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <!-- plugins -->
-  <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+  <div id="scripts">
+    <!-- docsify core -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <!-- plugins -->
+    <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script>
+      window.$docsify = {
+        el: "#main",
+        loadSidebar: true,
+        coverpage: true,
+        plugins: [
+          EditOnGithubPlugin.create(docBase, docEditBase, title)
+        ],
+        search: 'auto', // default
+
+        search : [
+          '/',            // => /README.md
+          '/guide',       // => /guide.md
+          '/get-started', // => /get-started.md
+          '/zh-cn/',      // => /zh-cn/README.md
+        ],
+        // search plugin
+        // complete configuration parameters
+        search: {
+          maxAge: 86400000, // Expiration time, the default one day
+          paths: [], // or 'auto'
+          placeholder: 'Type to search',
+          noData: 'No Results found!',
+          // Headline depth, 1 - 6
+          depth: 2,
+          hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+        }
+      }
+    </script>
+  </div>
 </body>
 </html>
