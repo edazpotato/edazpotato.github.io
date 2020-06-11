@@ -1,7 +1,7 @@
 - Getting started
-  - [Home](/README.md "Home")
-  - [invite](start/invite.md "Invite")
-  - [setup](start/setup.md "Setup")
+  - [Home](/ "Homepage")
+  - [Invite](start/invite.md "Invite UZX to your server")
+  - [Setup](start/setup.md "Server setup")
 
 - Reference
   - [Commands](ref/commands.md "Commands reference")
