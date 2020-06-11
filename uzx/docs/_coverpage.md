@@ -8,5 +8,5 @@
 - Reliable
 - **HUGE** ammount of commands!
 
-[Invite](#)
+[Invite](https://edazpotato.github.io/uzx/invite/)
 [Get Started](#main)
