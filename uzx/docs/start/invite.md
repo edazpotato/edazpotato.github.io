@@ -1,4 +1,4 @@
-### Invite link: [https://discord.com/api/oauth2/authorize?client_id=712195162532479008&permissions=8&scope=bot](https://edazpotato.github.io/uzx/invite/)
+### Invite link: [ https://discord.com/api/oauth2/authorize?client_id=712195162532479008&permissions=8&scope=bot](https://edazpotato.github.io/uzx/invite/)
 
 ## Adding UZX to a discord server
 
