@@ -1,5 +1,5 @@
 - Getting started
-  - [Home](/ "Homepage")
+  - [Home](/README.md "Homepage")
   - [Invite](start/invite.md "Invite UZX to your server")
   - [Setup](start/setup.md "Server setup")
 
