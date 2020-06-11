@@ -1,4 +1,4 @@
-![logo](https://edazpotato.github.io/i/spaceship.png)
+![logo](https://edazpotato.github.io/i/spaceship.png =250x "UZX Icon")
 
 # UZX <small>0.1</small>
 
