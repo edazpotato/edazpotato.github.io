@@ -5,4 +5,4 @@
 2. Configure custom prefix and other settings - see [server setup](/start/setup)
 3. Done. Explore commands from the `$help` command, or go to the [commands reference](/ref/commands/)
 
-!> This documentaion ussumes that you are using the default `$` prefix. For more info, go to [prefixes](/ref/prefixes)
+!> This documentaion usumes that you are using the default `$` prefix. For more info, go to [prefixes](/ref/prefixes)
