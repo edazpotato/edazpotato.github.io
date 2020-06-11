@@ -26,15 +26,15 @@
         plugins: [
           EditOnGithubPlugin.create(docBase, docEditBase, title)
         ],
+        
+        // search plugin
         search: 'auto', // default
 
         search : [
           '/',            // => /README.md
           '/guide',       // => /guide.md
-          '/get-started', // => /get-started.md
-          '/zh-cn/',      // => /zh-cn/README.md
+          '/get-started' // => /get-started.md
         ],
-        // search plugin
         // complete configuration parameters
         search: {
           maxAge: 86400000, // Expiration time, the default one day
