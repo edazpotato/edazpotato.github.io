@@ -4,6 +4,6 @@
   - [Setup](start/setup.md "Server setup")
 
 - Reference
-  - [Commands](ref/commands.md "Commands reference")
+  - [⮞ Commands](ref/commands.md "Commands reference")
   - [Prefixes](ref/prefixes.md "Prefix info")
   - [Other fetures](ref/other.md "Other fetures")
