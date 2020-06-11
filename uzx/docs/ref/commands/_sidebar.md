@@ -8,6 +8,6 @@
     - [Utitiy commands](#)
     - [Moderation commands](#)
     - [Fun commands](#)
-    - [API - based commands](#)
+    - [API-based commands](#)
   - [Prefixes](ref/prefixes.md "Prefix info")
   - [Other fetures](ref/other.md "Other fetures")
