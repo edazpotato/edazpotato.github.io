@@ -1,9 +1,21 @@
+/* global vars */
+var emailExt = "@wc.school.nz";
+var userData = {
+	email: "",
+	discordId: ""
+}
+
 /* helper functions */
 function hide(el) {
 	el.setAttribute("style", "display: none;")
 }
 function show(el) {
 	el.setAttribute("style", "")
+}
+function shout(msg) {
+	console.warn("");
+	console.log(msg);
+	console.warn("");
 }
 
 /* discord sign in */
@@ -26,11 +38,13 @@ function googleSignIn() {
     console.log("Userdata : \n" + JSON.stringify(user))
 	
 	if (user.isAnonymous == false && user.emailVerified == true) {
-		console.warn("");
-		console.log("User '" + user.displayName + "' has a verified email of '" + user.email + "'");
-		console.warn("");
+		shout("User '" + user.displayName + "' has a verified email of '" + user.email + "'")
+		if (user.email.endsWith(emailExt)) {
+			shout("Email ends with '" + emailExt + "'. Done!");
+			userData.email = user.email;
+			updatePageWithGoogleUserData(user);
+		}
 	} 
-	updatePageWithGoogleUserData(user);
 	  
   }).catch(function(error) {
     // Handle Errors here.
