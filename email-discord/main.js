@@ -1,8 +1,18 @@
+/* helper functions */
+function hide(el) {
+	el.setAttribute("style", "display: none;")
+}
+function show(el) {
+	el.setAttribute("style", "")
+}
+
+/* discord sign in */
 function discordSignIn() {
 	console.warn("");
 	console.log("Does nothing yet");
 	console.warn("");
 }
+/* google sign in */
 function googleSignIn() {
   var base_provider = new firebase.auth.GoogleAuthProvider();
   
@@ -36,7 +46,7 @@ function googleSignIn() {
 }
 
 function updatePageWithGoogleUserData(user) {
-	var el = document.getElementById("googleUserContainer")
+	var el = document.getElementById("googleUserContainer");
 	var imgEl = document.createElement("img");
 	imgEl.setAttribute("src", user.photoURL);
 	el.appendChild(imgEl);
@@ -44,5 +54,6 @@ function updatePageWithGoogleUserData(user) {
 	var textEl = document.createElement("p");
 	textEl.appendChild(text);
 	el.appendChild(textEl);
-	
+	var googleBtn = document.getElementById("googleBtn");
+	hide(googleBtn);
 }
