@@ -18,6 +18,31 @@ function shout(msg) {
 	console.warn("");
 }
 
+/* do database stuff */
+function databaseStuff(data) {
+	db.collection("users").get().then((querySnapshot) => {
+	    querySnapshot.forEach((doc) => {
+		if (doc.discordId == data.discordId) {
+			console.error("ERORR: That discord user has alredy been authenticated!");
+		} else if (doc.email == data.email) {
+			console.error("ERORR: That email adress has alredy been authenticated!");
+		} else {
+			// Add a second document with a generated ID.
+			db.collection("users").add({
+			    email: data.email,
+			    discordId: data.discordId
+			})
+			.then(function(docRef) {
+			    console.log("Document written with ID: ", docRef.id);
+			})
+			.catch(function(error) {
+			    console.error("Error adding document: ", error);
+			});
+		}
+	    });
+	});
+}
+
 /* google sign in */
 function googleSignIn() {
   var base_provider = new firebase.auth.GoogleAuthProvider();
@@ -37,6 +62,7 @@ function googleSignIn() {
 			shout("Email ends with '" + emailExt + "'. Done!");
 			userData.email = user.email;
 			updatePageWithGoogleUserData(user);
+			databaseStuff(userData);
 		}
 	} 
 	  
@@ -76,4 +102,5 @@ function discordSignIn() {
 	hide(discordBtn);
 	var googleBtn = document.getElementById("googleBtn");
 	show(googleBtn);
+	userData.id = "";
 }
