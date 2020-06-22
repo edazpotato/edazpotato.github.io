@@ -1,0 +1,15 @@
+{
+  "name": "email-discord",
+  "version": "1.0.0",
+  "description": "Authenticate with discord, the authenticate with google to get their email, if that email ends with ''\u001b[D@wc.scool.nz' give them a role on discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "keywords": [
+    "email",
+    "discord"
+  ],
+  "author": "Edaz#5671",
+  "license": "MIT"
+}

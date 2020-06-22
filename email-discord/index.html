@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>email-discord</title>
+    <meta name="author" content="Edaz#5671">
+    <meta name="description" content="made by Edaz for the good of discord.">
+    <meta name="keywords" content="discord,email,google">
+    <link rel="stylesheet" href="basic-grid.css" type="text/css">
+    <style type="text/css">
+      .centertext {
+        text-align: center;
+      }
+      .scripts {
+        display: none;
+      }
+      a {
+        font-size: 5vh;
+        text-decoration: none;
+        color: #1dc2d1;
+        border-bottom: 1vh dotted white;
+        transition: border 1s, color 1s;
+      }
+      a:hover, a:focus {
+        color: #1d71d1;
+        border-bottom: 1vh dotted #1d71d1;
+      }
+      a:active {
+        color: #1dd171;
+        border-bottom: 1vh dotted #1dd171;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row vert spaced">
+      <div class="col">
+        <div class="row vert">
+          <div class="col cent">
+            <div class="col row vert cent" id="google">
+				<div class="col">
+              		<button onclick="googleSignIn()">Sign in with google</button>
+				</div>
+				<div class="col" id="googleUserContainer">
+				</div>
+             </div>
+          </div>
+          <div class="col row vert cent" id="discord">
+				<div class="col">
+              		<button onclick="discordSignIn()">Sign in with discord</button>
+				</div>
+				<div class="col" id="discordUSerContainer">
+				</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scripts">
+        
+     </div>
+        <!-- FIREBASE -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-analytics.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-auth.js"></script>
+
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDNmRAwhTfsTm1eQtEVxdnpl2Q_ANq5IB0",
+            authDomain: "email-discord.firebaseapp.com",
+            databaseURL: "https://email-discord.firebaseio.com",
+            projectId: "email-discord",
+            storageBucket: "email-discord.appspot.com",
+            messagingSenderId: "679804190018",
+            appId: "1:679804190018:web:1f404e283cd81fa8f95cdb",
+            measurementId: "G-7BBR6NZYDN"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+          
+          
+        </script>
+<script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
