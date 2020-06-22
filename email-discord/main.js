@@ -18,12 +18,6 @@ function shout(msg) {
 	console.warn("");
 }
 
-/* discord sign in */
-function discordSignIn() {
-	console.warn("");
-	console.log("Does nothing yet");
-	console.warn("");
-}
 /* google sign in */
 function googleSignIn() {
   var base_provider = new firebase.auth.GoogleAuthProvider();
@@ -71,4 +65,11 @@ function updatePageWithGoogleUserData(user) {
 	el.appendChild(textEl);
 	var googleBtn = document.getElementById("googleBtn");
 	hide(googleBtn);
+}
+
+/* discord sign in */
+function discordSignIn() {
+	console.warn("");
+	console.log("Does nothing yet");
+	console.warn("");
 }
