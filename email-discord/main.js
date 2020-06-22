@@ -49,8 +49,9 @@ function updatePageWithGoogleUserData(user) {
 	var el = document.getElementById("googleUserContainer");
 	var imgEl = document.createElement("img");
 	imgEl.setAttribute("src", user.photoURL);
+	imgEl.setAttribute("title", user.email);
 	el.appendChild(imgEl);
-	var text = document.createTextNode("Signed in as: " + user.displayName);
+	var text = document.createTextNode("Signed in with google as: " + user.displayName);
 	var textEl = document.createElement("p");
 	textEl.appendChild(text);
 	el.appendChild(textEl);
