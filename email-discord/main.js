@@ -72,4 +72,8 @@ function discordSignIn() {
 	console.warn("");
 	console.log("Does nothing yet");
 	console.warn("");
+	var discordBtn = document.getElementById("discordBtn");
+	hide(discordBtn);
+	var googleBtn = document.getElementById("googleBtn");
+	show(googleBtn);
 }
