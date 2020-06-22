@@ -35,62 +35,52 @@
   </head>
   <body>
     <div class="row vert spaced">
-      <div class="col">
-        <div class="row vert">
-          <div class="col cent">
-            <div class="col row vert cent" id="google">
-				<div class="col">
-              		<button onclick="googleSignIn()" id="googleBtn" style="display: none;">Sign in with google</button>
-				</div>
-				<div class="col" id="googleUserContainer">
-				</div>
-             </div>
-          </div>
-          <div class="col row vert cent" id="discord">
-				<div class="col">
-              		<button onclick="discordSignIn()" id="discordBtn">Sign in with discord</button>
-				</div>
-				<div class="col" id="discordUSerContainer">
-				</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="scripts">
-        
-     </div>
-        <!-- FIREBASE -->
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-	  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-             https://firebase.google.com/docs/web/setup#available-libraries -->
-	  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-auth.js"></script>
-	  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
-	  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-analytics.js"></script>
-	  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-performance.js"></script>
-
-        <script>
-          // Your web app's Firebase configuration
-          var firebaseConfig = {
-            apiKey: "AIzaSyDNmRAwhTfsTm1eQtEVxdnpl2Q_ANq5IB0",
-            authDomain: "email-discord.firebaseapp.com",
-            databaseURL: "https://email-discord.firebaseio.com",
-            projectId: "email-discord",
-            storageBucket: "email-discord.appspot.com",
-            messagingSenderId: "679804190018",
-            appId: "1:679804190018:web:1f404e283cd81fa8f95cdb",
-            measurementId: "G-7BBR6NZYDN"
-          };
-		// Initialize Firebase
-		firebase.initializeApp(firebaseConfig);
-		// initialize other SDKs
-		var db = firebase.firestore();
-		firebase.analytics();
-		var perf = firebase.performance();
-          
-          
-        </script>
-<script src="main.js" type="text/javascript"></script>
-  </body>
+	    <div class="col">
+		    <div class="col cent row vert">
+			    <div class="col row vert cent" id="google">
+				    <div class="col">
+					    <button onclick="googleSignIn()" id="googleBtn" style="display: none;">Sign in with google</button>
+				    </div>
+				    <div class="col" id="googleUserContainer"></div>
+			    </div>
+			    <div class="col row vert cent" id="discord">
+				    <div class="col">
+					    <button onclick="discordSignIn()" id="discordBtn">Sign in with discord</button>
+				    </div>
+				    <div class="col" id="discordUSerContainer"></div>
+			    </div>
+		    </div>
+	    </div>
+	  </div>
+	  <div class="scripts">
+		  <!-- FIREBASE -->
+		  <!-- The core Firebase JS SDK is always required and must be listed first -->
+		  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+		  <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+		  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-auth.js"></script>
+		  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+		  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-analytics.js"></script>
+		  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-performance.js"></script>
+		  <script>
+			  // Your web app's Firebase configuration
+			  var firebaseConfig = {
+				  apiKey: "AIzaSyDNmRAwhTfsTm1eQtEVxdnpl2Q_ANq5IB0",
+				  authDomain: "email-discord.firebaseapp.com",
+				  databaseURL: "https://email-discord.firebaseio.com",
+				  projectId: "email-discord",
+				  storageBucket: "email-discord.appspot.com",
+				  messagingSenderId: "679804190018",
+				  appId: "1:679804190018:web:1f404e283cd81fa8f95cdb",
+				  measurementId: "G-7BBR6NZYDN"
+			  };
+			  // Initialize Firebase
+			  firebase.initializeApp(firebaseConfig);
+			  // initialize other SDKs
+			  var db = firebase.firestore();
+			  firebase.analytics();
+			  var perf = firebase.performance();
+		  </script>
+		  <script src="main.js" type="text/javascript"></script>
+	  </div>
+	</body>
 </html>
