@@ -85,6 +85,7 @@
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 		// initialize other SDKs
+		var db = firebase.firestore();
 		firebase.analytics();
 		var perf = firebase.performance();
           
