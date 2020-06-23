@@ -65,7 +65,7 @@
 		  <script>
 			  Vue.component("social-container", {
 				  props: ["provider", "btnclass"],
-				  template : '<div class="col row vert cent" :id="provider"><div class="col"><button :class="btnclass" :onclick="provider + \'SignIn()\'" :id="provider + \'Btn\'">Sign in with {{ provider }}</button></div><div class="col" :id="provider + \'USerContainer\'"></div></div>'
+				  template : '<div class="col row vert cent" :id="provider"><div class="col"><button :class="btnclass" :onclick="provider + \'SignIn()\'" :id="provider + \'Btn\'">Sign in with {{ provider }}</button></div><div class="col" :id="provider + \'UserContainer\'"></div></div>'
 			  });
 			  var vm = new Vue({
 			  el: '#app'
