@@ -36,7 +36,7 @@
   <body>
     <div class="row vert spaced">
 	    <div class="col">
-		    <div class="col cent row vert" id="app">{{ message }}
+		    <div class="col cent row vert" id="app">
 			    <div class="col row vert cent" id="google">
 				    <div class="col">
 					    <button onclick="googleSignIn()" id="googleBtn" style="display: none;">Sign in with google</button>
@@ -56,12 +56,16 @@
 		  <!-- Vue.js -->
 		  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 		  <script>
+			  Vue.component("social-container", {
+				  propr: [],
+				  template : ""
+			  });
 			  var app = new Vue({
 			  el: '#app',
 			  data: {
-			    message: 'Hello Vue!'
+			    message: 'Hello world!'
 			  }
-			})
+			});
 		  </script>
 		  <!-- end Vue.js -->
 		  
