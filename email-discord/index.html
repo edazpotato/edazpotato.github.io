@@ -67,7 +67,7 @@
 				  props: ["provider"],
 				  template : '<div class="col row vert cent" id="{{ provider }}"><div class="col"><button onclick="{{ provider }}SignIn()" id="{{ provider }}Btn">Sign in with {{ provider }}</button></div><div class="col" id="{{ provider }}USerContainer"></div></div>'
 			  });
-			  var app = new Vue({
+			  var vm = new Vue({
 			  el: '#app',
 			  data: {
 			    message: 'Hello world!'
