@@ -40,8 +40,8 @@
     <div class="row vert spaced">
 	    <div class="col">
 		    <div class="col cent row vert" id="app">
-			    <social-container provider="google" btnClass="hidden"></social-container>
-			    <social-container provider="discord"  btnClass="shown"></social-container>
+			    <social-container provider="google" btnclass="hidden"></social-container>
+			    <social-container provider="discord"  btnclass="shown"></social-container>
 			    <!--
 			    <div class="col row vert cent" id="google">
 				    <div class="col">
@@ -64,8 +64,8 @@
 		  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 		  <script>
 			  Vue.component("social-container", {
-				  props: ["provider", "btnClass"],
-				  template : '<div class="col row vert cent" :id="provider"><div class="col"><button :class="btnClass" :onclick="provider + \'SignIn()\'" :id="provider + \'Btn\'">Sign in with {{ provider }}</button></div><div class="col" :id="provider + \'USerContainer\'"></div></div>'
+				  props: ["provider", "btnclass"],
+				  template : '<div class="col row vert cent" :id="provider"><div class="col"><button :class="btnclass" :onclick="provider + \'SignIn()\'" :id="provider + \'Btn\'">Sign in with {{ provider }}</button></div><div class="col" :id="provider + \'USerContainer\'"></div></div>'
 			  });
 			  var vm = new Vue({
 			  el: '#app'
