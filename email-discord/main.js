@@ -7,10 +7,10 @@ var userData = {
 
 /* helper functions */
 function hide(el) {
-	el.setAttribute("style", "display: none;")
+	el.setAttribute("class", "hidden")
 }
 function show(el) {
-	el.setAttribute("style", "")
+	el.setAttribute("class", "")
 }
 function shout(msg) {
 	console.warn("");
