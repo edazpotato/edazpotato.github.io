@@ -12,6 +12,10 @@
     <meta name="description" content="made by Edaz for the good of discord.">
     <meta name="keywords" content="discord,email,google">
     <link rel="stylesheet" href="basic-grid.css" type="text/css">
+    <!-- vuetify -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+	  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <style type="text/css">
       .centertext {
         text-align: center;
@@ -40,36 +44,39 @@
     <div class="row vert spaced">
 	    <div class="col">
 		    <div class="col cent row vert" id="app">
-			    <social-container provider="google" btnclass="hidden"></social-container>
-			    <social-container provider="discord"  btnclass="shown"></social-container>
-			    <!--
-			    <div class="col row vert cent" id="google">
-				    <div class="col">
-					    <button onclick="googleSignIn()" id="googleBtn" style="display: none;">Sign in with google</button>
+			    <v-app>
+				    <social-container provider="google" btnclass="hidden"></social-container>
+				    <social-container provider="discord"  btnclass="shown"></social-container>
+				    <!--
+				    <div class="col row vert cent" id="google">
+					    <div class="col">
+						    <button onclick="googleSignIn()" id="googleBtn" style="display: none;">Sign in with google</button>
+					    </div>
+					    <div class="col" id="googleUserContainer"></div>
 				    </div>
-				    <div class="col" id="googleUserContainer"></div>
-			    </div>
-			    <div class="col row vert cent" id="discord">
-				    <div class="col">
-					    <button onclick="discordSignIn()" id="discordBtn">Sign in with discord</button>
+				    <div class="col row vert cent" id="discord">
+					    <div class="col">
+						    <button onclick="discordSignIn()" id="discordBtn">Sign in with discord</button>
+					    </div>
+					    <div class="col" id="discordUSerContainer"></div>
 				    </div>
-				    <div class="col" id="discordUSerContainer"></div>
-			    </div>
--->
+	-->
+			    </v-app>
 		    </div>
 	    </div>
 	  </div>
 	  <div class="scripts">
 		  <!-- Vue.js -->
 		  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
 		  <script>
 			  Vue.component("social-container", {
 				  props: ["provider", "btnclass"],
 				  template : '<div class="col row vert cent" :id="provider"><div class="col"><button :class="btnclass" :onclick="provider + \'SignIn()\'" :id="provider + \'Btn\'">Sign in with {{ provider }}</button></div><div class="col" :id="provider + \'UserContainer\'"></div></div>'
 			  });
 			  var vm = new Vue({
-			  el: '#app'
-			});
+			  	el: '#app'
+			  });
 		  </script>
 		  <!-- end Vue.js -->
 		  
