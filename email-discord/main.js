@@ -17,6 +17,9 @@ function shout(msg) {
 	console.log(msg);
 	console.warn("");
 }
+function makeError(msg) {
+	
+}
 
 /* do database stuff */
 function databaseStuff(data) {
@@ -63,6 +66,9 @@ function googleSignIn() {
 			userData.email = user.email;
 			updatePageWithGoogleUserData(user);
 			databaseStuff(userData);
+		} else {
+			console.error("Error: email adress does not end with '" + emailExt + "'");
+			makeError("Email doesn't end with '" + emailExt + "'");
 		}
 	} 
 	  
