@@ -47,3 +47,5 @@ async function init() {
   var app = document.getElementById("app");
   app.innerHTML = html;
 }
+
+await init();
