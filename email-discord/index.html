@@ -68,7 +68,7 @@
 		  <script>
 			  Vue.component("social-container", {
 				  props: ["provider", "disabled"],
-				  template : '<div :id="provider"><v-btn :disabled="!!disable" class="white--text v-btn v-btn--tile theme--light elevation-3 secondary" small="true" :onclick="provider + \'SignIn()\'" :id="provider + \'Btn\'">Sign in with {{ provider }}</button><div :id="provider + \'UserContainer\'"></div></div>'
+				  template : '<div :id="provider"><v-btn :disabled="disable" class="white--text v-btn v-btn--tile theme--light elevation-3 secondary" small="true" :onclick="provider + \'SignIn()\'" :id="provider + \'Btn\'">Sign in with {{ provider }}</button><div :id="provider + \'UserContainer\'"></div></div>'
 			  });
 			  var vm = new Vue({
 			  	el: '#app',
