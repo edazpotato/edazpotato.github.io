@@ -89,10 +89,12 @@ function googleSignIn() {
 
 function updatePageWithGoogleUserData(user) {
 	var el = document.getElementById("googleUserContainer");
-	var imgEl = document.createElement("img");
+	var imgEl = document.createElement("v-img");
 	imgEl.setAttribute("src", user.photoURL);
 	imgEl.setAttribute("title", user.email);
-	el.appendChild(imgEl);
+	var avartarEl = document.createElement("v-avatar");
+	avartarEl.appendChild(imgEl);
+	el.appendChild(avartarEl);
 	var text = document.createTextNode("Signed in with google as: " + user.displayName);
 	var textEl = document.createElement("p");
 	textEl.appendChild(text);
