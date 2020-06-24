@@ -2,7 +2,7 @@
 var mode = "postview";
 
 /* helper functions */
-function get (url, json) {
+async function get (url, json) {
   var response = await fetch(url);
   if (response.ok) { // if HTTP-status is 200-299
     var data;
@@ -16,7 +16,7 @@ function get (url, json) {
     console.error("HTTP-Error: " + response.status);
   }
 }
-function init() {
+async function init() {
   /* main blog system */
   /* delcare vars */
   var markdown = "";
@@ -38,7 +38,7 @@ function init() {
     var postTitle = post.title;
     var postPath = post.path;
     var postdate = post.date; // NOTE: this is not a date object, just a string, because i'm lazy
-    markdown = get("posts/" + postPath);
+    markdown = await get("posts/" + postPath);
   }
   /* parse markdown to html */
   var converter = new showdown.Converter();
