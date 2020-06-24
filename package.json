@@ -1,5 +1,8 @@
 {
   "name": "edazpoato-site",
   "version": "1.2.3",
-  "author": "Edaz"
+  "author": "Edaz",
+  "dependencies": {
+    "express": "~4.17.1"
+  }
 }
