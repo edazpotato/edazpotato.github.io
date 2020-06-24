@@ -35,11 +35,11 @@ async function init() {
     var post = posts.find(postId => postId === id);
     /* declare vars */
     var authorName = post.author;
-    var authorImage = post.author_image_path;
+    var authorImage = post.authuor_image_path;
     var postTitle = post.title;
     var postPath = post.path;
     var postdate = post.date; // NOTE: this is not a date object, just a string, because i'm lazy
-    markdown = await get("posts/" + postPath);
+    markdown = await get("posts/" + postPath, false);
   }
   /* parse markdown to html */
   var converter = new showdown.Converter();
