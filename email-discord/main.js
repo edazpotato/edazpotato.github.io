@@ -7,10 +7,10 @@ var userData = {
 
 /* helper functions */
 function hide(el) {
-	el.setAttribute("class", "hidden")
+	el.setAttribute("disabled", "true")
 }
 function show(el) {
-	el.setAttribute("class", "")
+	el.setAttribute("disabled", "false")
 }
 function shout(msg) {
 	console.warn("");
