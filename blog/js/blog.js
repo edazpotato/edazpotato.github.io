@@ -32,7 +32,7 @@ async function init() {
   } else if (mode == "postveiw") {
     /* get list of posts */
     var posts = await get("posts.json", true);
-    var post = posts[{"id": id}];
+    var post = posts.find(postId => postId === id);
     /* declare vars */
     var authorName = post.author;
     var authorImage = post.author_image_path;
