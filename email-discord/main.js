@@ -8,11 +8,11 @@ var userData = {
 /* helper functions */
 function hide(el) {
 	el.setAttribute("disabled", "");
-	el.classList.add("v-btn--dissabled");
+	el.classList.add("v-btn--disabled");
 }
 function show(el) {
 	el.removeAttribute("disabled");
-	el.classList.remove("v-btn--dissabled");
+	el.classList.remove("v-btn--disabled");
 }
 function shout(msg) {
 	console.warn("");
