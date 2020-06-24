@@ -44,5 +44,5 @@ async function init() {
   var converter = new showdown.Converter();
   var html = converter.makeHtml(markdown);
   var app = document.getElementById("app");
-  app.appendChild(html);
+  app.innerHTML(html);
 }
