@@ -48,4 +48,4 @@ async function init() {
   app.innerHTML = html;
 }
 
-await init();
+init();
