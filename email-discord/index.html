@@ -48,10 +48,10 @@
 				justify="center"
 			>
 				<v-col>
-				  <social-container provider="google" disabled="true"></social-container>
+				  <social-container provider="google" disable="true"></social-container>
 				</v-col>
 				<v-col>
-				  <social-container provider="discord" disabled="false"></social-container>
+				  <social-container provider="discord" disable="false"></social-container>
 				</v-col>
 			</v-row>
 		      </v-card-actions>
@@ -68,7 +68,7 @@
 		  <script>
 			  Vue.component("social-container", {
 				  props: ["provider", "disabled"],
-				  template : '<div :id="provider"><v-btn :disabled="disabled" class="white--text v-btn v-btn--tile theme--light elevation-3 secondary" small="true" :onclick="provider + \'SignIn()\'" :id="provider + \'Btn\'">Sign in with {{ provider }}</button><div :id="provider + \'UserContainer\'"></div></div>'
+				  template : '<div :id="provider"><v-btn :disabled="!!disable" class="white--text v-btn v-btn--tile theme--light elevation-3 secondary" small="true" :onclick="provider + \'SignIn()\'" :id="provider + \'Btn\'">Sign in with {{ provider }}</button><div :id="provider + \'UserContainer\'"></div></div>'
 			  });
 			  var vm = new Vue({
 			  	el: '#app',
