@@ -89,19 +89,16 @@ function googleSignIn() {
 
 function updatePageWithGoogleUserData(user) {
 	var el = document.getElementById("googleUserContainer");
-	var imgEl = document.createElement("v-img");
+	var imgEl = document.createElement("img");
 	imgEl.setAttribute("src", user.photoURL);
 	imgEl.setAttribute("title", user.email);
-	var avartarEl = document.createElement("v-avatar");
-	avartarEl.appendChild(imgEl);
-	el.appendChild(avartarEl);
+	el.appendChild(imgEl);
 	var text = document.createTextNode("Signed in with google as: " + user.displayName);
 	var textEl = document.createElement("p");
 	textEl.appendChild(text);
 	el.appendChild(textEl);
 	var googleBtn = document.getElementById("googleBtn");
 	hide(googleBtn);
-	Vue.forceUpdate();
 }
 
 /* discord sign in */
