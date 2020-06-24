@@ -59,8 +59,8 @@
 		  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
 		  <script>
 			  Vue.component("social-container", {
-				  props: ["provider", "btnclass"],
-				  template : '<div :id="provider"><button :class="btnclass" :onclick="provider + \'SignIn()\'" :id="provider + \'Btn\'">Sign in with {{ provider }}</button><div :id="provider + \'UserContainer\'"></div></div>'
+				  props: ["provider", "disabled"],
+				  template : '<div :id="provider"><v-btn :disabled="disabled" class="white--text v-btn v-btn--tile theme--light elevation-3 v-size--large secondary" :onclick="provider + \'SignIn()\'" :id="provider + \'Btn\'">Sign in with {{ provider }}</button><div :id="provider + \'UserContainer\'"></div></div>'
 			  });
 			  var vm = new Vue({
 			  	el: '#app',
