@@ -15,7 +15,10 @@ function get(url, json) {
   }
 }
 
-
+/* variables needed:
+ * mode: either "home" or "postsearch" or "postveiw"
+ * id: id of post, only set if mode is "postveiw"
+ */
 /* main blog system */
 if (mode == "postsearch") {
   /* get list of posts */
@@ -33,6 +36,7 @@ if (mode == "postsearch") {
   var postdate;
   /* get list of posts */
   var posts = await get("posts.json", true);
+  var post = posts[{"id": id}]
   
   
 }
