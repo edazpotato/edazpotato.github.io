@@ -7,7 +7,7 @@ var userData = {
 
 /* helper functions */
 function hide(el) {
-	el.setAttribute("disabled", "true")
+	el.setAttribute("disabled")
 }
 function show(el) {
 	el.removeAttribute("disabled")
