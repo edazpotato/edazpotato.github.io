@@ -56,7 +56,7 @@ h1 {
 }
 .avatar {
 	border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
-	height: 14vh;
+	height: 20%;
 	margin: 10px 0 15px 0;
 	border: 2px solid var(--bg-color);
 	transition: border 1s;
