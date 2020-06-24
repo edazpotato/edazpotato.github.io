@@ -101,6 +101,7 @@ function updatePageWithGoogleUserData(user) {
 	el.appendChild(textEl);
 	var googleBtn = document.getElementById("googleBtn");
 	hide(googleBtn);
+	Vue.forceUpdate();
 }
 
 /* discord sign in */
