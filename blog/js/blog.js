@@ -28,15 +28,15 @@ if (mode == "postsearch") {
     get("posts/" + post.path, false);
   }
 } else if (mode == "postveiw") {
-  /* declare vars */
-  var authorName;
-  var authorImage;
-  var postTitle;
-  var postPath;
-  var postdate;
   /* get list of posts */
   var posts = await get("posts.json", true);
-  var post = posts[{"id": id}]
+  var post = posts[{"id": id}];
+  /* declare vars */
+  var authorName = post.author;
+  var authorImage = post.author_image_path;
+  var postTitle = post.title;
+  var postPath = post.path;
+  var postdate = post.date; // NOTE: this is not a date object, just a string, because i'm lazy
   
   
 }
