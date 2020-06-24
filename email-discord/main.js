@@ -10,7 +10,7 @@ function hide(el) {
 	el.setAttribute("disabled", "true")
 }
 function show(el) {
-	el.setAttribute("disabled", "false")
+	el.removeAttribute("disabled")
 }
 function shout(msg) {
 	console.warn("");
