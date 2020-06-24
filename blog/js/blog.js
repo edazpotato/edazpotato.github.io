@@ -16,6 +16,9 @@ function get (url, json) {
 }
 function init() {
   /* main blog system */
+  /* delcare vars */
+  var markdown = "";
+  
   if (mode == "postsearch") {
     /* get list of posts */
     var posts = await get("posts.json", true);
@@ -33,10 +36,11 @@ function init() {
     var postTitle = post.title;
     var postPath = post.path;
     var postdate = post.date; // NOTE: this is not a date object, just a string, because i'm lazy
+    markdown = get("posts/" + postPath);
   }
+  /* parse markdown to html */
+  var converter = new showdown.Converter();
+  var html = converter.makeHtml(markdown);
+  var app = document.getElementById("app");
+  app.appendChild(html);
 }
-
-/* parse markdown to html */
-text = "";
-converter = new showdown.Converter(),
-html = converter.makeHtml(text);
