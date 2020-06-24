@@ -7,10 +7,12 @@ var userData = {
 
 /* helper functions */
 function hide(el) {
-	el.setAttribute("disabled", "")
+	el.setAttribute("disabled", "");
+	el.classList.add("v-btn--dissabled");
 }
 function show(el) {
-	el.removeAttribute("disabled")
+	el.removeAttribute("disabled");
+	el.classList.remove("v-btn--dissabled");
 }
 function shout(msg) {
 	console.warn("");
