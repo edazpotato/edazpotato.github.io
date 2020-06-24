@@ -1,5 +1,6 @@
 /* temp stuff */
 var mode = "postview";
+var id = 0;
 
 /* helper functions */
 async function get (url, json) {
