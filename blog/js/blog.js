@@ -1,3 +1,5 @@
+/* temp stuff */
+var mode = "postview";
 
 /* helper functions */
 function get (url, json) {
