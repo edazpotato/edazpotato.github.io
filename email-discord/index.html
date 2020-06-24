@@ -43,8 +43,17 @@
 			<v-spacer></v-spacer>
 		      </v-toolbar>
 		      <v-card-actions>
-			<social-container provider="google" disabled="true"></social-container>
-			<social-container provider="discord" disabled="false"></social-container>
+			<v-row
+				align="center"
+				justify="center"
+			>
+				<v-col>
+				  <social-container provider="google" disabled="true"></social-container>
+				</v-col>
+				<v-col>
+				  <social-container provider="discord" disabled="false"></social-container>
+				</v-col>
+			</v-row>
 		      </v-card-actions>
 		    </v-card>
 		  </v-col>
