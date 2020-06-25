@@ -62,8 +62,8 @@ async function init() {
     var postdate = post.date; // NOTE: this is not a date object, just a string, because i'm lazy
     markdown = await get("posts/" + postPath, false);
   }
-  var app = document.getElementById("app");
-  app.innerHTML = "parse(markdown)";
+  //var app = document.getElementById("app");
+  //app.innerHTML = "parse(markdown)";
 }
 
 init();
