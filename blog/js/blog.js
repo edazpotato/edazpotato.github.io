@@ -17,10 +17,24 @@ async function get (url, json) {
     console.error("HTTP-Error: " + response.status);
   }
 }
+function parse(markdown) {
+    /* parse markdown to html */
+    var options = {
+      parseImgDimensions: true,
+      simplifiedAutoLink: true,
+      strikethrough: true,
+      tables, tasklists: true,
+      simpleLineBreaks: true,
+      emoji: true,
+      underline: true
+    }
+    var converter = new showdown.Converter(options);
+    var html = converter.makeHtml(markdown);
+}
+
+/* main app */
 async function init() {
   /* main blog system */
-  /* delcare vars */
-  var markdown = "";
   
   if (mode == "postsearch") {
     /* get list of posts */
@@ -41,20 +55,8 @@ async function init() {
     var postdate = post.date; // NOTE: this is not a date object, just a string, because i'm lazy
     markdown = await get("posts/" + postPath, false);
   }
-  /* parse markdown to html */
-  var options = {
-    parseImgDimensions: true,
-    simplifiedAutoLink: true,
-    strikethrough: true,
-    tables, tasklists: true,
-    simpleLineBreaks: true,
-    emoji: true,
-    underline: true
-  }
-  var converter = new showdown.Converter(options);
-  var html = converter.makeHtml(markdown);
   var app = document.getElementById("app");
-  app.innerHTML = html;
+  app.innerHTML = parse(html);
 }
 
 init();
