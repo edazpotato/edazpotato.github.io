@@ -4,6 +4,7 @@ var id = 0;
 
 /* helper functions */
 async function get (url, json) {
+  console.log(0);
   var response = await fetch(url);
   console.log(1);
   if (response.ok) { // if HTTP-status is 200-299
