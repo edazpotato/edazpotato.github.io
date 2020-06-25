@@ -42,7 +42,16 @@ async function init() {
     markdown = await get("posts/" + postPath, false);
   }
   /* parse markdown to html */
-  var converter = new showdown.Converter();
+  var options = {
+    parseImgDimensions: true,
+    simplifiedAutoLink: true,
+    strikethrough: true,
+    tables, tasklists: true,
+    simpleLineBreaks: true,
+    emoji: true,
+    underline: true
+  }
+  var converter = new showdown.Converter(options);
   var html = converter.makeHtml(markdown);
   var app = document.getElementById("app");
   app.innerHTML = html;
