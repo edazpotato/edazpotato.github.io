@@ -23,7 +23,8 @@ function parse(markdown) {
       parseImgDimensions: true,
       simplifiedAutoLink: true,
       strikethrough: true,
-      tables, tasklists: true,
+      tables: true,
+      tasklists: true,
       simpleLineBreaks: true,
       emoji: true,
       underline: true
