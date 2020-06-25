@@ -61,7 +61,7 @@ async function init() {
     markdown = await get("posts/" + postPath, false);
   }
   var app = document.getElementById("app");
-  app.innerHTML = "parse(markdown)";
+  app.innerHTML = parse(markdown);
 }
 
 document.addEventListener("DOMContentLoaded", () => init());
