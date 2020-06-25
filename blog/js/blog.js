@@ -31,6 +31,7 @@ function parse(markdown) {
     }
     var converter = new showdown.Converter(options);
     var html = converter.makeHtml(markdown);
+    return html;
 }
 
 /* main app */
