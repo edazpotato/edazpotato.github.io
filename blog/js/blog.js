@@ -64,4 +64,4 @@ async function init() {
   //app.innerHTML = "parse(markdown)";
 }
 
-document.addEventListener("DOMcontentLoaded", () => init());
+document.addEventListener("DOMContentLoaded", () => init());
