@@ -5,6 +5,7 @@ var id = 0;
 /* helper functions */
 async function get (url, json) {
   var response = await fetch(url);
+  console.log(1);
   if (response.ok) { // if HTTP-status is 200-299
     var data;
     if (json) {
@@ -48,6 +49,7 @@ async function init() {
   } else if (mode == "postveiw") {
     /* get list of posts */
     var posts = await get("posts.json", true);
+    console.log(2);
     var post = posts.find(postId => postId === id);
     /* declare vars */
     var authorName = post.author;
