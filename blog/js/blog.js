@@ -36,7 +36,7 @@ function parse(markdown) {
 /* main app */
 async function init() {
   /* main blog system */
-  
+  var markdown = "";
   if (mode == "postsearch") {
     /* get list of posts */
     var posts = await get("posts.json", true);
@@ -57,7 +57,7 @@ async function init() {
     markdown = await get("posts/" + postPath, false);
   }
   var app = document.getElementById("app");
-  app.innerHTML = parse(html);
+  app.innerHTML = parse(markdown);
 }
 
 init();
