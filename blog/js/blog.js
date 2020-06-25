@@ -1,8 +1,6 @@
 /* temp stuff */
 var mode = "postview";
 var id = 0;
-document.addEventListener('ready', () => {console.log("ready")});
-document.addEventListener('load', () => {console.log("loaded")});
 
 /* helper functions */
 async function get (url, json) {
@@ -66,4 +64,4 @@ async function init() {
   //app.innerHTML = "parse(markdown)";
 }
 
-init();
+document.addEventListener("DOMcontentLoaded", () => init());
