@@ -3,4 +3,9 @@
 Edaz Potato's offcial website!
 
 - Feel free to contribute to this repostory!
-- Lisence: MIT (see [licence](./LICENCE) file)
+
+
+### License
+#### This project is licensed under the MIT license 
+- (see [licence](./LICENCE) file for more info)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fedazpotato%2Fedazpotato.github.io.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fedazpotato%2Fedazpotato.github.io?ref=badge_large)
