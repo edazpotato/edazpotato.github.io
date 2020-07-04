@@ -6,5 +6,37 @@
     {
       "key": "google",
       "link": "https://google.com"
+    },
+    {
+      "key": "site",
+      "link": "https://edazpotato.github.io"
+    },
+    {
+      "key": "uzx",
+      "link": "https://edazpotato.github.io/uzx"
+    },
+    {
+      "key": "sub",
+      "link": "https://www.youtube.com/channel/UCK1ME1J0XNbN31bCOV9UjKw?sub_confirmation=true"
+    },
+    {
+      "key": "yt",
+      "link": "https://www.youtube.com/channel/UCK1ME1J0XNbN31bCOV9UjKw"
+    },
+    {
+      "key": "github",
+      "link": "https://github.com/edazpotato"
+    },
+    {
+      "key": "twitter",
+      "link": "https://twitter.com/edazpotato"
+    },
+    {
+      "key": "discord",
+      "link": "https://google.com"
+    },
+    {
+      "key": "no",
+      "link": "https://edazpotato.github.io/NO"
     }
 ]
