@@ -42,10 +42,13 @@
     {
         "key": "njp",
         "link": "https://wikham.github.io"
-    }
-    ,
+    },
     {
         "key": "ub",
+        "link": "https://www.yoobee.ac.nz/"
+    },
+    {
+        "key": "yoobee",
         "link": "https://www.yoobee.ac.nz/"
     }
 ]
