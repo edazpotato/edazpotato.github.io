@@ -31,14 +31,17 @@
         align-items: center;
         justify-content: center;
       }
-      #bottom {
+      .bottom {
         justify-self: flex-end;
+      }
+      .top {
+        justify-self: flex-start;
       }
     </style>
   </head>
   <body>
     <div class="container tall">
-      <div class="container">
+      <div class="container top">
         <h1>404</h1><br/>
         <h6>(that means that something broke!)</h6>
         <hr/>
@@ -48,6 +51,6 @@
           How about we just go back to the <a href="/">home page</a> and pretend nothing ever happened, OK?
         </p>
       </div>
-      <span id="bottom">Or if you want, you could go fix the problem in the <a href="">github repo</a></span>
+      <span class="bottom">Or if you want, you could go fix the problem in the <a href="">github repo</a></span>
     </div>
 </html>
