@@ -29,8 +29,10 @@ function databaseStuff(data) {
 	    querySnapshot.forEach((doc) => {
 		if (doc.discordId == data.discordId) {
 			console.error("ERORR: That discord user has alredy been authenticated!");
+			alert("ERORR: That discord user has alredy been authenticated!");
 		} else if (doc.email == data.email) {
 			console.error("ERORR: That email adress has alredy been authenticated!");
+			alert("ERORR: That email adress has alredy been authenticated!");
 		} else {
 			// Add a second document with a generated ID.
 			db.collection("users").add({
@@ -71,6 +73,7 @@ function googleSignIn() {
 		} else {
 			console.error("Error: email adress does not end with '" + emailExt + "'");
 			makeError("Email doesn't end with '" + emailExt + "'");
+			alert("Error: email adress does not end with '" + emailExt + "'")
 		}
 	} 
 	  
