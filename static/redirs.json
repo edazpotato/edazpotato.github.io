@@ -54,5 +54,9 @@
     {
         "key": "when.lol",
         "link": "https://when.lol/"
+    },
+    {
+        "Key": "discord-dev-build",
+        "link": "https://discord.com/api/download/development?platform=win"
     }
 ]
