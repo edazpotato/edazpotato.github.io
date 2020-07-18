@@ -58,5 +58,9 @@
     {
         "key": "discord-dev-build",
         "link": "https://discord.com/api/download/development?platform=win"
+    },
+    {
+        "key": "ddb",
+        "link": "https://discord.com/api/download/development?platform=win"
     }
 ]
