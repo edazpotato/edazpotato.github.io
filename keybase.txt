@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/edaz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://edaz.codes
+  * I am edaz (https://keybase.io/edaz) on keybase.
+  * I have a public key with fingerprint 9EB6 941C 5AF5 ED66 5883  DF14 84D8 7E4D DD02 D50C
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01014a39b123211e8ba39c005448346f10611289c9408812de37dd08aaf0e3cf9a4d0a",
+      "fingerprint": "9eb6941c5af5ed665883df1484d87e4ddd02d50c",
+      "host": "keybase.io",
+      "key_id": "84d87e4ddd02d50c",
+      "kid": "01014a39b123211e8ba39c005448346f10611289c9408812de37dd08aaf0e3cf9a4d0a",
+      "uid": "da6c780069fbcc48936e34fbc9071b19",
+      "username": "edaz"
+    },
+    "service": {
+      "hostname": "edaz.codes",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1595219372,
+  "expire_in": 157680000,
+  "prev": "39a1525a1e09e589d1e449a2eb4cb59ea7bf8cdec6a31f2280a5f09f566789ff",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMM9AnicrVJrTBRXGF0eYiS0oAaly8N1FEPtxs6d184MLaax2JoFiSkmQijLPO7A
+yLK77A4rjwB2wbbxkVokELAWMPbdIgaqpFgBu61QXBHapQhSaolBStMWELWlCZ0h
+bdIf/dlf937nnnPu+b583seCdKEB1aMVqROB/rCAgd43i3SWyNiPyxDeLpYgbBmS
+D1cOaBWhS7HkyyLCIihAAcHhDA8wHAMA0rxaCChKEgSNE5QEUAoAjGYEhkBpGmAi
+xE2iiNIcJ6EQFySGI0SUQ4yIJNtyodPhlG2KastAnmIIIJCcREKRokiaxkUJEDQh
+0iZIiKoFJpKooArz7C5NoYbjORfcIdtVTC0sK/H+g/8/5y5asRM5SjDRKEoxEi8I
+BM3gFMQJ9c6gJsADRiO6oNPGFUCVDUWuFCk3IirilgWoDVXr4l+vOwS7OmRV5XDa
+Fbtgt6p4nqI4XKymU0ocGvEQ5C1/W1h42SaqE1QVbuh0yXYbwgKVKSiy5glIhsQA
+g5swIwKLHbITWmSNQZooNTSKav9At2qJMxwgMZIDEGUgSTMigATBcBjkCYEnGciZ
+eIkWRChQHA4kDKNRjpRQRiIpykQzkoRoTRXa7AhLqDG5XNXSJefaOKXICZHyq71Z
+wbqAUF3IqkBts3ShayL+2bfNxvA/w1yz2xML7t4Y9s7oFi+/ePVO6ZbXg2Yb++JX
+p/syukeSTtz3vHEzryPkWMDOa5l0Vv/e6pZ78ZM/Znxf+yWbVYANZEhTiauGvtkV
+YXakGVPmDO6N9yN2n44ih+s7G7462ZzUdaRqNebR7xu93G27/apnsrl4vubAD148
+Nu419szIxtHi6PfmHqw33r4Cg70PDresP79torT96PEbvfqCn+LYfe0hpodphvo/
+SlPv9feFxf2M+xN65j9timly2MMGZ6fhd4z55Sd6zdP6X5+h3y75diI2odbmqetv
+TPbNF3a2GlL8V+Z+qVqKEUnDcHryUu1F2/5KJtz86FbrO4vxg1bld9eANLgzb2hq
+7EjFZkiKW/HEU0WfRXuupx+vO+jRZ47HOBvX+tqbZ3qnF5K3lC2u6RksfDf90SZz
+uP7AhayqT/Dux8dm0tMSuva8z15aah9xho7ljN70tqUW91y0xi2/kh11awPtifS/
+1GYZ7XKAij0Lz7pzdicGdx8br34rcPudE+UHOzM+dAeB2MjnLtxlWTNc2jT5W/b5
+zMSv+eIXYMvnvuVpb8qQwZi79uTwR9Flvi/6ntcvTO06/bCusqkwW1E+qNlmTora
+cK5h0OqL93fYnh6XT+WcqWk9bL1WvvXJdcv+4IZMXneo5alKw1nAH73UmRNQD5X8
+tpCOqv3tZ9fh1/8CPci+5w==
+=XGJZ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/edaz
+
+==================================================================
