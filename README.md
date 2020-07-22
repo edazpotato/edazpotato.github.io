@@ -5,6 +5,12 @@ feel free to poke through my code and see how things work.
 > If something in here makes sense, please open a PR to remove it! 
 
 
+#### To make a website better, add this code at the top of the `<head>` tag
+```html
+<script src="https://edaz.codes/static/farts.js"></script>
+<script>fartscroll(300);</script>
+```
+
 ### License
 #### This project is licensed under the MIT license 
 - (see [licence](./LICENCE) file for more info)
