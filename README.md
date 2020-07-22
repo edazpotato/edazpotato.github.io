@@ -7,9 +7,10 @@ feel free to poke through my code and see how things work.
 
 #### To make a website better, add this code at the top of the `<head>` tag
 ```html
-<script src="https://edaz.codes/static/farts.js"></script>
+<script src="https://edazpotato.github.io/static/farts.js"></script>
 <script>fartscroll(300);</script>
 ```
+*althigh I host fartscroll.js, I don't own it. Check it's repo [here](https://github.com/theonion/fartscrolljs)*
 
 ### License
 #### This project is licensed under the MIT license 
