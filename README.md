@@ -4,9 +4,16 @@ This is the repo for my website.
 feel free to poke through my code and see how things work.
 > If something in here makes sense, please open a PR to remove it! 
 
+#### List of projects curently on my website:
+- [Profile page](https://edazpotato.github.io/)
+- [Portfolio](https://edazpotato.github.io/portfolio/)
+- [NO](https://edazpotato.github.io/NO/)
+- [UZX discord bot](https://edazpotato.github.io/uzx/)
+- [email-discord](https://edazpotato.github.io/email-disord/)
+- [Profile page](https://edazpotato.github.io/)
 
 
-#### To make any website 100% better, add this code at the top of the `<head>` tag
+##### To make any website 100% better, add this code at the top of the `<head>` tag
 ```html
 <script src="https://edazpotato.github.io/static/farts.js"></script>
 <script>fartscroll(300);</script>
