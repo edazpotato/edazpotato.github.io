@@ -3,7 +3,7 @@
   margin: 0;
   border: 0;
 }
-html, body {
+html, body, .contaienr {
   height: 100%;
 }
 #scripts {
@@ -16,6 +16,9 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.alncent {
+  text-align: center;
 }
 .title {
   font-size: 15vh;
