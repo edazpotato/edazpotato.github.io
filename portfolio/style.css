@@ -12,6 +12,8 @@
   padding: 0;
   margin: 0;
   border: 0;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 html, body, .container {
   height: 100%;
@@ -31,5 +33,6 @@ html, body, .container {
   text-align: center;
 }
 .title {
+  color: var(--title-text-color);
   font-size: 10vh;
 }
