@@ -1,3 +1,13 @@
+:root[theme-color="dark"] {
+  --bg-color: #2C2F33;
+  --title-text-color: #ffffff;
+  --text-color: #ededed;
+}
+:root[theme-color="light"] {
+  --bg-color: #ffffff;
+  --title-text-color: #23272A;
+  --text-color: #2C2F33;
+}
 * {
   padding: 0;
   margin: 0;
