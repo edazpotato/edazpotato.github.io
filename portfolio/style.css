@@ -1,6 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+html, body {
+  height: 100%;
+}
 #scripts {
   display: none
 }
 .hide {
   display: none;
+}
+.cent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 15vh;
 }
