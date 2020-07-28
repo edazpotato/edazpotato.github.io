@@ -14,7 +14,7 @@
   border: 0;
   color: var(--text-color);
   background-color: var(--bg-color);
-  transition-duration: 1s;
+  transition: transform 0.1s;
   font-family: arial;
 }
 html, body, .container {
@@ -36,5 +36,12 @@ html, body, .container {
 }
 .title {
   color: var(--title-text-color);
-  font-size: 10vh;
+  font-size: 130%;
+}
+.card {
+  box-shadow: 4px 6px 6px 5px rgba(0,0,0,0.75);
+  background-color: var(--bg-color);
+  padding: 5%;
+  border-radius: 30px;
+  transition-duration: 150ms;
 }
