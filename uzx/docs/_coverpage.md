@@ -1,6 +1,6 @@
 <img src="https://edazpotato.github.io/i/spaceship.png" width="200" height="200" title="UZX Icon">
 
-# UZX <small>0.1</small>
+# UZX <small>beta 0.0.2</small>
 
 > The discord bot you waited for.
 
@@ -8,5 +8,5 @@
 - Always online
 - **ALL** the commands!
 
-[Invite](https://edazpotato.github.io/uzx/invite/)
-[Get Started](#main)
+[Apply](https://edazpotato.github.io/uzx/invite/ "apply to have UZX added to your discord server")
+[Read the docs](#main)
