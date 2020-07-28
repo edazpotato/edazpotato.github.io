@@ -1,9 +1,8 @@
-## This documention uses the `$` prefix, but some others are avalible:
-- `$<command>` NOTE: this is the prefix that gets replaced when you use the `$prefix` command
-- `uzx<command>`
-- `uzx <command>`
-- `@uzx<command>`
+## This documention uses the `uzx` prefix, but some others are avalible:
+- `uzx <command>` NOTE: this is the prefix that gets replaced when you use the `uzx prefix` command
 - `@uzx <command>`
 
-> You can replace the `$` prefix with a different one by using the `$prefix [new prefix]` command
+
+#### Changing the prefix
+You can replace the `uzx` prefix with a different one by using the `uzx prefix [new prefix]` command
 
