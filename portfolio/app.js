@@ -19,7 +19,7 @@ for (var el of hoverCards) {
 	  
 	  var xRotation = -20 * ((yVal - height / 2) / height);
 	  
-	  var string = 'perspective(500px) scale(1.1) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)';
+	  var string = 'perspective(500px) scale(1.01) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)';
 	  
 	  el.style.transform = string;
 	}
