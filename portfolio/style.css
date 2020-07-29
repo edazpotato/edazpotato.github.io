@@ -45,5 +45,5 @@ html, body, .container {
   background-color: var(--darker-bg-color);
   padding: 5%;
   border-radius: 3px;
-  transition-duration: 150ms;
+  transition-duration: 200ms;
 }
