@@ -62,19 +62,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="charset" content"utf-8">
     
-    <!-- particles.js -->
-    <script src="/data-bin/particles.js"></script>
-    <!-- micromodal -->
-    <script src="/data-bin/micromodal.min.js"></script>
-    <script>
-      MicroModal.init();
-      function showModal() {
-        MicroModal.show("vbucks-popup");
-      }
-      document.addEventListener("DOMContentLoaded", function(){
-        setTimeout(showModal, 5000);
-      });
-    </script>
     <!-- css -->
     <link rel="stylesheet" href="/data-bin/homepage.css"/>
   </head>
@@ -124,6 +111,8 @@
       </p>
     </div>
     <div id="scripts">
+      <!-- particles.js -->
+      <script src="/data-bin/particles.js"></script>
       <script>
         particlesJS.load("particlesJS", "/data-bin/pjs-config.json");
       </script>
@@ -148,8 +137,18 @@
         }
         toggleSwitch.addEventListener('change', switchTheme, false);
       </script>
-      <!-- temportaily dissabled <script src="https://cdn.jsdelivr.net/gh/edazpotato/cookie-consent@latest/cookie-consent.js"></script>-->
-
+      <!-- <script src="https://cdn.jsdelivr.net/gh/edazpotato/cookie-consent@latest/cookie-consent.js"></script> -->
+      <!-- micromodal -->
+      <script src="/data-bin/micromodal.min.js"></script>
+      <script>
+        MicroModal.init();
+        function showModal() {
+          MicroModal.show("vbucks-popup");
+        }
+        document.addEventListener("DOMContentLoaded", function(){
+          setTimeout(showModal, 5000);
+        });
+    </script>
     </div>
   </body>
 </html>
