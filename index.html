@@ -77,7 +77,7 @@
     <script>
       MicroModal.init();
       function showModal() {
-        MicroModal.show('modal-id');
+        MicroModal.show("vbucks-popup");
       }
       document.addEventListener("DOMContentLoaded", function(){
         setTimeout(showModal, 5000);
@@ -122,16 +122,16 @@
     </div>
     </div>
     <!-- annoying popup -->
-    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <div class="modal micromodal-slide" id="vbucks-popup" aria-hidden="true">
       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="vbucks-popup-title">
           <header class="modal__header">
-            <h2 class="modal__title" id="modal-1-title">
+            <h2 class="modal__title" id="vbucks-popup-title">
               FREE V-BUCKS!
             </h2>
             <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
           </header>
-          <main class="modal__content" id="modal-1-content">
+          <main class="modal__content" id="vbucks-popup-content">
             <p>
               Need some free v-bucks? well check out our new working v-bucks trick!
             </p>
