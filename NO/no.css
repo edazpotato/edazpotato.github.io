@@ -41,22 +41,22 @@ audio {
   display: none;
 }
 @-webkit-keyframes rainbow {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50% }
-  100% { background-position: 0% 50% }
+  0% { background-position: 0% 100% }
+  50% { background-position: 100% 0% }
+  100% { background-position: 0% 100% }
 }
 @-moz-keyframes rainbow {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50% }
-  100% { background-position: 0% 50% }
+  0% { background-position: 0% 100% }
+  50% { background-position: 100% 0% }
+  100% { background-position: 0% 100% }
 }
 @-o-keyframes rainbow {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50% }
-  100% { background-position: 0% 50% }
+  0% { background-position: 0% 100% }
+  50% { background-position: 100% 0% }
+  100% { background-position: 0% 100% }
 }
-@keyframes rainbow { 
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50% }
-  100% { background-position: 0% 50% }
+@keyframes rainbow {
+  0% { background-position: 0% 100% }
+  50% { background-position: 100% 0% }
+  100% { background-position: 0% 100% }
 }
