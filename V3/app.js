@@ -1,6 +1,6 @@
 var rick = {
   roll: function(){
-    document.getElemntById("rick_modal").checked = true;
+    document.getElementById("rick_modal").checked = true;
   }
 }
 Mousetrap.bind('up up down down left right left right b a enter', function() {
