@@ -7,6 +7,17 @@ Mousetrap.bind('up up down down left right left right b a enter', function() {
     rick.roll();
 });
 
+window.addEventListener('scroll', function() {
+  // Hide arrow button when scrolling down the page 
+  var scrollPosition = window.scrollY; 
+  var arrow = document.getElementByID('arrow'); 
+  if (scrollPosition >= 100) {
+    arrow.classList.add('hide'); 
+  } else {
+    arrow.classList.remove('hide'); 
+  }
+});
+
 /* picnic.css javascript stuff */
 document.onkeydown = function(e){
   if (e.keyCode == 27) {
