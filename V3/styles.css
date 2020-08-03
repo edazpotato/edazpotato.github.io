@@ -22,6 +22,7 @@ html, body, #page {
 #content {
 	height: 100%;
 	background-color: #2C2F33;
+	margin: 10%;
 }
 
 .bounce-arrow {
