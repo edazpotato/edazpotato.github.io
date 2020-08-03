@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
+	color: #ffffff;
 }
 
 html, body, #page {
@@ -18,8 +19,12 @@ html, body, #page {
 	background-color: #23272A;
 }
 
+#content {
+	height: 100%;
+	background-color: #2C2F33;
+}
+
 .bounce-arrow {
-	color: #ffffff;
 	animation: bounce 2s linier infinite;
 }
 
