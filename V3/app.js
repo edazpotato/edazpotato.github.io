@@ -1,4 +1,8 @@
-
+var rick = {
+  roll: function(){
+    document.getElemntById("rick_modal").checked = true;
+  }
+}
 
 /* picnic.css javascript stuff */
 document.onkeydown = function(e){
