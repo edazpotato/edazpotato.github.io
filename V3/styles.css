@@ -12,3 +12,8 @@ html, body, #page {
 #scripts {
 	display: none;
 }
+
+#header {
+	height: 70%;
+	background-color: #23272A;
+}
