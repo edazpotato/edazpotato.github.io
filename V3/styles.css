@@ -25,6 +25,8 @@ html, body {
 
 #arrow {
 	fill: #ffffff;
+	height: 10%;
+	width: 10%;
 }
 
 #content {
