@@ -5,9 +5,13 @@
 	color: #ffffff;
 }
 
-html, body, #page {
+html, body {
 	height: 100%;
 	width: 100%;
+}
+
+#page {
+	height: auto;
 }
 
 #scripts {
@@ -17,6 +21,10 @@ html, body, #page {
 #header {
 	height: 100%;
 	background-color: #23272A;
+}
+
+#arrow {
+	fill: #ffffff;
 }
 
 #content {
