@@ -62,5 +62,9 @@
     {
         "key": "ddb",
         "link": "https://discord.com/api/download/development?platform=win"
+    },
+    {
+        "key": "fire-tmp",
+        "link": "https://discord.com/oauth2/authorize?client_id=444871677176709141&permissions=8&scope=bot"
     }
 ]
