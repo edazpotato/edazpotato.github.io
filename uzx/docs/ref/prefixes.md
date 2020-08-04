@@ -1,8 +1,8 @@
-## This documention uses the `uzx` prefix, but some others are avalible:
-- `uzx <command>` NOTE: this is the prefix that gets replaced when you use the `uzx prefix` command
+## Prefixes
+- `<customprefix> <command>` NOTE: your server's custom prefix will defultly be `uzx`
 - `@uzx <command>`
 
 
-#### Changing the prefix
+### Changing the prefix
 You can replace the `uzx` prefix with a different one by using the `uzx prefix [new prefix]` command
 
