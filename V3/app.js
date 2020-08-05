@@ -11,13 +11,13 @@ window.addEventListener('scroll', function() {
   // Hide arrow button when scrolling down the page 
   var scrollPosition = window.scrollY; 
   var arrow = document.getElementById('arrow'); 
-  /*if (scrollPosition >= 130) {
+  if (scrollPosition >= 130) {
     arrow.classList.add('hide'); 
   } else {
     arrow.classList.remove('hide'); 
-  }*/
-  var scrollratio = 1 - scrollPosition / 300;
-  arrow.style.opacity = scrollratio;
+  }
+  /*var scrollratio = 1 - scrollPosition / 300;
+  arrow.style.opacity = scrollratio;*/
 });
 
 /* picnic.css javascript stuff */
