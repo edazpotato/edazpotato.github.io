@@ -3,6 +3,7 @@
 	padding: 0;
 	border: 0;
 	color: #ffffff;
+	opacity: 100%;
 }
 
 html, body {
@@ -45,7 +46,12 @@ html, body {
 }
 
 .hide {
+	opacity: 0%;
 	display: none;
+}
+
+.fade {
+	transition: opactiy 1s; 
 }
 
 @keyframes bounce {
