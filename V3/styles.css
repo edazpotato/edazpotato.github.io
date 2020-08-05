@@ -44,7 +44,7 @@ html, body {
 }
 
 .bounce-arrow {
-	animation: bounce 2s linier infinite;
+	animation: bounce 2s linear infinite;
 }
 
 .hide {
@@ -57,5 +57,6 @@ html, body {
 }
 
 @keyframes bounce {
-	
+	0% {},
+	100% {}
 }
