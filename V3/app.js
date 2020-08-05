@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
   // Hide arrow button when scrolling down the page 
   var scrollPosition = window.scrollY; 
   var arrow = document.getElementById('arrow'); 
-  if (scrollPosition >= 100) {
+  if (scrollPosition >= 130) {
     arrow.classList.add('hide'); 
   } else {
     arrow.classList.remove('hide'); 
