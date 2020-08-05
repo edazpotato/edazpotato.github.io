@@ -20,7 +20,7 @@ html, body {
 }
 
 #header {
-	height: 100vh;
+	height: 100%;
 	background-color: #23272A;
 	display: flex;
 	flex-direction: column;
