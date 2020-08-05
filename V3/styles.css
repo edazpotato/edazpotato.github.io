@@ -52,8 +52,19 @@ html, body {
 	transition: opacity 1s; 
 }
 
+#profile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
 .avatar {
 	width: 50%;
 	height: 50%;
-	border-raidus: 25%;
+	border-raidus: 25;
+}
+
+.bio {
+	color: #ffffff;
 }
