@@ -10,7 +10,7 @@ Mousetrap.bind('up up down down left right left right b a enter', function() {
 window.addEventListener('scroll', function() {
   // Hide arrow button when scrolling down the page 
   var scrollPosition = window.scrollY; 
-  var arrow = document.getElementByID('arrow'); 
+  var arrow = document.getElementById('arrow'); 
   if (scrollPosition >= 100) {
     arrow.classList.add('hide'); 
   } else {
