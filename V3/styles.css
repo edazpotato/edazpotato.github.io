@@ -21,12 +21,17 @@ html, body {
 #header {
 	height: 100%;
 	background-color: #23272A;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 #arrow {
 	fill: #ffffff;
 	height: 5%;
 	width: 5%;
+	align-self: flex-end;
 }
 
 #content {
