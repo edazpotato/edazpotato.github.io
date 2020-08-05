@@ -23,7 +23,7 @@ html, body {
 	height: 100vh;
 	background-color: #23272A;
 	display: flex;
-	/*flex-direction: column;*/
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
@@ -32,7 +32,7 @@ html, body {
 	fill: #ffffff;
 	height: 5%;
 	width: 5%;
-	align-self: flex-end;
+	justify-self: flex-end;
 }
 
 #content {
