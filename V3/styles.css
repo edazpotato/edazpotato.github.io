@@ -33,7 +33,7 @@ html, body {
 	height: 5%;
 	width: 5%;
 	justify-self: flex-end;
-	padding: 1%;
+	margin: 1%;
 }
 
 #content {
