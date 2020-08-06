@@ -89,9 +89,10 @@ html, body {
 }
 
 .avatar {
-	width: 23vw;
-	height: 23vw;
+	width: 21vw;
+	height: 21vw;
 	border-radius: 1000px;
+	margin: 1vw;
 }
 
 .bio {
