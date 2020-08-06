@@ -10,6 +10,7 @@ noscript {
 	border: 0;
 	color: #ffffff;
 	opacity: 1;
+	transition-duration: 500ms;
 }
 
 html, body {
