@@ -71,6 +71,13 @@ h1 {
 	flex-direction: column;
 }
 
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
 .avatar {
 	width: 30vh;
 	height: 30vh;
