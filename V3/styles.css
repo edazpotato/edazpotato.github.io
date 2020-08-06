@@ -80,14 +80,22 @@ h1 {
 }
 
 .avatar {
-	width: 15vw;
-	height: 15vw;
+	width: 18vw;
+	height: 18vw;
 	border-radius: 1000px;
 }
 
 .bio {
 	color: #ffffff;
 	padding: 5vw;
+	padding-left: 7vw;
+}
+
+.links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 }
 
 /* buttons */
