@@ -93,23 +93,23 @@ h1 {
 	border-radius: 5px;
 }
 .red {
-	background-color: hsla(1, 67%, 35%, 1);
+	background-color: #951f1d;
 	box-shadow: 10px 9px 0px 4px #951f1d;
 }
 .orange {
-	background-color: hsla(34, 100%, 47%, 1);
+	background-color: #f08800;
 	box-shadow: 10px 9px 0px 4px #f08800;
 	
 }
 .yellow {
-	background-color: hsla(61, 100%, 50%, 1);
+	background-color: #fbff00;
 	box-shadow: 10px 9px 0px 4px #fbff00;
 }
 .green {
-	background-color: hsla(149, 89%, 43%, 1);
+	background-color: #0ccf6a;
 	box-shadow: 10px 9px 0px 4px #0ccf6a;
 }
 .blue {
-	background-color: hsla(197, 98%, 46%, 1);
+	background-color: #02a7e8;
 	box-shadow: 10px 9px 0px 4px #02a7e8;
 }
