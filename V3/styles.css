@@ -87,3 +87,20 @@ h1 {
 .bio {
 	color: #ffffff;
 }
+
+/* button background colors */
+.red {
+	background-color: hsla(1, 67%, 35%, 1);
+}
+.orange {
+	background-color: hsla(34, 100%, 47%, 1);
+}
+.yellow {
+	background-color: hsla(61, 100%, 50%, 1);
+}
+.green {
+	background-color: hsla(149, 89%, 43%, 1);
+}
+.blue {
+	background-color: hsla(197, 98%, 46%, 1);
+}
