@@ -80,6 +80,10 @@ h1 {
 	flex-direction: row;
 }
 
+.bottom {
+	width: 100%;
+}
+
 .avatar {
 	width: 20vw;
 	height: 20vw;
