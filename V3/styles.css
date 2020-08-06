@@ -115,6 +115,11 @@ html, body {
 	padding: 1vw;
 	width: 13vw;
 	font-size: 3vw;
+	opacity: 85%;
+	transition-duration: 400ms;
+}
+.button:hover, .button:focus {
+	opacity: 100%;
 }
 .red {
 	background-color: #951f1d;
