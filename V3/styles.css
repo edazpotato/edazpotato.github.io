@@ -95,22 +95,22 @@ h1 {
 }
 .red {
 	background-color: #951f1d;
-	box-shadow: 10px 9px 0px 4px #951f1d;
+	box-shadow: 10px 9px 0px 4px #6c1615;
 }
 .orange {
 	background-color: #f08800;
-	box-shadow: 10px 9px 0px 4px #f08800;
+	box-shadow: 10px 9px 0px 4px #ae6200;
 	
 }
 .yellow {
 	background-color: #fbff00;
-	box-shadow: 10px 9px 0px 4px #fbff00;
+	box-shadow: 10px 9px 0px 4px #b6b900;
 }
 .green {
 	background-color: #0ccf6a;
-	box-shadow: 10px 9px 0px 4px #0ccf6a;
+	box-shadow: 10px 9px 0px 4px #08964d;
 }
 .blue {
 	background-color: #02a7e8;
-	box-shadow: 10px 9px 0px 4px #02a7e8;
+	box-shadow: 10px 9px 0px 4px #0179a8;
 }
