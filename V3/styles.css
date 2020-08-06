@@ -16,8 +16,7 @@ html, body {
 	height: 100%;
 	width: 100%;
 	/* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
-	font-size: calc(20px + (30px - 20px) * ((100vw - 200px) / (2000px - 200px)));
-	line-height: calc(20px + (30px - 20px) * ((100vw - 200px) / (2000px - 200px)));
+	font-size: 2vw;
 }
 
 #page {
