@@ -105,8 +105,8 @@ h1 {
 
 /* buttons */
 .button {
-	border-radius: 5px;
-	padding: 5px;
+	border-radius: 3px;
+	padding: 2vw;
 }
 .red {
 	background-color: #951f1d;
