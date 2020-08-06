@@ -91,6 +91,7 @@ h1 {
 /* buttons */
 .button {
 	border-radius: 5px;
+	padding: 5px;
 }
 .red {
 	background-color: #951f1d;
