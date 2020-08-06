@@ -32,6 +32,10 @@ html, body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	font-size: 10vh;
+}
+h1 {
+	font-size: 20vh;
 }
 
 #arrow {
