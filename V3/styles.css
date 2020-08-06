@@ -10,7 +10,6 @@ noscript {
 	border: 0;
 	color: #ffffff;
 	opacity: 1;
-	transition-duration: 100ms;
 }
 
 html, body {
@@ -80,6 +79,7 @@ html, body {
 	align-items: center;
 	justify-content: space-around;
 	flex-direction: row;
+	transition-duration: 150ms;
 }
 
 .bottom {
