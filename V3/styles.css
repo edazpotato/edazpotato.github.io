@@ -75,7 +75,7 @@ h1 {
 .top {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	flex-direction: row;
 }
 
@@ -87,8 +87,6 @@ h1 {
 
 .bio {
 	color: #ffffff;
-	padding: 5vw;
-	padding-left: 7vw;
 }
 
 .links {
