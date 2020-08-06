@@ -35,10 +35,10 @@ html, body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	/*font-size: 5vh;*/
+	font-size: 5vw;
 }
-h1 {
-	/*font-size: 10vh;*/
+#header h1 {
+	font-size: 7vh;*/
 }
 
 #arrow {
@@ -110,7 +110,7 @@ h1 {
 /* buttons */
 .button {
 	border-radius: 3px;
-	padding: 2vw;
+	padding: 1vw;
 	width: 13vw;
 	font-size: 3vw;
 }
