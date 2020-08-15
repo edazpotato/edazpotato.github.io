@@ -1,23 +1,14 @@
 var rick = {
+  load: function(el){
+    el.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  },
   roll: function(){
     document.getElementById("rick_modal").checked = true;
   }
 }
 Mousetrap.bind('up up down down left right left right b a enter', function() {
-    rick.roll();
-});
-
-window.addEventListener('scroll', function() {
-  // Hide arrow button when scrolling down the page 
-  var scrollPosition = window.scrollY; 
-  var arrow = document.getElementById('arrow'); 
-  if (scrollPosition >= 130) {
-    arrow.classList.add('hide'); 
-  } else {
-    arrow.classList.remove('hide'); 
-  }
-  /*var scrollratio = 1 - scrollPosition / 300;
-  arrow.style.opacity = scrollratio;*/
+  rick.load(document.getElementById("rick_video_container"));
+  rick.roll();
 });
 
 /* picnic.css javascript stuff */
