@@ -1,6 +1,9 @@
 var rick = {
   load: function(el){
-    el.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    rickvid = '<iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1&loop=1&modestbranding=1&showinfo=0&rel=0&theme=light&fs=0&color=white&controls=0&disablekb=1" width="560" height="315" frameborder="0"></iframe>';
+    if (el.innerHTML.length < 1) {
+      el.innerHTML = rickvid;
+    }
   },
   roll: function(){
     document.getElementById("rick_modal").checked = true;
