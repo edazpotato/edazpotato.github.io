@@ -113,6 +113,7 @@ h1 {
 	right: 0;
 	bottom: 0;
 	margin: 1vw;
+	font-size: 1vw;
 }
 #imgcredit a {
 	color: #ffffff;
@@ -156,7 +157,7 @@ h1 {
 	box-shadow: 5px 5px 0px 2px #29449f !important;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 	.button {
 		width: 34vw;
 		font-size: 6vw;
@@ -169,8 +170,8 @@ h1 {
 		flex-direction: column;
 	}
 	.avatar {
-		width: 34vw;
-		height: 34vw;
+		width: 45vw;
+		height: 45vw;
 	}
 	.bio {
 		text-align: center;
@@ -180,5 +181,13 @@ h1 {
 	}
 	p {
 		font-size: 3.5vw;
+	}
+	#imgcredit a {
+		font-size: 5vw;
+	}
+}
+@media (max-width: 800px) {
+	#imgcredit a {
+		font-size: 2vw;
 	}
 }
