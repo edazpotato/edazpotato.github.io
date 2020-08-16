@@ -15,11 +15,11 @@ for (var el of hoverCards) {
 	  var xVal = e.layerX;
 	  var yVal = e.layerY;
 	  
-	  var yRotation = 22 * ((xVal - width / 2) / width);
+	  var yRotation = 26 * ((xVal - width / 2) / width);
 	  
-	  var xRotation = -22 * ((yVal - height / 2) / height);
+	  var xRotation = -26 * ((yVal - height / 2) / height);
 	  
-	  var string = 'perspective(500px) scale(1.01) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)';
+	  var string = 'perspective(500px) scale(1) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)';
 	  
 	  el.style.transform = string;
 	}
@@ -28,11 +28,4 @@ for (var el of hoverCards) {
 	  el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
 	});
 
-	el.addEventListener('mousedown', function() {
-	  el.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)'
-	});
-
-	el.addEventListener('mouseup', function() {
-	  el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)'
-	});
 }
