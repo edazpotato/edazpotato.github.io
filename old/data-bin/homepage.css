@@ -32,7 +32,7 @@ canvas {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
-	z-index: -2;
+	/*z-index: -2;*/
 }
 #wrapper {
 	height: 100%;
@@ -47,7 +47,7 @@ canvas {
 	flex-direction: column;
 	align-items: center;
 	padding: 20px 30px;
-	z-index: -1;
+	/*z-index: -1;*/
 	background-color: var(--bg-color);
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 	transition: 0.3s;
