@@ -15,9 +15,9 @@ for (var el of hoverCards) {
 	  var xVal = e.layerX;
 	  var yVal = e.layerY;
 	  
-	  var yRotation = 26 * ((xVal - width / 2) / width);
+	  var yRotation = 1.5 * ((xVal - width / 2) / width);
 	  
-	  var xRotation = -26 * ((yVal - height / 2) / height);
+	  var xRotation = -1.5 * ((yVal - height / 2) / height);
 	  
 	  var string = 'perspective(500px) scale(1) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)';
 	  
