@@ -43,6 +43,12 @@ html, body, .container {
 .card {
   box-shadow: 15px 16px 0px -3px rgba(0,0,0,0.54);
   background-color: var(--darker-bg-color);
-  padding: 5%;
-  transition-duration: 100ms;
+  width: 30vh;
+  height: 10vh;
+  transition-duration: 250ms;
+  cursor: pointer;
+}
+.card .txt {
+  padding: 20px;
+  white-space: nowrap;
 }
