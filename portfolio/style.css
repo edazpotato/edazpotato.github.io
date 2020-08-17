@@ -41,7 +41,7 @@ html, body, .container {
   font-size: 130%;
 }
 .card {
-  box-shadow: 15px 16px 0px -3px rgba(0,0,0,0.54);
+  box-shadow: 10px 10px 0px 4px rgba(0,0,0,0.54);
   background-color: rgba(0,0,0,0.54);
   transition-duration: 250ms;
   cursor: pointer;
