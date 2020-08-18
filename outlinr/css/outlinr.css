@@ -18,6 +18,11 @@ html, body, .full-height {
 #sidebar {
   width: 30vw;
 }
+#sidebar-items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
 #content {
   width: 70wv;
 }
