@@ -54,3 +54,9 @@ html, body, .full-height {
   width: 80vw;
   background-color: var(--secondary-background-color);
 }
+#content article {
+  display: none;
+}
+#content article .active {
+  display: flex;
+}
