@@ -30,6 +30,7 @@ html, body, .full-height {
   padding-left: 5vw;
 }
 #sidebar-items {
+  padding: 4vw;
   list-style-type: none;
   display: flex;
   flex-direction: column;
