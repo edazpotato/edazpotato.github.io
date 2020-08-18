@@ -39,6 +39,9 @@ html, body, .full-height {
 #sidebar-items a:hover, #sidebar-items a:focus {
   border-bottom: 2px solid var(--highlight-color);
 }
+#sidebar-items a:active {
+  color: var(--highlight-color);
+}
 #content {
   width: 70wv;
 }
