@@ -16,8 +16,8 @@ html, body, .full-height {
   flex-direction: row;
 }
 #sidebar {
-  width: 20vw;
+  width: 30vw;
 }
 #content {
-  width: 80wv;
+  width: 70wv;
 }
