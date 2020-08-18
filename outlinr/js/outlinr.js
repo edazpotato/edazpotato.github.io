@@ -1,10 +1,10 @@
 function updateTabs(){
-  /*for (var el of document.getElementById("content").children) {
+  for (var el of document.getElementById("content").children) {
     el.classList.remove("active");
-  }*/
+  }
   var hash = location.hash;
   var anchorID = hash.slice(1);
-  var activeTab = document.getElementByID(anchorID);
+  var activeTab = document.getElementById(anchorID);
   activeTab.classList.add("active");
 }
 
