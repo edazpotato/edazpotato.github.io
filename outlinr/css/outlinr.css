@@ -18,12 +18,15 @@ html, body, .full-height {
 }
 #sidebar {
   width: 30vw;
-  padding: 5vw;
+  padding-left: 3vw;
 }
 #sidebar-items {
   list-style-type: none;
   display: flex;
   flex-direction: column;
+}
+#sidebar-items li {
+  padding: 1vw;
 }
 #sidebar-items a {
   text-decoration: none;
