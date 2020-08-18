@@ -2,8 +2,8 @@
   --text-color: #304455;
   --background-color: #ffffff;
   --highlight-color: #00fff3;
-  --normal-text-size: 2vw;
-  --big-text-size: 4vw;
+  --normal-text-size: 2vh;
+  --big-text-size: 4vh;
 }
 #scripts {
   display: none;
