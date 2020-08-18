@@ -1,7 +1,6 @@
 function updateTabs(){
   for (var el of document.getElementById("content").children) {
-    var kid = el.children[0];
-    kid.classList.remove("active");
+    el.classList.remove("active");
   }
   var hash = location.hash;
   var anchorID = hash.slice(1);
