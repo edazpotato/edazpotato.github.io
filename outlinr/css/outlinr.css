@@ -32,10 +32,12 @@ html, body, .full-height {
   padding-left: 5vw;
 }
 #sidebar-items {
-  padding: 4vw;
   list-style-type: none;
   display: flex;
   flex-direction: column;
+}
+#sidebar-items ul {
+  padding: 2vw;
 }
 #sidebar-items a {
   color: var(--text-color);
