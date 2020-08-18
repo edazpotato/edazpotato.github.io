@@ -6,6 +6,7 @@
   margin: 0;
   border: 0;
   outline: 0;
+  color: #304455;
 }
 html, body, .full-height {
   height: 100%;
@@ -17,11 +18,19 @@ html, body, .full-height {
 }
 #sidebar {
   width: 30vw;
+  padding: 5vw;
 }
 #sidebar-items {
   list-style-type: none;
   display: flex;
   flex-direction: column;
+}
+#sidebar-items a {
+  text-decoration: none;
+}
+#sidebar-items a:hover, #sidebar-items a:focus {
+  text-decoration: underline;
+  text-decoration-color: #006964;
 }
 #content {
   width: 70wv;
