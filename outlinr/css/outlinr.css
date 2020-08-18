@@ -40,7 +40,7 @@ html, body, .full-height {
   border-bottom: 2px solid var(--highlight-color);
 }
 .active-link {
-  color: var(--highlight-color);
+  color: var(--highlight-color) !important;
 }
 #content {
   width: 70wv;
