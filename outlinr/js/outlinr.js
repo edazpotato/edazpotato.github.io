@@ -4,7 +4,7 @@ function updateLinks(e){
   console.log(source);
   for (var el of document.getElementById("sidebar-items").children) {
     var kid = el.children[0];
-    kid.classList.remove("active");
+    kid.classList.remove("active-link");
   }
   source.classList.add("active-link");
 }
