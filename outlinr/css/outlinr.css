@@ -18,22 +18,20 @@ html, body, .full-height {
 }
 #sidebar {
   width: 30vw;
-  padding-left: 3vw;
+  padding: 5vw;
 }
 #sidebar-items {
   list-style-type: none;
   display: flex;
   flex-direction: column;
 }
-#sidebar-items li {
-  padding: 1vw;
-}
 #sidebar-items a {
+  color: #304455;
   text-decoration: none;
+  border-bottom: 2px solid #ffffff;
 }
 #sidebar-items a:hover, #sidebar-items a:focus {
-  text-decoration: underline;
-  text-decoration-color: #006964;
+  border-bottom: 2px solid #00fff3;
 }
 #content {
   width: 70wv;
