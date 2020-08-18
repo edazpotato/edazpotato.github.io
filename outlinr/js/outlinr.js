@@ -20,7 +20,7 @@ function updateLinks(e){
 }
 
 function setup(){
-  location.hash = "/home";
+  location.hash = "home";
   updateTabs();
   for (var el of document.getElementById("sidebar-items").children) {
     var kid = el.children[0];
