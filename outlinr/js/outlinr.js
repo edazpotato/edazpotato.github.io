@@ -3,8 +3,8 @@ function updateTabs(){
     el.classList.remove("active");
   }
   var hash = location.hash;
-  var anchorID = hash.slice(1);
-  var activeTab = document.getElementById(anchorID);
+  var anchorId = hash.slice(1);
+  var activeTab = document.getElementById(anchorId);
   activeTab.classList.add("active");
 }
 
@@ -19,7 +19,9 @@ function updateLinks(e){
 }
 
 function setup(){
-  location.hash = "home";
+  if (location.hash == ""){
+    location.hash = "home";
+  }
   updateTabs();
   for (var el of document.getElementById("sidebar-items").children) {
     var kid = el.children[0];
