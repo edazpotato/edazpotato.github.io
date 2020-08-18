@@ -28,7 +28,7 @@ html, body, .full-height {
   background-color: var(--background-color);
 }
 #sidebar {
-  width: 30vw;
+  width: 20vw;
   padding-left: 5vw;
 }
 #sidebar-items {
@@ -51,6 +51,6 @@ html, body, .full-height {
   color: var(--highlight-color) !important;
 }
 #content {
-  width: 70vw;
+  width: 80vw;
   background-color: var(--secondary-background-color);
 }
