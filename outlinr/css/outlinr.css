@@ -18,7 +18,7 @@ html, body, .full-height {
 }
 #sidebar {
   width: 30vw;
-  padding: 5vw;
+  padding-left: 5vw;
 }
 #sidebar-items {
   list-style-type: none;
