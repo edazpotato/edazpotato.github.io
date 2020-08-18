@@ -1,6 +1,7 @@
 :root {
   --text-color: #304455;
   --background-color: #ffffff;
+  --secondary-background-color: #fffeed;
   --highlight-color: #00fff3;
   --normal-text-size: 2vh;
   --big-text-size: 4vh;
@@ -24,6 +25,7 @@ html, body, .full-height {
 #page {
   display: flex;
   flex-direction: row;
+  background-color: var(--background-color);
 }
 #sidebar {
   width: 30vw;
@@ -48,4 +50,5 @@ html, body, .full-height {
 }
 #content {
   width: 70wv;
+  background-color: var(--secondary-background-color);
 }
