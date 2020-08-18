@@ -51,6 +51,6 @@ html, body, .full-height {
   color: var(--highlight-color) !important;
 }
 #content {
-  width: 70wv;
+  width: 70vw;
   background-color: var(--secondary-background-color);
 }
