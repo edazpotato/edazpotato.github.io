@@ -9,6 +9,6 @@ function setup() {
   scale.onload = function() {
     ctx.drawImage(scale, 0, 0);
   }
-  scale.src = "https://edazpoato.github.io/assets/scale.webp";
+  scale.src = "https://edazpotato.github.io/simp-o-meter/assets/scale.webp";
 }
 document.addEventListener("DOMContentLoaded", setup);
