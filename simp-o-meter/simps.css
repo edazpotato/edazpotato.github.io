@@ -25,3 +25,7 @@ html, body {
   align-items: center;
   justify-content: space-around;
 }
+#simpcanvas {
+  height: 20vh;
+  width: 50vh;
+}
