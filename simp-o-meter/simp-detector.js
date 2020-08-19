@@ -1,15 +1,14 @@
-function loop(ctx) {
+function updatescale() {
   
 }
 
 function setup() {
   var canvas = document.getElementById("simpcanvas");
   var ctx = canvas.getContext("2d");
-  var img = new Image();
-  img.onload = function() {
-    ctx.drawImage(img, 0, 0);
+  var scale = new Image();
+  scale.onload = function() {
+    ctx.drawImage(scale, 0, 0);
   }
-  img.src = "https://edazpoato.github.io/assets/simpometer-bg.png";
-  loop(ctx)
+  scale.src = "https://edazpoato.github.io/assets/scale.webp";
 }
 document.addEventListener("DOMContentLoaded", setup);
