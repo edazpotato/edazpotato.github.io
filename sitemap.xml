@@ -1,16 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://edazpotato.js.org/</loc>
-  <lastmod>2020-04-29T03:51:08+00:00</lastmod>
-</url>
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://edaz.codes</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://edaz.codes/contact</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://edaz.codes/portfolio</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://edaz.codes/simp-o-meter</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://edaz.codes/free-vbucks-works-2020-legit</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://edaz.codes/old</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://edaz.codes/NO</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://edaz.codes/outlinr</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://edaz.codes/uzx</loc>
+    <changefreq>hourly</changefreq>
+  </url>
 </urlset>
