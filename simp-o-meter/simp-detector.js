@@ -1,4 +1,10 @@
+function loop(ctx) {
+  
+}
+
 function setup() {
-  console.log("It wokrks!");
+  var canvas = document.getElementById("simpcanvas");
+  var ctx = canvas.getContext("2d");
+  loop(ctx)
 }
 document.addEventListener("DOMContentLoaded", setup);
