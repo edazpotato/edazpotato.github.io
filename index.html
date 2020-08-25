@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=”no-js”>
 <head>
 	<!-- unimportant meta tags -->
 	<!-- COMMON TAGS -->
@@ -40,9 +40,12 @@
 	<link href="css/styles.css" rel="stylesheet" preload/>
 </head>
 <body>
+	<!-- things for if they dont have js -->
+	<script>document.documentElement.classList.remove("no-js");</script>
 	<noscript>
 		Please turn on javascript to make this website work properly. Thankyou ^-^ 
 	</noscript>
+	<!-- page -->
 	<div id="page">
 		<header id="header">
 			<div id="profile">
@@ -86,6 +89,8 @@
 	</div>
 	<div id="scripts">
 		<!-- libraries -->
+		<script src="modernizr.js" defer></script>
+		<script>Modernizr.on('webp', function (result) {});</script>
 		<script src="js/mousetrap.min.js" defer></script>
 		<!-- my js -->
 		<script src="js/app.js" defer></script>
