@@ -35,9 +35,16 @@ html, body {
 	align-items: center;
 	justify-content: center;
 	font-size: 2vw;
-	background-image: url(../assets/background.jpg);
 	background-position: top center;
 }
+/* this stuff is for using webp */
+.no-webp #header {
+	background-image: url(../assets/background.jpg);
+}
+.webp #header {
+	background-image: url(../assets/background.webp);
+}
+
 
 #arrow {
 	fill: #ffffff;
