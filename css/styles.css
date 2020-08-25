@@ -38,7 +38,7 @@ html, body {
 	background-position: top center;
 }
 /* this stuff is for using webp */
-.no-webp #header {
+.no-webp #header, .no-js #header {
 	background-image: url(../assets/background.jpg);
 }
 .webp #header {
