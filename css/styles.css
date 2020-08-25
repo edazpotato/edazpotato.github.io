@@ -107,19 +107,26 @@ h1 {
 	flex-wrap: wrap;
 	width: 80%;
 }
-
+#privacypolicy {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
 #imgcredit {
 	position: absolute;
 	right: 0;
 	bottom: 0;
+}
+
+.white-link {
 	margin: 1vw;
 	font-size: 1vw;
 }
-#imgcredit a {
+.white-link a {
 	color: #ffffff;
 	text-decoration: none;
 }
-#imgcredit a:hover, #imgcredit a:focus {
+.white-link a:hover, .white-link a:focus {
 	text-decoration: underline;
 }
 
