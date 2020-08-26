@@ -8,9 +8,9 @@ var urlsToCache = [
   '/css/styles.css',
   '/css/picnic.min.css',
   '/outlinr/',
-  '/outlinr/outlinr.js',
-  '/outlinr/outlinr.css',
-  '/outlinr/picnic.min.css',
+  '/outlinr/js/outlinr.js',
+  '/outlinr/css/outlinr.css',
+  '/outlinr/css/picnic.min.css',
 ];
 
 
