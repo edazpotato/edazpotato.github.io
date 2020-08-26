@@ -1,3 +1,16 @@
+/* service worker stuff */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('js/worker.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+/* main page logic */
 var rick = {
   load: function(el){
     rickvid = '<iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1&loop=1&modestbranding=1&showinfo=0&rel=0&theme=light&fs=0&color=white&controls=0&disablekb=1" width="560" height="315" frameborder="0"></iframe>';
