@@ -11,26 +11,35 @@
     <link href="css/picnic.min.css" rel="stylesheet" />
   </head>
   <body>
-    <main id="page" class="full-height">
-      <section id="sidebar" class="full-height">
-        <ul id="sidebar-items">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#todos">Todos</a></li>
-          <li><a href="#notes">Notes</a></li>
-        </ul>
+    <header id="header">
+      <h1>Outlinr</h1>
+    </header>
+    <main class="tabs three">
+      <input id='home' type='radio' name='tabgroupB' checked />
+      <input id='notes' type='radio' name='tabgroupB'>
+      <input id='todos' type='radio' name='tabgroupB'>
+      <section id="sidebar">
+        <label class="pseudo button toggle" for="home">Forest</label>
+        <label class="pseudo button toggle" for="notes">Lake</label>
+        <label class="pseudo button toggle" for="todo">Balloon</label>
       </section>
-      <section id="content" class="full-height">
-        <article id="home" class="full-height active">
-          
-        </article>
-        <article id="todos" class="full-height">
-          
-        </article>
-        <article id="notes" class="full-height">
-          
-        </article>
-      </section>
+      <div class="row">
+        <div>
+          <img src="img/forest.jpg">
+        </div>
+
+        <div>
+          <img src="img/lake.jpg">
+        </div>
+
+        <div>
+          <img src="img/balloon.jpg">
+        </div>
+      </div>
     </main>
+    <footer>
+      
+    </footer>
     <div id="scripts">
       <script src="js/outlinr.js" defer></script>
     </div>
