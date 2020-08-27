@@ -19,9 +19,24 @@
       <input id='notes' type='radio' name='tabgroupB'>
       <input id='todos' type='radio' name='tabgroupB'>
       <section id="sidebar">
-        <label class="pseudo button stack toggle" for="home">Home</label>
-        <label class="pseudo button stack toggle" for="notes">Notes</label>
-        <label class="pseudo button stack toggle" for="todo">Todos</label>
+        <label class="stack" for="home">
+          <input type="radio" name="stack">
+          <span class="button toggle">
+            Home
+          </span>
+        </label>
+        <label class="stack" for="notes">
+          <input type="radio" name="stack">
+          <span class="button toggle">
+            Notes
+          </span>
+        </label>
+        <label class="stack" for="todo">
+          <input type="radio" name="stack">
+          <span class="button toggle">
+            Todos
+          </span>
+        </label>
       </section>
       <div class="row">
         <article>
