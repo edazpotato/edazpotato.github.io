@@ -16,7 +16,8 @@ html, body {
 #header {
   height: 20vh;
   width: 100vw;
-  padding: 25vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
   text-align: center;
   font-weight: bold;
   font-size: 4vw;
