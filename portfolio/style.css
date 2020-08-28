@@ -7,6 +7,12 @@ html, body {
   height: 100%;
   width: 100%;
 }
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
 #header {
   height: 20vh;
   width: 100vw;
