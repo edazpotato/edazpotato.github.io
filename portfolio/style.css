@@ -8,8 +8,14 @@ html, body {
   width: 100%;
 }
 #header {
+  height: 20vh;
+  width: 100vw;
   padding: 25vw;
   text-align: center;
   font-weight: bold;
   font-size: 150%;
+}
+#content {
+  height: 80vh;
+  width: 100vw;
 }
