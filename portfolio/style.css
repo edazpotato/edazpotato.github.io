@@ -1,53 +1,15 @@
-:root[darkness-mode="dark"] {
-  --darker-bg-color: #303437;
-  --bg-color: #2C2F33;
-  --title-text-color: #ffffff;
-  --text-color: #ededed;
-}
-:root[darkness-mode="light"] {
-  --bg-color: #ffffff;
-  --title-text-color: #23272A;
-  --text-color: #2C2F33;
-}
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   border: 0;
-  color: var(--text-color);
-  /*background-color: var(--bg-color);*/
-  transition: transform 0.1s;
-  font-family: arial;
 }
-html, body, .container {
+html, body {
   height: 100%;
-  background-color: var(--bg-color);
+  width: 100%;
 }
-#scripts {
-  display: none
-}
-.hide {
-  display: none;
-}
-.cent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.alncent {
+#header {
+  padding: 25vw;
   text-align: center;
-}
-.title {
-  color: var(--title-text-color);
-  font-size: 130%;
-}
-.card {
-  box-shadow: 10px 10px 0px 4px rgba(0,0,0,0.54);
-  background-color: rgba(0,0,0,0.54);
-  transition-duration: 250ms;
-  cursor: pointer;
-}
-.card .txt {
-  padding: 20px;
-  background-color: var(--darker-bg-color);
-  white-space: nowrap;
+  font-weight: bold;
+  font-size: 150%;
 }
