@@ -1,0 +1,99 @@
+/* setup */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+}
+:root {
+	--primary-color: #3083dc;
+	--text-on-primary: #ffffff;
+	--secondary-color: #51e5ff;
+	--text-on-secondary: #23272a;
+	--bg-colour: #23272a;
+	--surface-colour: #2c2f33;
+	--text-colour: #ffffff;
+}
+
+/* main styles */
+#app {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: var(--bg-colour);
+	color: var(--text-colour);
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+header {
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	justify-self: flex-start;
+	text-align: center;
+	background-color: var(--surface-colour);
+	color: var(--text-colour);
+	font-weight: bold;
+	font-size: 2vw;
+}
+
+footer {
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	justify-self: flex-end;
+	text-align: center;
+	background-color: var(--surface-colour);
+	color: var(--text-colour);
+	font-size: 2vw;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	justify-self: center;
+}
+
+@media (min-width: 1000px) {
+	#app {
+		font-size: 1.25vw;
+	}
+	header {
+		font-size: 1.5vw;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+	footer {
+		font-size: 1vw;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+}
+@media (max-width: 700px) {
+	#app {
+		font-size: 3vw;
+	}
+	header {
+		font-size: 3vw;
+	}
+	footer {
+		font-size: 3vw;
+	}
+}
+@media (max-width: 400px) {
+	#app {
+		font-size: 4.5vw;
+	}
+	header {
+		font-size: 5vw;
+	}
+	footer {
+		font-size: 5vw;
+	}
+}

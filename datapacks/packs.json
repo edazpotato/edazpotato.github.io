@@ -1,0 +1,13 @@
+[
+	{
+		"title": "Hello World!",
+		"description": "Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text.",
+		"tags": [
+			"datapack",
+			"resourcepack"
+		],
+		"date": "29/08/2020",
+		"icon_url": "icons/apple.png",
+		"file_url": "packs/apple.zip"
+	}
+]
