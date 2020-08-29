@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:900i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <!-- import the Material stylesheet -->
-    <link rel="stylesheet" href="css/material.css">
+    <!--<link rel="stylesheet" href="css/material.css">-->
   </head>
   <body>
     <noscript>
@@ -24,15 +24,20 @@
     	<header>
     		<h1>Edazpotato's datapacks</h1>
     	</header>
-    	<main>
-    		<p>
-    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    		</p>
+    	<main id="dp-list">
+    		<section v-for="pack of packs" class="card">
+    			<section class="card-header">
+    				<img :src="pack.icon_url" class="card-icon" :alt="pack.title + ' icon'">
+    				<h4>{{ pack.title }}</h4>
+    			</section>
+    			<section class="card-content">
+    				<p>{{ pack.description }}</p>
+    			</section>
+    			<section class="card-footer">
+    				<aside class="card-tags"><span v-for="tag of pack.tags" class="card-tag">{{ tag }}</span></aside>
+    				<aside class="card-date">{{ pack.date }}</aside>
+    			</section>
+    		</section>
     	</main>
     	<footer>
     		© Copyright {{ year || 2020 }} Edazpotato

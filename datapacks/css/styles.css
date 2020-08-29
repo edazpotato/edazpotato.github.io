@@ -54,10 +54,50 @@ footer {
 	font-size: 2vw;
 }
 
-main {
+#dp-list {
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.card {
+	width: 275px;
+	height: 150px;
+	margin: 1.5vw;
+	margin-top: 1.5vw;
+	background-color: var(--surface-colour);
+	padding: 3%;
+	box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.75);
+	border-radius: 2px;
+}
+.card-content {
+	height: 40%;
+	width: 100%;
+	font-size: 80%;
+	opacity: 85%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/* ALLLL the media queries! */
+@media (min-width: 1500px) {
+	#app {
+		font-size: 1vw;
+	}
+	header {
+		font-size: 0.5vw;
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+	}
+	footer {
+		font-size: 1vw;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
 }
 
 @media (min-width: 1000px) {
@@ -83,7 +123,7 @@ main {
 		font-size: 3vw;
 	}
 	footer {
-		font-size: 3vw;
+		font-size: 2vw;
 	}
 }
 @media (max-width: 400px) {
