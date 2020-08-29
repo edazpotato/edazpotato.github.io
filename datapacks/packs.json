@@ -12,33 +12,22 @@
 			"file_url": "packs/apple.zip"
 		},
 		{
-			"title": "Hello World!",
-			"description": "Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text.Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text.",
+			"title": "Long title long title long title long title",
+			"description": "Short description.",
 			"tags": [
 				"datapack",
-				"resourcepack"
+				"resourcepack",
+				"map"
 			],
 			"date": "29/08/2020",
 			"icon_url": "icons/apple.png",
 			"file_url": "packs/apple.zip"
 		},
 		{
-			"title": "Hello World!",
-			"description": "Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text.Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text.",
+			"title": "Short",
+			"description": "Short.",
 			"tags": [
-				"datapack",
-				"resourcepack"
-			],
-			"date": "29/08/2020",
-			"icon_url": "icons/apple.png",
-			"file_url": "packs/apple.zip"
-		},
-		{
-			"title": "Hello World!",
-			"description": "Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text.Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text.",
-			"tags": [
-				"datapack",
-				"resourcepack"
+				"map"
 			],
 			"date": "29/08/2020",
 			"icon_url": "icons/apple.png",

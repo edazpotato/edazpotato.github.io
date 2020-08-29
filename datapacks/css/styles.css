@@ -19,8 +19,17 @@ html, body {
 }
 
 /* main styles */
+a {
+	color: var(--primary-color);
+	transition-duration: 25ms;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: var(--secondary-color);
+	text-decoration: underline;
+}
 #app {
-	height: 100%;
+	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -37,7 +46,7 @@ header {
 	padding-bottom: 2%;
 	justify-self: flex-start;
 	text-align: center;
-	background-color: var(--surface-colour);
+	background-color: var(--primary-color);
 	color: var(--text-colour);
 	font-weight: bold;
 	font-size: 2vw;
@@ -57,15 +66,17 @@ footer {
 #dp-list {
 	width: 100%;
 	min-height: 100%;
+	flex: 1;
 	justify-self: center;
 	display: flex;
-	flex-direction: column;
+	/*flex-direction: column;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: flex-start;*/
 }
 
 .card {
-	width: 275px;
+	flex: 1;
+	width: 25vw;
 	height: 150px;
 	margin: 1.5vw;
 	margin-top: 1.5vw;
@@ -74,6 +85,25 @@ footer {
 	box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.75);
 	border-radius: 2px;
 }
+
+.card-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+.card-header h4 {
+	padding: 1vw;
+}
+
+.card-icon {
+	width: 4vw;
+	height: 4vw;
+	justify-self: flex-start;
+	background-color: var(--bg-colour);
+	border-radius: 100%;
+}
+
 .card-content {
 	height: 40%;
 	width: 100%;
@@ -81,6 +111,32 @@ footer {
 	opacity: 85%;
 	text-overflow: ellipsis;
 	overflow: hidden;
+	background-color: var(--bg-colour);
+}
+
+.card-tags {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	
+}
+.card-tag {
+	width: auto;
+	padding-top: 0.25vw;
+	padding-bottom: 0.25vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	margin: 0.5vw;
+	margin-right: 0.75vw;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 1vw;
+	background-color: var(--secondary-color);
+	color: var(--text-on-secondary);
+	font-weight: bold;
 }
 
 /* ALLLL the media queries! */
@@ -125,6 +181,22 @@ footer {
 	footer {
 		font-size: 2vw;
 	}
+	#dp-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.card {
+		width: 50vw;
+	}
+	.card-icon {
+		width: 6vw;
+		height: 6vw;
+	}
+	.card-tag {
+		font-size: 3vw;
+	}
 }
 @media (max-width: 400px) {
 	#app {
@@ -135,5 +207,8 @@ footer {
 	}
 	footer {
 		font-size: 5vw;
+	}
+	.card {
+		width: 75vw;
 	}
 }

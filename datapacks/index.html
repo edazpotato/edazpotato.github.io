@@ -11,8 +11,6 @@
     <!-- stuff for material design -->
     <!-- import Material Icons from Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:900i">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <!-- import the Material stylesheet -->
     <!--<link rel="stylesheet" href="css/material.css">-->
   </head>
@@ -35,17 +33,19 @@
     			</section>
     			<section class="card-footer">
     				<aside class="card-tags"><span v-for="tag of pack.tags" class="card-tag">{{ tag }}</span></aside>
-    				<aside class="card-date">{{ pack.date }}</aside>
+    				<section class="footer-bottom">
+    					<aside class="card-date">{{ pack.date }}</aside>
+    					<aside class="download-btn"><a :href="pack.file_url" target="_blank" rel="noreferer" download><i class="material-icons">download</i></a></aside>
+    				</section>
     			</section>
     		</section>
     	</main>
     	<footer>
-    		© Copyright {{ year || 2020 }} Edazpotato
+    		Kindly hosted by <a href="https://github.com" target="_blank" rel="noreferer">Github</a> - Copyright {{ year || 2020 }} Edazpotato
     	</footer>
     </div>
     <div id="scripts">
     	<!-- libs -->
-    	<script src="js/material.js"></script>
     	<script src="js/vue.js"></script>
     	<!-- my js -->
     	<script src="js/app.js"></script>
