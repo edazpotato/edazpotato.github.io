@@ -114,6 +114,11 @@ h1 {
 	flex-wrap: wrap;
 	width: 80%;
 }
+#datapacks {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
 #privacypolicy {
 	position: absolute;
 	left: 0;
