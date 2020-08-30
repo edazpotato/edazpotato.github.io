@@ -6,10 +6,11 @@ Feel free to poke through my code and see how things work.
 #### List of page curently on my website:
 - [home page](https://edazpotato.github.io/)
 - [Portfolio](https://edazpotato.github.io/portfolio/)
+- [datapacks](https://edazpotato.github.io/datapacks/)
 - [NO](https://edazpotato.github.io/NO/)
 - [UZX discord bot](https://edazpotato.github.io/uzx/)
 - [email-discord](https://edazpotato.github.io/email-disord/)
-- [Version 3 of website](https://edazpotato.github.io/V3)
+- [Old version of website](https://edazpotato.github.io/old)
 
 
 #### To make any website 100% better, add this code at the top of the `<head>` tag
