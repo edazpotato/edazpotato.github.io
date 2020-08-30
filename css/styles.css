@@ -196,7 +196,7 @@ h1 {
 	p {
 		font-size: 3.5vw;
 	}
-	#imgcredit a {
+	.white-link a {
 		font-size: 5vw;
 	}
 }
