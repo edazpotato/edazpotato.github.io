@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'dp_list_icons';
-  src: url('../fonts/icons/dp_list_icons.eot?21717246');
-  src: url('../fonts/icons/dp_list_icons.eot?21717246#iefix') format('embedded-opentype'),
-       url('../fonts/icons/dp_list_icons.woff2?21717246') format('woff2'),
-       url('../fonts/icons/dp_list_icons.woff?21717246') format('woff'),
-       url('../fonts/icons/dp_list_icons.ttf?21717246') format('truetype'),
-       url('../fonts/icons/dp_list_icons.svg?21717246#dp_list_icons') format('svg');
+  src: url('../fonts/icons/dp_list_icons.eot?71269159');
+  src: url('../fonts/icons/dp_list_icons.eot?71269159#iefix') format('embedded-opentype'),
+       url('../fonts/icons/dp_list_icons.woff2?71269159') format('woff2'),
+       url('../fonts/icons/dp_list_icons.woff?71269159') format('woff'),
+       url('../fonts/icons/dp_list_icons.ttf?71269159') format('truetype'),
+       url('../fonts/icons/dp_list_icons.svg?71269159#dp_list_icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,12 +15,12 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'dp_list_icons';
-    src: url('../font/dp_list_icons.svg?21717246#dp_list_icons') format('svg');
+    src: url('../fonts/icons/dp_list_icons.svg?71269159#dp_list_icons') format('svg');
   }
 }
 */
  
-[class$="_icon"]:before, [class*="_icon "]:before {
+ [class$="_icon"]:before, [class*="_icon "]:before {
   font-family: "dp_list_icons";
   font-style: normal;
   font-weight: normal;
@@ -58,5 +58,6 @@
 .download_icon:before { content: '\e800'; } /* '' */
 .code_icon:before { content: '\e801'; } /* '' */
 .heart_icon:before { content: '\e802'; } /* '' */
+.video_icon:before { content: '\e803'; } /* '' */
 .cloud-download_icon:before { content: '\f0ed'; } /* '' */
 .github_icon:before { content: '\f308'; } /* '' */

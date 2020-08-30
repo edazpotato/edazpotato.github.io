@@ -1,8 +1,19 @@
+/* Copyright 2020 Edazpotato */
+
+/**
+*
+*  Yes, I know that this css is ugly but it works, so you'll just have to deal with it.
+*
+*  PROTIP: You should put box-sizing: border-box; on everything at the very start so it doesn't mess stuff up later on.
+*
+**/
+
 /* setup */
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	box-sizing: border-box;
 }
 html, body {
 	height: 100%;
@@ -19,6 +30,36 @@ html, body {
 }
 
 /* main styles */
+
+/* custom tooltips: https://codepen.io/shimdim/pen/NjyNNb */
+[class$="_icon"] {
+	color: var(--text-colour);
+	cursor: pointer;
+}
+[data-title] {
+	position: relative;
+	cursor: help;
+	text-decoration: underline dotted var(--text-on-secondary);
+}
+[data-title]::before {
+	opacity: 0%;
+	transition: opacity 500ms;
+	content: attr(data-title);
+	position: absolute;
+	right: 2px;
+	display: inline-block;
+	padding: 3px 6px;
+	border-radius: 2px;
+	background: var(--secondary-color);
+	color: var(--text-on-secondary);
+	font-size: 12px;
+	font-family: sans-serif;
+	white-space: nowrap;
+}
+[data-title]:hover::before {
+	opacity: 100%;
+}
+
 a {
 	color: var(--primary-color);
 	transition-duration: 25ms;
@@ -28,6 +69,7 @@ a:hover, a:focus {
 	color: var(--secondary-color);
 	text-decoration: underline;
 }
+
 #app {
 	min-height: 100vh;
 	width: 100%;
@@ -38,6 +80,7 @@ a:hover, a:focus {
 	background-color: var(--bg-colour);
 	color: var(--text-colour);
 	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20px;
 }
 
 header {
@@ -68,40 +111,52 @@ footer {
 	min-height: 100%;
 	flex: 1;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .card {
-	width: 25vw;
-	height: 150px;
+	width: 350px;
+	height: 225px;
 	margin: 1.5vw;
 	margin-top: 1.5vw;
 	background-color: var(--surface-colour);
-	padding: 3%;
+	padding: 2%;
 	box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.75);
 	border-radius: 2px;
 }
 
 .card-header {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 5%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
 }
-.card-header h4 {
+.card-header-right {
 	padding: 1vw;
+}
+.card-title {
+	font-size: 130%;
+	font-weight: bold;
 }
 
 .card-icon {
-	width: 4vw;
-	height: 4vw;
-	justify-self: flex-start;
+	width: 60px;
+	height: 60px;
 	background-color: var(--bg-colour);
 	border-radius: 100%;
 }
 
 .card-content {
-	height: 40%;
-	width: 100%;
+	height: 50px;
+	width: 90%;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
 	font-size: 80%;
 	opacity: 85%;
 	text-overflow: ellipsis;
@@ -124,7 +179,8 @@ footer {
 	padding-bottom: 0.25vw;
 	padding-left: 1vw;
 	padding-right: 1vw;
-	margin: 0.5vw;
+	margin-top: 0.5vw;
+	margin-bottom: 0.5vw;
 	margin-right: 0.75vw;
 	text-align: center;
 	border-radius: 5px;
@@ -133,12 +189,19 @@ footer {
 	color: var(--text-on-secondary);
 	font-weight: bold;
 }
+.card-footer-bottom {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+.card-download-btn {
+	align-self: flex-end;
+}
 
 /* ALLLL the media queries! */
 @media (min-width: 1500px) {
-	#app {
-		font-size: 1vw;
-	}
 	header {
 		font-size: 0.5vw;
 		padding-top: 0.5%;
@@ -152,9 +215,6 @@ footer {
 }
 
 @media (min-width: 1000px) {
-	#app {
-		font-size: 1.25vw;
-	}
 	header {
 		font-size: 1.5vw;
 		padding-top: 1%;
@@ -167,40 +227,25 @@ footer {
 	}
 }
 @media (max-width: 700px) {
-	#app {
-		font-size: 3vw;
-	}
 	header {
 		font-size: 3vw;
 	}
 	footer {
 		font-size: 2vw;
 	}
-	#dp-list {
-		display: block;
-	}
-	.card {
-		width: 50vw;
-	}
 	.card-icon {
-		width: 8vw;
-		height: 8vw;
+		width: 50px;
+		height: 50px;
 	}
 	.card-tag {
-		font-size: 3vw;
+		font-size: 10px;
 	}
 }
 @media (max-width: 400px) {
-	#app {
-		font-size: 4.5vw;
-	}
 	header {
 		font-size: 5vw;
 	}
 	footer {
 		font-size: 5vw;
-	}
-	.card {
-		width: 75vw;
 	}
 }

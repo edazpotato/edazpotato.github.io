@@ -3,18 +3,19 @@
 		{
 			"title": "Magic Staves",
 			"id": "magic-staves",
-			"description": "Adds a bunch of magical staves to your world",
+			"description": "A datapack that adds a bunch of magical staves to your world",
 			"tags": [
 				"datapack",
 				"INCOMPLETE"
 			],
 			"versions": [
-				"1.14+"
+				"1.14+",
+				"1.16?"
 			],
 			"date": "30/08/2020",
 			"video_url": "https://youtu.be/XvpHfUOliiI",
 			"icon_url": "icons/pink_tulip.png",
-			"file_url": "packs/Magic_Staffs_DO_NOT_UNZIP.zip"
+			"file_url": "packs/Magic_Staffs_datapack_1.14.4_DO_NOT_UNZIP.zip"
 		}
 	]
 }

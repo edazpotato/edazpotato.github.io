@@ -23,16 +23,20 @@
     		<section v-for="pack of packs" :id="pack.id" class="card">
     			<section class="card-header">
     				<img :src="pack.icon_url" class="card-icon" :alt="pack.title + ' icon'">
-    				<h4 class="card-title">{{ pack.title }}</h4>
+                    <section class="card-header-right">
+    				    <h4 class="card-title">{{ pack.title }}</h4>
+                        <section class="card-versions" :data-title="pack.versions.join(', ')">{{ pack.versions[0] }}</section>
+                    </section>
     			</section>
     			<section class="card-content">
     				<p>{{ pack.description }}</p>
     			</section>
     			<section class="card-footer">
     				<aside class="card-tags"><span v-for="tag of pack.tags" class="card-tag">{{ tag }}</span></aside>
-    				<section class="footer-bottom">
+    				<section class="card-footer-bottom">
     					<aside class="card-date">{{ pack.date }}</aside>
-    					<aside class="download-btn"><a :href="pack.file_url" target="_blank" rel="noreferer" download><span class="download_icon"></span></a></aside>
+    					<aside class="card-download-btn"><a :href="pack.file_url" target="_blank" rel="noreferer" download><span class="download_icon"></span></a></aside>
+                        <aside v-if="'video_url' in pack" class="card-video-btn"><a :href="pack.video_url" target="_blank" rel="noreferer" download><span class="video_icon"></span></a></aside>
     				</section>
     			</section>
     		</section>
