@@ -8,11 +8,8 @@
 
     <!-- my css -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- stuff for material design -->
-    <!-- import Material Icons from Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- import the Material stylesheet -->
-    <!--<link rel="stylesheet" href="css/material.css">-->
+    <!-- icons -->
+    <link rel="stylesheet" href="css/dp_list_icons.css">
   </head>
   <body>
     <noscript>
@@ -23,10 +20,10 @@
     		<h1>Edazpotato's datapacks</h1>
     	</header>
     	<main id="dp-list">
-    		<section v-for="pack of packs" class="card">
+    		<section v-for="pack of packs" :id="pack.id" class="card">
     			<section class="card-header">
     				<img :src="pack.icon_url" class="card-icon" :alt="pack.title + ' icon'">
-    				<h4>{{ pack.title }}</h4>
+    				<h4 class="card-title">{{ pack.title }}</h4>
     			</section>
     			<section class="card-content">
     				<p>{{ pack.description }}</p>
@@ -35,7 +32,7 @@
     				<aside class="card-tags"><span v-for="tag of pack.tags" class="card-tag">{{ tag }}</span></aside>
     				<section class="footer-bottom">
     					<aside class="card-date">{{ pack.date }}</aside>
-    					<aside class="download-btn"><a :href="pack.file_url" target="_blank" rel="noreferer" download><i class="material-icons">download</i></a></aside>
+    					<aside class="download-btn"><a :href="pack.file_url" target="_blank" rel="noreferer" download><span class="download_icon"></span></a></aside>
     				</section>
     			</section>
     		</section>

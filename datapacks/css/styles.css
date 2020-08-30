@@ -67,15 +67,10 @@ footer {
 	width: 100%;
 	min-height: 100%;
 	flex: 1;
-	justify-self: center;
 	display: flex;
-	/*flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;*/
 }
 
 .card {
-	flex: 1;
 	width: 25vw;
 	height: 150px;
 	margin: 1.5vw;
@@ -182,17 +177,14 @@ footer {
 		font-size: 2vw;
 	}
 	#dp-list {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
+		display: block;
 	}
 	.card {
 		width: 50vw;
 	}
 	.card-icon {
-		width: 6vw;
-		height: 6vw;
+		width: 8vw;
+		height: 8vw;
 	}
 	.card-tag {
 		font-size: 3vw;

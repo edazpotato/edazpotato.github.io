@@ -1,37 +1,20 @@
 {
 	"packs": [
 		{
-			"title": "Hello World!",
-			"description": "Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text.Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text. Filler text.",
+			"title": "Magic Staves",
+			"id": "magic-staves",
+			"description": "Adds a bunch of magical staves to your world",
 			"tags": [
 				"datapack",
-				"resourcepack"
+				"INCOMPLETE"
 			],
-			"date": "29/08/2020",
-			"icon_url": "icons/apple.png",
-			"file_url": "packs/apple.zip"
-		},
-		{
-			"title": "Long title long title long title long title",
-			"description": "Short description.",
-			"tags": [
-				"datapack",
-				"resourcepack",
-				"map"
+			"versions": [
+				"1.14+"
 			],
-			"date": "29/08/2020",
-			"icon_url": "icons/apple.png",
-			"file_url": "packs/apple.zip"
-		},
-		{
-			"title": "Short",
-			"description": "Short.",
-			"tags": [
-				"map"
-			],
-			"date": "29/08/2020",
-			"icon_url": "icons/apple.png",
-			"file_url": "packs/apple.zip"
+			"date": "30/08/2020",
+			"video_url": "https://youtu.be/XvpHfUOliiI",
+			"icon_url": "icons/pink_tulip.png",
+			"file_url": "packs/Magic_Staffs_DO_NOT_UNZIP.zip"
 		}
 	]
 }
