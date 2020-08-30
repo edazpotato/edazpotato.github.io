@@ -1,7 +1,7 @@
 /* Service workerr woot! */
 // If you're intreseted in service workers, you should read this article: https://developers.google.com/web/fundamentals/primers/service-workers
 
-var CACHE_NAME = 'my-site-cache-v1';
+var CACHE_NAME = 'cache-v2';
 var urlsToCache = [
   '/',
   '/js/app.js',
@@ -11,6 +11,10 @@ var urlsToCache = [
   '/outlinr/js/outlinr.js',
   '/outlinr/css/outlinr.css',
   '/outlinr/css/picnic.min.css',
+  '/privacy',
+  '/portfolio',
+  '/contact',
+  '/datapacks'
 ];
 
 
