@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://edaz.codes</loc>
+    <loc>https://edaz.codes/</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://edaz.codes/contact</loc>
+    <loc>https://edaz.codes/contact/</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://edaz.codes/portfolio</loc>
+    <loc>https://edaz.codes/portfolio/</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://edaz.codes/free-vbucks-works-2020-legit</loc>
+    <loc>https://edaz.codes/datapacks/</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://edaz.codes/NO</loc>
+    <loc>https://edaz.codes/outlinr/</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://edaz.codes/outlinr</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://edaz.codes/uzx</loc>
+    <loc>https://edaz.codes/uzx/</loc>
     <changefreq>hourly</changefreq>
   </url>
 </urlset>
