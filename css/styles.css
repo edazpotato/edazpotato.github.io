@@ -206,7 +206,7 @@ h1 {
 	}
 }
 @media (max-width: 800px) {
-	#imgcredit a {
+	.white-link {
 		font-size: 2vw;
 	}
 }
