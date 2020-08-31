@@ -39,7 +39,7 @@
     				<section class="card-footer-bottom">
     					<aside class="card-date">{{ pack.date }}</aside>
               <section class="card-btns">
-                <aside class="card-download-btn"><a :href="pack.file_url" target="_blank" rel="noreferer" download class="card-btn" title="Click to download"><span class="download_icon"></span></a></aside>
+                <aside class="card-download-btn"><a :href="pack.file_url" target="_blank" rel="noreferer" download class="card-btn" title="Click to download this pack"><span class="download_icon"></span></a></aside>
                 <aside v-if="'video_url' in pack" class="card-video-btn"><a :href="pack.video_url" target="_blank" rel="noreferer" download class="card-btn" title="Click to watch this pack's video"><span class="video_icon"></span></a></aside>
               </section>
     				</section>
