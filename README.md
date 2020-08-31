@@ -25,3 +25,5 @@ Feel free to poke through my code and see how things work.
 - (see [licence](./LICENCE) file for more info)
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fedazpotato%2Fedazpotato.github.io.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fedazpotato%2Fedazpotato.github.io?ref=badge_large)
+
+Kindly hosted by [Github](https://github.com) <3
