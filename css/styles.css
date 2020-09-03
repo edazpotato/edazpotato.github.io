@@ -119,6 +119,11 @@ h1 {
 	left: 0;
 	top: 0;
 }
+#games {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
 #privacypolicy {
 	position: absolute;
 	left: 0;
