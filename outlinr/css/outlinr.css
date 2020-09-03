@@ -22,41 +22,10 @@ html, body, .full-height {
   height: 100%;
 }
 
-#page {
-  display: flex;
-  flex-direction: row;
-  background-color: var(--background-color);
+#notes-input {
+  width: 100%;
+  height: 100%;
 }
-#sidebar {
-  width: 20vw;
-  padding-left: 5vw;
-}
-#sidebar-items {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-}
-#sidebar-items ul {
-  padding: 2vw;
-}
-#sidebar-items a {
-  color: var(--text-color);
-  text-decoration: none;
-  border-bottom: 2px solid var(--background-color);
-}
-#sidebar-items a:hover, #sidebar-items a:focus {
-  border-bottom: 2px solid var(--highlight-color);
-}
-.active-link {
-  color: var(--highlight-color) !important;
-}
-#content {
-  width: 80vw;
-  background-color: var(--secondary-background-color);
-}
-#content article {
+#todos {
   display: none;
-}
-.active {
-  display: block !important;
 }
