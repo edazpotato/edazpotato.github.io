@@ -120,6 +120,43 @@
 			</main>
 		</div>
 		<div id="scripts">
+			<!-- YOU SHOULD VOTE! -->
+			<link href="/css/toastr.css" rel="stylesheet"/>
+			<style>
+				.vote-btn {
+					color: #ffffff;
+					border-radius: 3px;
+					padding: 3px;
+					font-size: 110%;
+					font-weight: bold;
+					background: rgba(135, 135, 135, 0.3);
+				}
+				.vote-btn:hover {
+					background-color: #ffffff;
+					color: #000000 !important;
+				}
+			</style>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><!-- jQuery eww -->
+			<script src="/js/toastr.js"></script>
+			<script type="text/javascript">
+				toastr.warning('<a target="_blank" rel="noreferer" href="https://vote.nz" style="color: #ffffff !important;">Check now at <span class="vote-btn">Vote.nz</span></a>', "Are you enroled to vote?")
+				toastr.options = {
+				  "closeButton": true,
+				  "debug": false,
+				  "newestOnTop": true,
+				  "progressBar": true,
+				  "positionClass": "toast-top-left",
+				  "preventDuplicates": false,
+				  "showDuration": "30000000000000000000000",
+				  "hideDuration": "10000000000000000000",
+				  "timeOut": "20000000000000000000",
+				  "extendedTimeOut": "300000000000000000000",
+				  "showEasing": "swing",
+				  "hideEasing": "linear",
+				  "showMethod": "slideUp",
+				  "hideMethod": "slideDown"
+				}
+			</script>
 			<!-- libraries -->
 			<script src="js/modernizr-webp.js"></script>
 			<script>Modernizr.on('webp', function (result) {});</script>
