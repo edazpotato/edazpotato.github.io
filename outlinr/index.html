@@ -14,38 +14,12 @@
     <header id="header">
       <h1>Outlinr</h1>
     </header>
-    <main class="tabs three">
-      <section id="sidebar">
-        <input id='home' type='radio' name='tabgroupB' checked />
-        <label class="stack" for="home">
-          <input name="stack" type="radio">
-          <span class="button toggle">
-            <span class="icon-picture"></span> Home
-          </span>
-        </label>
-        <input id='notes' type='radio' name='tabgroupB'>
-        <label class="stack" for="notes">
-          <input name="stack" type="radio">
-          <span class="button toggle">
-            <span class="icon-puzzle"></span> Notes
-          </span>
-        </label>
-        <input id='todos' type='radio' name='tabgroupB'>
-        <label class="stack" for="todos">
-          <input name="stack" type="radio">
-          <span class="button toggle">
-            <span class="icon-file-code"></span> Todos
-          </span>
-        </label>
-      </section>
+    <main>
       <section>
-        <article>
-          Home
+        <article id="notes">
+          <textarea id="notes-input" placeholder="Type something here, and it will be saved automaticaly!" />
         </article>
-        <article>
-          Notes
-        </article>
-        <article>
+        <article id="todos">
           todos
         </article>
       </section>
