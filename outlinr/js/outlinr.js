@@ -11,14 +11,19 @@ function updateStorage(){
 }
 function loadStorage(){
   var storage = window.localStorage;
-  outlinrData = storage.getItem("outlinr");
+  outlinrStorageData = storage.getItem("outlinr");
+  if (outlinrStorageData == null) {
+    updateStorage();
+  } else{
+    outlinrData = outlinrStorageData;
+  }
 }
 function setupTextarea(){
   var textEl = document.getElementById("notes-input");
   textEl.value = outlinrData.notes.value;
   textEl.addEventListener("keyup", function(){
     outlinrData.notes.value = textEl.value;
-    updateStorage()
+    updateStorage();
   });
 }
 function setup(){
