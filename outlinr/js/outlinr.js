@@ -11,7 +11,7 @@ function updateStorage(){
 }
 function loadStorage(){
   var storage = window.localStorage;
-  outlinrStorageData = storage.getItem("outlinr");
+  outlinrStorageData = JSON.parse(storage.getItem("outlinr"));
   if (outlinrStorageData == null) {
     updateStorage();
   } else{
