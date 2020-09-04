@@ -19,7 +19,7 @@ function loadStorage(){
   }
 }
 function setupTextarea(){
-  TLN.append_line_numbers("#notes-input")
+  TLN.append_line_numbers("notes-input")
   var textEl = document.getElementById("notes-input");
   textEl.value = outlinrData.notes.value;
   textEl.addEventListener("keyup", function(){
