@@ -30,12 +30,19 @@ function setupTextarea(){
   });
   return "Text area set up!";
 }
+function setupShortcuts(){
+  Mousetrap.bind('meta+s', function(e) {
+    updateStorage();
+    alert("You don't need to save :) - Outlinr saves in your browser automatically!");
+  });
+}
 function setup(){
   if (location.hash == ""){
     location.hash = "home";
   }
   loadStorage();
   setupTextarea();
+  setupShortcuts();
   return "Setup complete!";
 }
 
