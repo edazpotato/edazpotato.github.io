@@ -31,7 +31,7 @@ function setupTextarea(){
   return "Text area set up!";
 }
 function setupShortcuts(){
-  Mousetrap.bind(['meta+s', 'ctrl+s'],, function(e) {
+  Mousetrap.bind(['meta+s', 'ctrl+s'], function(e) {
     updateStorage();
     alert("You don't need to save :) - Outlinr saves in your browser automatically!");
   });
