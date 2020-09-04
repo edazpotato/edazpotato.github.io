@@ -4,7 +4,7 @@ var outlinrData = {
     "value": ""
   },
   "todos": {}
-};
+}
 function updateStorage(){
   var storage = window.localStorage;
   storage.setItem("outlinr", JSON.stringify(outlinrData));
