@@ -50,7 +50,7 @@ main {
   color: var(--text-color);
   background-color: var(--secondary-background-color);
   font-size: var(--normal-text-size);
-  resize: vertical;
+  resize: none;
 }
 #todos {
   display: none;
