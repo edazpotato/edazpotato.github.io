@@ -32,7 +32,7 @@ function setupTextarea(){
 }
 function setupShortcuts(){
   Mousetrap.bind(['meta+s', 'ctrl+s'], function(e) {
-    e.preventDefualt();
+    e.preventDefault();
     updateStorage();
     alert("You don't need to save :) - Outlinr saves in your browser automatically!");
   });
