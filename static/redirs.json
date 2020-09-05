@@ -52,9 +52,9 @@
         "link": "https://www.yoobee.ac.nz/"
     },
     {
-        "key": "when.lol",
+        "key": "when",
         "link": "https://when.lol"
-},
+	},
     {
         "key": "discord-dev-build",
         "link": "https://discord.com/api/download/development?platform=win"
@@ -82,5 +82,9 @@
     {
         "key": "titanium",
         "link": "https://youtu.be/L_vnEHDjfZ8?t=89"
+    },
+    {
+    	"key": "mc-resourcepack",
+    	"link": "https://youtu.be/uQLO82QJuaw"
     }
 ]
