@@ -6,6 +6,12 @@
   --normal-text-size: 3vw;
   --big-text-size: 5vw;
 }
+@media (min-width: 700px) {
+	:root {
+	  --normal-text-size: 2vw;
+	  --big-text-size: 3vw;
+	}
+}
 #scripts {
   display: none;
 }
