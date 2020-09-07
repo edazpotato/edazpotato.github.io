@@ -25,17 +25,19 @@
 	<meta name="og:site_name" content="Edazpotato's Datapacks">
 	<meta name="og:locale" content="en_NZ">
 	<meta name="og:type" content="website">
-
-  	<!-- important meta tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Edazpotato's datapacks</title>
-
-    <!-- my css -->
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- icons -->
-    <link rel="stylesheet" href="css/dp_list_icons.css">
+	  
+	  <!-- important meta tags -->
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	  <title>Edazpotato's datapacks</title>
+	
+	  <!-- csses -->
+	  <link rel="stylesheet" href="css/styles.css">
+	  <!-- loading spinners -->
+	  <link rel="stylesheet" href="css/spinkit.min.css">
+	  <!-- icons -->
+	  <link rel="stylesheet" href="css/dp_list_icons.css">
   </head>
   <body>
     <noscript>
@@ -48,6 +50,14 @@
     	<header>
     		<h1>Edazpotato's datapacks</h1>
     	</header>
+	<section class="loader">
+		<div class="sk-fold">
+			<div class="sk-fold-cube"></div>
+			<div class="sk-fold-cube"></div>
+			<div class="sk-fold-cube"></div>
+			<div class="sk-fold-cube"></div>
+		</div>
+	</section>
     	<main id="dp-list" v-cloak>
     		<section v-for="pack of packs" :id="pack.id" class="card">
     			<section class="card-header">
