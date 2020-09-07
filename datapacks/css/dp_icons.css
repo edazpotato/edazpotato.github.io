@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'dp_icons';
-  src: url('../font/dp_icons.eot?59970938');
-  src: url('../font/dp_icons.eot?59970938#iefix') format('embedded-opentype'),
-       url('../font/dp_icons.woff2?59970938') format('woff2'),
-       url('../font/dp_icons.woff?59970938') format('woff'),
-       url('../font/dp_icons.ttf?59970938') format('truetype'),
-       url('../font/dp_icons.svg?59970938#dp-icons') format('svg');
+  src: url('../fonts/icons/dp_icons.eot?59970938');
+  src: url('../fonts/icons/dp_icons.eot?59970938#iefix') format('embedded-opentype'),
+       url('../fonts/icons/dp_icons.woff2?59970938') format('woff2'),
+       url('../fonts/icons/dp_icons.woff?59970938') format('woff'),
+       url('../fonts/icons/dp_icons.ttf?59970938') format('truetype'),
+       url('../fonts/icons/dp_icons.svg?59970938#dp-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
