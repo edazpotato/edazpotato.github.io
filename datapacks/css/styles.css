@@ -28,14 +28,26 @@ html, body {
 	--surface-colour: #2c2f33;
 	--text-colour: #ffffff;
 }
+
+/* main styles */
+
+/* loader */
+.loader {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--primary-color);
+	color: var(--text-on-primary);
+	
+}
 [v-cloak], .loader {
 	display: none;
 }
 [v-cloak] .loader {
 	display: flex;
 }
-
-/* main styles */
 
 /* custom tooltips: https://codepen.io/shimdim/pen/NjyNNb */
 [class$="_icon"] {
