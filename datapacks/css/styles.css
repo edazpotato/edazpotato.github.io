@@ -28,6 +28,12 @@ html, body {
 	--surface-colour: #2c2f33;
 	--text-colour: #ffffff;
 }
+[v-cloak], .loader {
+	display: none;
+}
+[v-cloak] .loader {
+	display: flex;
+}
 
 /* main styles */
 
