@@ -1,10 +1,3 @@
-function waitSync(ms) {
-	/* from http://www.endmemo.com/js/pause.php */
-    var d = new Date();
-    var d2 = null;
-    do { d2 = new Date(); }
-    while(d2-d < ms);
-}
 var app = new Vue({
 	el: "#app",
 	data: {
@@ -17,8 +10,5 @@ var app = new Vue({
 			.then(json => {
 				this.packs = json.packs;
 			});
-	},
-	beforeMount() {
-		waitSync(5000);
 	}
 });
