@@ -20,7 +20,7 @@
 }
 */
  
- [class$="-icon"]:before, [class*="-icon "]:before {
+ [class$="_icon"]:before, [class*="_icon "]:before {
   font-family: "dp-icons";
   font-style: normal;
   font-weight: normal;
@@ -40,12 +40,8 @@
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
  
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
- 
   /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
+  font-size: 120%;
  
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
@@ -55,15 +51,15 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.help-circled-icon:before { content: '\e800'; } /* '' */
-.info-circled-icon:before { content: '\e801'; } /* '' */
-.download-icon:before { content: '\e802'; } /* '' */
-.play-icon:before { content: '\e803'; } /* '' */
-.heart-icon:before { content: '\e804'; } /* '' */
-.twitter-icon:before { content: '\f099'; } /* '' */
-.github-circled-icon:before { content: '\f09b'; } /* '' */
-.download-cloud-icon:before { content: '\f0ed'; } /* '' */
-.github-icon:before { content: '\f113'; } /* '' */
-.help-icon:before { content: '\f128'; } /* '' */
-.info-icon:before { content: '\f129'; } /* '' */
-.twitter-squared-icon:before { content: '\f304'; } /* '' */
+.help_circled_icon:before { content: '\e800'; } /* '' */
+.info_circled_icon:before { content: '\e801'; } /* '' */
+.download_icon:before { content: '\e802'; } /* '' */
+.play_icon:before { content: '\e803'; } /* '' */
+.heart_icon:before { content: '\e804'; } /* '' */
+.twitter_icon:before { content: '\f099'; } /* '' */
+.github_circled_icon:before { content: '\f09b'; } /* '' */
+.download_cloud_icon:before { content: '\f0ed'; } /* '' */
+.github_icon:before { content: '\f113'; } /* '' */
+.help_icon:before { content: '\f128'; } /* '' */
+.info_icon:before { content: '\f129'; } /* '' */
+.twitter_squared_icon:before { content: '\f304'; } /* '' */
