@@ -48,7 +48,7 @@
     	<header>
     		<h1>Edazpotato's datapacks</h1>
     	</header>
-    	<main id="dp-list">
+    	<main id="dp-list" v-cloak>
     		<section v-for="pack of packs" :id="pack.id" class="card">
     			<section class="card-header">
     				<img :src="pack.icon_url" class="card-icon" :alt="pack.title + ' icon'">
