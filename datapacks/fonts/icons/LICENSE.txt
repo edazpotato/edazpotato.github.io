@@ -10,15 +10,6 @@ Font license info
    Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 
-## Web Symbols
-
-   Copyright (c) 2011 by Just Be Nice studio. All rights reserved.
-
-   Author:    Just Be Nice studio
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.justbenicestudio.com/
-
-
 ## Elusive
 
    Copyright (C) 2013 by Aristeides Stathopoulos
@@ -26,14 +17,5 @@ Font license info
    Author:    Aristeides Stathopoulos
    License:   SIL (http://scripts.sil.org/OFL)
    Homepage:  http://aristeides.com/
-
-
-## Brandico
-
-   (C) 2012 by Vitaly Puzrin
-
-   Author:    Crowdsourced, for Fontello project
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  
 
 
