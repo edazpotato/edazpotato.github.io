@@ -21,6 +21,15 @@ function loadStorage(){
     return "Loaded '" + JSON.stringify(outlinrData) + "' from storage";
   }
 }
+function setupRoutes(){
+  if (location.hash == ""){
+      location.hash = "notes";
+  }
+  window.addEventListener("hashchange", function(E){
+    console.log("Hash changed!")
+  });
+  location.hash = "home";
+}
 function setupTextarea(){
   var textEl = document.getElementById("notes-input");
   textEl.value = outlinrData.notes.value;
@@ -38,10 +47,8 @@ function setupShortcuts(){
   });
 }
 function setup(){
-  if (location.hash == ""){
-    location.hash = "notes";
-  }
   loadStorage();
+  setupRoutes();
   setupTextarea();
   setupShortcuts();
   return "Setup complete!";
