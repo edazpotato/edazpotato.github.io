@@ -39,7 +39,7 @@ function setupShortcuts(){
 }
 function setup(){
   if (location.hash == ""){
-    location.hash = "home";
+    location.hash = "notes";
   }
   loadStorage();
   setupTextarea();
