@@ -46,6 +46,7 @@
     <div id="app">
     	<header>
     		<h1>Edazpotato's datapacks</h1>
+		<aside id="help-btn"><a href="#help" rel="noreferer" title="Click to get some serious help"><span class="help_icon"></span></a></aside>
     	</header>
 	<section class="loader" v-cloak>
 		<h1>Loading please wait...</h1>
@@ -68,7 +69,7 @@
     					<aside class="card-date">{{ pack.date }}</aside>
               <section class="card-btns">
                 <aside v-if="'file_url' in pack" class="card-download-btn"><a :href="pack.file_url" target="_blank" rel="noreferer" download class="card-btn" title="Click to download this pack"><span class="download_icon"></span></a></aside>
-                <aside v-if="'video_url' in pack" class="card-video-btn"><a :href="pack.video_url" target="_blank" rel="noreferer" download class="card-btn" title="Click to watch this pack's video"><span class="play_icon"></span></a></aside>
+                <aside v-if="'video_url' in pack" class="card-video-btn"><a :href="pack.video_url" target="_blank" rel="noreferer" class="card-btn" title="Click to watch this pack's video"><span class="play_icon"></span></a></aside>
               </section>
     				</section>
     			</section>
