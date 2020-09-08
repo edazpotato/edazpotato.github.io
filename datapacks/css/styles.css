@@ -88,11 +88,21 @@ header {
 	padding-top: 2%;
 	padding-bottom: 2%;
 	justify-self: flex-start;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
 	background-color: var(--primary-color);
 	color: var(--text-colour);
 	font-weight: bold;
 	font-size: 2vw;
+}
+header h1 {
+	text-align: center;
+}
+#help-btn {
+	justify-self: flex-end;
+	margin: 2%;
 }
 
 footer {
