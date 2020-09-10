@@ -66,7 +66,7 @@
     {
         "key": "when",
         "link": "https://when.lol"
-	},
+    },
     {
         "key": "discord-dev-build",
         "link": "https://discord.com/api/download/development?platform=win"
@@ -106,5 +106,5 @@
     {
 	"key": "flushmojis",
 	"link": "https://discord.gg/3Ddx7yD"
-    },
+    }
 ]
