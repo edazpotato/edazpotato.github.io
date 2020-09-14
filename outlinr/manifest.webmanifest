@@ -1,0 +1,28 @@
+{
+  "name": "Outlinr: Orginize your thoughts",
+  "short_name": "Outlinr",
+  "description": "Outlinr is the only tool that YOU NEED to keep track of all your thoughts, be them ideas, todo lists or people",
+  "icons": [
+    {
+      "src": "images/icon-144.png",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/outlinr/?source=pwa",
+  "background_color": "#A31621",
+  "display": "standalone",
+  "scope": "/outlinr/",
+  "theme_color": "#ffffff"
+}
