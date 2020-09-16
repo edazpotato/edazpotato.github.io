@@ -13,4 +13,4 @@ function dealWithTextData(text){
   console.log(text);
 }
 
-()({await recognizeImage()})
+await recognizeImage()
