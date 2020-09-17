@@ -197,11 +197,6 @@ h1 {
 		font-size: 3.5vw;
 	}
 	.white-link a {
-		font-size: 5vh;
-	}
-}
-@media (max-width: 800px) {
-	.white-link a {
-		font-size: 2vw;
+		font-size: 10vh;
 	}
 }
