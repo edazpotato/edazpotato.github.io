@@ -55,16 +55,6 @@ html, body {
 	margin-top: auto;
 }
 
-
-.hide {
-	opacity: 0;
-	/*visibility: hidden;*/
-}
-
-.fade {
-	transition: opacity 1s; 
-}
-
 #profile {
 	display: flex;
 	align-items: center;
@@ -207,7 +197,7 @@ h1 {
 		font-size: 3.5vw;
 	}
 	.white-link a {
-		font-size: 5vw;
+		font-size: 5vh;
 	}
 }
 @media (max-width: 800px) {
