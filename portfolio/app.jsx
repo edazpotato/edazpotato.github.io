@@ -1,7 +1,8 @@
 function Header() {
   return (
-    <header>
-    
+    <header className="flex flex-col justify-center text-center">
+      <h1 className="text-3xl">Things that I've made</h1>
+      <h6 className="text-sm text-black sm:text-gray-600 text-opacity-80 sm:text-opaciy-100">AKA my portolio</h6>
     </header>
   )
 }
@@ -34,11 +35,11 @@ function ProjectCards() {
 
 function App() {
   return (
-    <React.Fragment>
+    <section className="font-sans">
       <Header />
       <ProjectCards />
       <Footer />
-    </React.Fragment>
+    </section>
   )
 }
 
