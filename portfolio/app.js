@@ -38,9 +38,8 @@ async function ProjectCards() {
     projects = json.projects;
   });
   var projectCardElements = projects.map(function (project) {
-    /*#__PURE__*/
-    React.createElement(ProjectCard, {
-      key: project.id,
+    return /*#__PURE__*/React.createElement(ProjectCard, {
+      key: project.id.toString(),
       projData: project
     });
   });
