@@ -11,7 +11,7 @@ function Footer() {
   var year = new Date.getFullYear();
   return (
     <footer>
-      Copyright Edazpotato {2020.toString() || year.toString()}
+      Copyright Edazpotato {2020 || year.toString()}
     </footer>
   )
 }
