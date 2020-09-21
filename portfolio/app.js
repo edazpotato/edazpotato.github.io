@@ -30,12 +30,12 @@ function ProjectCard(props) {
   }, data.title)), /*#__PURE__*/React.createElement("p", null, data.description)));
 }
 
-function ProjectCards() {
+async function ProjectCards() {
   var projects;
-  fetch("projects.json").then(function (res) {
+  await fetch("projects.json").then(function (res) {
     return res.json();
   }).then(function (json) {
-    return projects = json.projects;
+    projects = json.projects;
   });
   var projectCardElements = projects.map(function (project) {
     /*#__PURE__*/
