@@ -2,15 +2,16 @@ function Header() {
   return (
     <header className="flex flex-col justify-center text-center">
       <h1 className="text-3xl">Things that I've made</h1>
-      <h6 className="text-sm text-black sm:text-gray-600 text-opacity-80 sm:text-opaciy-100">AKA my portolio</h6>
+      <h6 className="text-xs text-gray-600">AKA my portolio</h6>
     </header>
   )
 }
 
 function Footer() {
+  var year = new Date.getFullYear();
   return (
     <footer>
-    
+      Copyright Edazpotato {2020.toString() | year.toString()}
     </footer>
   )
 }
@@ -28,7 +29,7 @@ function ProjectCards() {
   var projects = fetch("projects.json").then(function(res){res.json();}).then(function(json){return json.projects});
   return (
     <main className="h-full flex flex-row flex-wrap justify-center p-4">
-    
+      
     </main>
   )
 }
