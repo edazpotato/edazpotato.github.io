@@ -35,7 +35,9 @@ async function ProjectCards() {
     projects = json.projects;
   });
   var projectCardElements  = projects.map(function(project){
-    <ProjectCard key={project.id} projData={project} />
+    return (
+      <ProjectCard key={project.id.toString()} projData={project} />
+    )
   });
   return (
     <main className="h-full flex flex-row flex-wrap justify-center p-4">
