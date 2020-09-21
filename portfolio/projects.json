@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "title": "Test",
+      "description": "This is a test.",
+      "url": "https://edazpotato.github.io",
+      "icon_url": "icons/0.png"
+    }
+  ]
+}
