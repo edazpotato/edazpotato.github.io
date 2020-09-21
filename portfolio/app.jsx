@@ -17,19 +17,26 @@ function Footer() {
 }
 
 function ProjectCard(props) {
-  var data = props.data;
+  var data = props.projData;
   return (
     <section className="flex flex-row text-left justify-start">
-      <img />
+      <img src={data.icon_url} alt={data.title + " - image"} />
+      <aside className="flex flex-row text-left justify-start">
+        <h2><a href={data.url} target="_blank">{data.title}</a></h2>
+        <p>{data.description}</p>
+      </aside>
     </section>
   )
 }
 
 function ProjectCards() {
   var projects = fetch("projects.json").then(function(res){res.json();}).then(function(json){return json.projects});
+  var projectCardElements = projects.map(function(project){
+    <ProjectCard key={project.id} projData={project} />
+  });
   return (
     <main className="h-full flex flex-row flex-wrap justify-center p-4">
-      
+      {projectCardElements}
     </main>
   )
 }
