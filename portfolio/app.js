@@ -11,7 +11,7 @@ function Header() {
 }
 
 function Footer() {
-  var year = new Date.getFullYear();
+  var year = new Date().getFullYear();
   return /*#__PURE__*/React.createElement("footer", null, "Copyright Edazpotato ", 2020 || year);
 }
 
