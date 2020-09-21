@@ -8,7 +8,7 @@ function Header() {
 }
 
 function Footer() {
-  var year = new Date.getFullYear();
+  var year = new Date().getFullYear();
   return (
     <footer>
       Copyright Edazpotato {2020 || year}
