@@ -12,7 +12,7 @@ function Header() {
 
 function Footer() {
   var year = new Date.getFullYear();
-  return /*#__PURE__*/React.createElement("footer", null, "Copyright Edazpotato ", 2020 || year.toString());
+  return /*#__PURE__*/React.createElement("footer", null, "Copyright Edazpotato ", 2020 || year);
 }
 
 function ProjectCard(props) {
@@ -31,10 +31,11 @@ function ProjectCard(props) {
 }
 
 function ProjectCards() {
-  var projects = fetch("projects.json").then(function (res) {
-    res.json();
+  var projects;
+  fetch("projects.json").then(function (res) {
+    return res.json();
   }).then(function (json) {
-    return json.projects;
+    return projects = json.projects;
   });
   var projectCardElements = projects.map(function (project) {
     /*#__PURE__*/
