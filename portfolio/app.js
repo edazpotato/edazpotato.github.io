@@ -6,19 +6,28 @@ function Header() {
   }, /*#__PURE__*/React.createElement("h1", {
     className: "text-3xl"
   }, "Things that I've made"), /*#__PURE__*/React.createElement("h6", {
-    className: "text-sm text-black sm:text-gray-600 text-opacity-80 sm:text-opaciy-100"
+    className: "text-xs text-gray-600"
   }, "AKA my portolio"));
 }
 
 function Footer() {
-  return /*#__PURE__*/React.createElement("footer", null);
+  var year = new Date.getFullYear();
+  return /*#__PURE__*/React.createElement("footer", null, "Copyright Edazpotato ", 2020 || year.toString());
 }
 
 function ProjectCard(props) {
-  var data = props.data;
+  var data = props.projData;
   return /*#__PURE__*/React.createElement("section", {
     className: "flex flex-row text-left justify-start"
-  }, /*#__PURE__*/React.createElement("img", null));
+  }, /*#__PURE__*/React.createElement("img", {
+    src: data.icon_url,
+    alt: data.title + " - image"
+  }), /*#__PURE__*/React.createElement("aside", {
+    className: "flex flex-row text-left justify-start"
+  }, /*#__PURE__*/React.createElement("h2", null, /*#__PURE__*/React.createElement("a", {
+    href: data.url,
+    target: "_blank"
+  }, data.title)), /*#__PURE__*/React.createElement("p", null, data.description)));
 }
 
 function ProjectCards() {
@@ -27,9 +36,16 @@ function ProjectCards() {
   }).then(function (json) {
     return json.projects;
   });
+  var projectCardElements = projects.map(function (project) {
+    /*#__PURE__*/
+    React.createElement(ProjectCard, {
+      key: project.id,
+      projData: project
+    });
+  });
   return /*#__PURE__*/React.createElement("main", {
     className: "h-full flex flex-row flex-wrap justify-center p-4"
-  });
+  }, projectCardElements);
 }
 
 function App() {
