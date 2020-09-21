@@ -29,9 +29,11 @@ function ProjectCard(props) {
   )
 }
 
-function ProjectCards() {
+async function ProjectCards() {
   var projects;
-  fetch("projects.json").then((res) => res.json()).then((json) => projects = json.projects);
+  await fetch("projects.json").then((res) => res.json()).then((json) => {
+    projects = json.projects;
+  });
   var projectCardElements  = projects.map(function(project){
     <ProjectCard key={project.id} projData={project} />
   });
