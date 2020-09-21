@@ -8,12 +8,10 @@ Feel free to poke through my code and see how things work.
 - [Portfolio](https://edazpotato.github.io/portfolio/)
 - [datapacks](https://edazpotato.github.io/datapacks/)
 - [NO](https://edazpotato.github.io/NO/)
-- [UZX discord bot](https://edazpotato.github.io/uzx/)
-- [email-discord](https://edazpotato.github.io/email-disord/)
 - [Old version of website](https://edazpotato.github.io/old)
 
 
-#### To make any website 100% better, add this code at the top of the `<head>` tag
+#### To make a page fart while you scroll through it, add this code at the bottom of the `<body>` tag
 ```html
 <script src="https://edazpotato.github.io/static/farts.js"></script>
 <script>fartscroll(300);</script>
