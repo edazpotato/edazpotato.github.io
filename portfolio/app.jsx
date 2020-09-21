@@ -11,7 +11,7 @@ function Footer() {
   var year = new Date.getFullYear();
   return (
     <footer>
-      Copyright Edazpotato {2020 || year.toString()}
+      Copyright Edazpotato {2020 || year}
     </footer>
   )
 }
@@ -30,8 +30,9 @@ function ProjectCard(props) {
 }
 
 function ProjectCards() {
-  var projects = fetch("projects.json").then(function(res){res.json();}).then(function(json){return json.projects});
-  var projectCardElements = projects.map(function(project){
+  var projects;
+  fetch("projects.json").then((res) => res.json()).then((json) => projects = json.projects);
+  var projectCardElements  = projects.map(function(project){
     <ProjectCard key={project.id} projData={project} />
   });
   return (
