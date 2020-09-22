@@ -2,13 +2,13 @@ var app = new Vue({
 	el: "#app",
 	data: {
 		year: new Date().getFullYear(),
-		packs: []
+		projects: []
 	},
 	created() {
-		fetch("packs.json")
+		fetch("projects.json")
 			.then(res => res.json())
 			.then(json => {
-				this.packs = json.packs;
+				this.projects = json.projects;
 			});
 	}
 });
