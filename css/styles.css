@@ -192,9 +192,19 @@ h1 {
 		font-size: 3.5vw;
 	}
 	.white-link a {
-		font-size: 15vw;
+		font-size: 1.75vw;
 	}
 	#datapacks {
 		display: none;
+	}
+	#privacypolicy {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	#imgcredit {
+		position: absolute;
+		left: 0;
+		bottom: 0;
 	}
 }
