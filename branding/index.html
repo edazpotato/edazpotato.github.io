@@ -5,71 +5,33 @@
 	  <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-	  <title>Portfolio yay</title>
+	  <title>Edazpotato branding</title>
 	  <!-- neat meta generator: https://megatags.co/ -->
 	  <!-- meta tags for social media -->
 	  <!-- Search Engine -->
-	  <meta name="description" content="Heres a list of some things that I made.">
-	  <meta name="image" content="https://edazpotato.github.io/portfolio/images/social.png">
+	  <meta name="description" content="Branding colours for Edazpotato.">
+	  <meta name="image" content="https://edazpotato.github.io/branding/images/social.png">
 	  <!-- Schema.org for Google -->
-	  <meta itemprop="name" content="Portfolio yay">
-	  <meta itemprop="description" content="Heres a list of some things that I made.">
-	  <meta itemprop="image" content="https://edazpotato.github.io/portfolio/images/social.png">
+	  <meta itemprop="name" content="Edazpotato branding">
+	  <meta itemprop="description" content="Branding colours for Edazpotato.">
+	  <meta itemprop="image" content="https://edazpotato.github.io/branding/images/social.png">
 	  <!-- Twitter -->
 	  <meta name="twitter:card" content="summary_large_image">
-	  <meta name="twitter:title" content="Portfolio yay">
-	  <meta name="twitter:description" content="Heres a list of some things that I made.">
+	  <meta name="twitter:title" content="Edazpotato branding">
+	  <meta name="twitter:description" content="Branding colours for Edazpotato.">
 	  <meta name="twitter:site" content="@edazpotato">
 	  <meta name="twitter:creator" content="@edazpotato">
-	  <meta name="twitter:image:src" content="https://edazpotato.github.io/portfolio/images/social.png">
+	  <meta name="twitter:image:src" content="https://edazpotato.github.io/branding/images/social.png">
 	  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
 	  <meta name="og:title" content="Portfolio yay">
-	  <meta name="og:description" content="Heres a list of some things that I made.">
-	  <meta name="og:image" content="https://edazpotato.github.io/porfolio/images/social.png">
-	  <meta name="og:url" content="https://edazpotato.github.io/portfolio">
-	  <meta name="og:site_name" content="Portfolio yay">
+	  <meta name="og:description" content="Branding colours for Edazpotato.">
+	  <meta name="og:image" content="https://edazpotato.github.io/branding/images/social.png">
+	  <meta name="og:url" content="https://edazpotato.github.io/branding">
+	  <meta name="og:site_name" content="Edazpotato branding">
 	  <meta name="og:locale" content="en_NZ">
 	  <meta name="og:type" content="website">
 	
 	  <!-- css -->
-	  <style>
-		  /* hide un-rendered things */
-		  [v-cloak] {
-		  	display: none;
-		  }
-		  /* loading spinner*/
-		  /* from https://gist.github.com/oze4/c4f87f6f83630850fabc5e4426874952 */
-		  .loader [v-cloak] {
-			  display: block;
-			  padding: 50px 0;
-		  }
-		  @keyframes spinner {
-			  to {
-				  transform: rotate(360deg);
-			  }
-		  }
-		  .loader [v-cloak]:before {
-			  content: "";
-			  box-sizing: border-box;
-			  position: absolute;
-			  top: 50%;
-			  left: 50%;
-			  width: 20px;
-			  height: 20px;
-			  margin-top: -10px;
-			  margin-left: -10px;
-			  border-radius: 50%;
-			  border: 2px solid #ccc;
-			  border-top-color: #333;
-			  animation: spinner 0.6s linear infinite;
-			  text-indent: 100%;
-			  white-space: nowrap;
-			  overflow: hidden;
-		  }
-		  .loader [v-cloak]>* {
-			  display: none;
-		  }
-	  </style>
 	  <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -79,37 +41,23 @@
     <div id="offline-message" style="display: none;">
       <strong>I'm sorry, but this page doesn't work properly offline. Please make sure that you have a working connection to the internet to continue.</strong>
     </div>
-    <div id="app">
-    	<header>
-    		<h1>Some things I made</h1>
-		<aside id="help-btn"><a href="#help" rel="noreferer" title="Click to get some serious help"><span class="help_circled_icon"></span></a></aside>
-    	</header>
-    	<main id="proj-list" v-cloak class="loader">
-    		<section v-for="proj of projects" :id="'card-' + proj.id" class="card">
-    			<section class="card-header">
-    				<img :src="proj.icon_url" class="card-icon" :alt="proj.title + ' icon'">
-                    <section class="card-header-right">
-    				    <h4 class="card-title"><a :href="proj.url" target="_blank" rel="noreferer">{{ proj.title }}</a></h4>
-                    </section>
-    			</section>
-    			<section class="card-content">
-    				<p>{{ proj.description }}</p>
-    			</section>
-    			<section class="card-footer">
-    				<aside class="card-tags"><span v-for="tag of proj.tags" class="card-tag">{{ tag }}</span></aside>
-    				<section class="card-footer-bottom">
-					<aside class="card-date">{{ proj.date }}</aside>
-    				</section>
-    			</section>
-    		</section>
-    	</main>
-    	<footer>
-    		Kindly hosted by <a href="https://github.com" target="_blank" rel="noreferer">Github</a> - Copyright <span v-cloak>{{ year || 2020 }}</span> Edazpotato
-    	</footer>
+    <div id="treeleg">
+	    <main class="wrapper">
+		    <section class="avatars">
+			    <aside class="avatar"></aside>
+			    <aside class="avatar"></aside>
+		    </section>
+		    <section class="colours">
+			    <aside class="colour"></aside>
+			    <aside class="colour"></aside>
+			    <aside class="colour"></aside>
+			    <aside class="colour"></aside>
+			    <aside class="colour"></aside>
+			    <aside class="colour"></aside>
+		    </section>
+	    </main>
     </div>
     <div id="scripts">
-    	<!-- libs -->
-    	<script src="js/vue.js"></script>
     	<!-- my js -->
     	<script src="js/app.js"></script>
       <!-- offline detector -->
