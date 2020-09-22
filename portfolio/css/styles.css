@@ -93,8 +93,8 @@ footer {
 }
 
 .card {
-	width: 350px;
-	height: 225px;
+	width: 375px;
+	height: 230px;
 	margin: 10px;
 	margin-top: 1.5vw;
 	background-color: var(--surface-colour);
@@ -201,6 +201,7 @@ footer {
 }
 
 @media (min-width: 1000px) {
+
 	header {
 		font-size: 1.5vw;
 		padding-top: 1%;
