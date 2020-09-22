@@ -33,9 +33,13 @@
 	
 	  <!-- css -->
 	  <style>
+		  /* hide un-rendered things */
+		  [v-cloak] {
+		  	display: none;
+		  }
 		  /* loading spinner*/
 		  /* from https://gist.github.com/oze4/c4f87f6f83630850fabc5e4426874952 */
-		  [v-cloak] {
+		  .loader [v-cloak] {
 			  display: block;
 			  padding: 50px 0;
 		  }
@@ -44,7 +48,7 @@
 				  transform: rotate(360deg);
 			  }
 		  }
-		  [v-cloak]:before {
+		  .loader [v-cloak]:before {
 			  content: "";
 			  box-sizing: border-box;
 			  position: absolute;
@@ -62,7 +66,7 @@
 			  white-space: nowrap;
 			  overflow: hidden;
 		  }
-		  [v-cloak]>* {
+		  .loader [v-cloak]>* {
 			  display: none;
 		  }
 	  </style>
@@ -80,7 +84,7 @@
     		<h1>Some things I made</h1>
 		<aside id="help-btn"><a href="#help" rel="noreferer" title="Click to get some serious help"><span class="help_circled_icon"></span></a></aside>
     	</header>
-    	<main id="proj-list" v-cloak>
+    	<main id="proj-list" v-cloak class="loader">
     		<section v-for="proj of projects" :id="'card-' + proj.id" class="card">
     			<section class="card-header">
     				<img :src="proj.icon_url" class="card-icon" :alt="proj.title + ' icon'">
@@ -100,7 +104,7 @@
     		</section>
     	</main>
     	<footer>
-    		Kindly hosted by <a href="https://github.com" target="_blank" rel="noreferer">Github</a> - Copyright {{ year || 2020 }} Edazpotato
+    		Kindly hosted by <a href="https://github.com" target="_blank" rel="noreferer">Github</a> - Copyright <span v-cloak>{{ year || 2020 }}</span> Edazpotato
     	</footer>
     </div>
     <div id="scripts">
