@@ -2,10 +2,15 @@
   "projects": [
     {
       "id": 0,
-      "title": "Test",
-      "description": "This is a test.",
+      "title": "Profile page",
+      "description": "A simple page that showcases my name and avatar, as well as linking to various social medias and other projects.",
       "url": "https://edazpotato.github.io",
-      "icon_url": "icons/0.png"
+      "icon_url": "icons/0.png",
+      "tags": [
+        "HTML",
+        "CSS"
+      ],
+      "date": "28/08/2020"
     }
   ]
 }
