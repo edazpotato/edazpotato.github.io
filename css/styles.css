@@ -104,21 +104,28 @@ h1 {
 	flex-wrap: wrap;
 	width: 80%;
 }
-.white-link .top {
+.white-link  .top .left {
+	position: absolute;
+	left: 0;
 	top: 0;
 }
-.white-link .bottom {
+.white-link  .top .right {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.white-link  .bottom .left {
+	position: absolute;
+	left: 0;
 	bottom: 0;
 }
-.white-link .left {
-	left: 0;
-}
-.white-link .right {
+.white-link  .bottom .right {
+	position: absolute;
 	right: 0;
+	bottom: 0;
 }
 
 .white-link {
-	position: absolute !important;
 	margin: 1vw;
 	font-size: 1vw;
 }
@@ -190,7 +197,7 @@ h1 {
 		font-size: 3.5vw;
 	}
 	.white-link a {
-		font-size: 20vw;
+		font-size: 10vh;
 	}
 	#datapacks {
 		display: none;
