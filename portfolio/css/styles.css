@@ -136,7 +136,7 @@ footer {
 
 .card-content {
 	height: 100px;
-	width: 90%;
+	width: 100%;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-left: 8px;
@@ -169,18 +169,17 @@ footer {
 	margin-right: 8px;
 	text-align: center;
 	border-radius: 5px;
-	font-size: 60%;
+	font-size: 70%;
 	background-color: var(--secondary-color);
 	color: var(--text-on-secondary);
 	font-weight: bold;
 }
 .card-footer {
-	width: 100%;
-	height: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
+	padding-top: 8px;
 }
 .card-date {
 	font-size: 110%;
