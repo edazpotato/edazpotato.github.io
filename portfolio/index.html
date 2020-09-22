@@ -33,8 +33,6 @@
 	
 	  <!-- css -->
 	  <link rel="stylesheet" href="css/styles.css">
-	  <!-- icons -->
-	  <link rel="stylesheet" href="css/dp_icons.css">
   </head>
   <body>
     <noscript>
@@ -52,25 +50,20 @@
 		<h1>Loading please wait...</h1>
 	</section>
     	<main id="dp-list" v-cloak>
-    		<section v-for="pack of packs" :id="pack.id" class="card">
+    		<section v-for="proj of projects" :id="pack.id" class="card">
     			<section class="card-header">
-    				<img :src="pack.icon_url" class="card-icon" :alt="pack.title + ' icon'">
+    				<img :src="proj.icon_url" class="card-icon" :alt="proj.title + ' icon'">
                     <section class="card-header-right">
-    				    <h4 class="card-title">{{ pack.title }}</h4>
-                        <section class="card-versions" :data-title="pack.versions.join(', ')">{{ pack.versions[0] }}</section>
+    				    <h4 class="card-title"><a :href="proj.url" target="_blank" rel="noreferer">{{ proj.title }}</a></h4>
                     </section>
     			</section>
     			<section class="card-content">
-    				<p>{{ pack.description }}</p>
+    				<p>{{ proj.description }}</p>
     			</section>
     			<section class="card-footer">
-    				<aside class="card-tags"><span v-for="tag of pack.tags" class="card-tag">{{ tag }}</span></aside>
+    				<aside class="card-tags"><span v-for="tag of proj.tags" class="card-tag">{{ tag }}</span></aside>
     				<section class="card-footer-bottom">
-    					<aside class="card-date">{{ pack.date }}</aside>
-              <section class="card-btns">
-                <aside v-if="'file_url' in pack" class="card-download-btn"><a :href="pack.file_url" target="_blank" rel="noreferer" download class="card-btn" title="Click to download this pack"><span class="download_icon"></span></a></aside>
-                <aside v-if="'video_url' in pack" class="card-video-btn"><a :href="pack.video_url" target="_blank" rel="noreferer" class="card-btn" title="Click to watch this pack's video"><span class="play_icon"></span></a></aside>
-              </section>
+					<aside class="card-date">{{ proj.date }}</aside>
     				</section>
     			</section>
     		</section>
