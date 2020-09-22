@@ -104,22 +104,22 @@ h1 {
 	flex-wrap: wrap;
 	width: 80%;
 }
-#datapacks {
+.white-link  .top .left {
 	position: absolute;
 	left: 0;
 	top: 0;
 }
-#games {
+.white-link  .top .right {
 	position: absolute;
 	right: 0;
 	top: 0;
 }
-#privacypolicy {
+.white-link  .bottom .left {
 	position: absolute;
 	left: 0;
 	bottom: 0;
 }
-#imgcredit {
+.white-link  .bottom .right {
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -198,5 +198,8 @@ h1 {
 	}
 	.white-link a {
 		font-size: 10vh;
+	}
+	#datapacks {
+		display: none;
 	}
 }
