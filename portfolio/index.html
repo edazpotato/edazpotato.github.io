@@ -46,11 +46,8 @@
     		<h1>Some things I made</h1>
 		<aside id="help-btn"><a href="#help" rel="noreferer" title="Click to get some serious help"><span class="help_circled_icon"></span></a></aside>
     	</header>
-	<section class="loader" v-cloak>
-		<h1>Loading please wait...</h1>
-	</section>
-    	<main id="dp-list" v-cloak>
-    		<section v-for="proj of projects" :id="pack.id" class="card">
+    	<main id="proj-list" v-cloak>
+    		<section v-for="proj of projects" :id="'card-' + proj.id" class="card">
     			<section class="card-header">
     				<img :src="proj.icon_url" class="card-icon" :alt="proj.title + ' icon'">
                     <section class="card-header-right">
