@@ -1,0 +1,79 @@
+/* setup */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html, css, #treeleg {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+}
+
+/* main styles */
+:root {
+  --rocket-metallic: #988988;
+  --blue-sapphire: #025B87;
+  --capri: #05BFFA;
+  --black: #000000;
+  --ou-crimson-red: #851314;
+  --red-ryb: #FE1515;
+  --white-text: #FFFFFF;
+}
+
+.rocket-metallic {
+  background-color: var(--rocket-metallic);
+  color: var(--white-text);
+}
+.blue-sapphire {
+  background-color: var(--blue-sapphire);
+  color: var(--white-text);
+}
+.capri {
+  background-color: var(--capri);
+  color: var(--white-text);
+}
+.black {
+  background-color: var(--ou-crimson-red);
+  color: var(--white-text);
+}
+.ou-crimson-red {
+  background-color: var(--red-ryb);
+  color: var(--white-text);
+}
+.red-ryb {
+  background-color: var(--white-text);
+  color: var(--white-text);
+}
+
+.colour {
+  width: 16.666;
+  height: 80%;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.avatars {
+  width: 100%;
+  height: 75%;
+}
+.colours {
+  width: 100%;
+  height: 250%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
