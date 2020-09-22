@@ -1,0 +1,2 @@
+- Don't PR bad stuff
+- Yeah thats it basicly
