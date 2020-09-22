@@ -104,28 +104,21 @@ h1 {
 	flex-wrap: wrap;
 	width: 80%;
 }
-.white-link  .top .left {
-	position: absolute;
-	left: 0;
+.white-link .top {
 	top: 0;
 }
-.white-link  .top .right {
-	position: absolute;
-	right: 0;
-	top: 0;
+.white-link .bottom {
+	bottom: 0;
 }
-.white-link  .bottom .left {
-	position: absolute;
+.white-link .left {
 	left: 0;
-	bottom: 0;
 }
-.white-link  .bottom .right {
-	position: absolute;
+.white-link .right {
 	right: 0;
-	bottom: 0;
 }
 
 .white-link {
+	position: absolute;
 	margin: 1vw;
 	font-size: 1vw;
 }
