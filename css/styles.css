@@ -118,7 +118,7 @@ h1 {
 }
 
 .white-link {
-	position: absolute;
+	position: absolute !important;
 	margin: 1vw;
 	font-size: 1vw;
 }
@@ -190,7 +190,7 @@ h1 {
 		font-size: 3.5vw;
 	}
 	.white-link a {
-		font-size: 10vh;
+		font-size: 20vw;
 	}
 	#datapacks {
 		display: none;
