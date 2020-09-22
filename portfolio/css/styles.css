@@ -30,8 +30,6 @@ html, body {
 }
 
 /* main styles */
-
-/* custom tooltips: https://codepen.io/shimdim/pen/NjyNNb */
 a {
 	color: var(--secondary-color);
 	transition-duration: 25ms;
@@ -102,8 +100,8 @@ footer {
 	background-color: var(--surface-colour);
 	padding: 2%;
 	box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.75);
-	border-radius: 2px;
-	transition-duration: 100ms;
+	border-radius: 15px;
+	transition-duration: 200ms;
 }
 .card:hover, .card:focus {
 	box-shadow: 0px 0px 40px -3px rgba(40,40,40,1);
@@ -122,19 +120,19 @@ footer {
 	padding: 1vw;
 }
 .card-title {
-	font-size: 130%;
+	font-size: 140%;
 	font-weight: bold;
 }
 
 .card-icon {
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
 	background-color: var(--bg-colour);
 	border-radius: 100%;
 }
 
 .card-content {
-	height: 50px;
+	height: 100px;
 	width: 90%;
 	padding-top: 2px;
 	padding-bottom: 2px;
@@ -145,6 +143,7 @@ footer {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	background-color: var(--bg-colour);
+	border-radius: 10px;
 }
 
 .card-tags {
@@ -179,13 +178,6 @@ footer {
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-}
-.card-btns {
-	flex: 1;
-	align-self: flex-end;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
 }
 .card-btn {
 	flex: 1;
