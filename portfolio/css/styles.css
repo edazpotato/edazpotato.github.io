@@ -1,0 +1,289 @@
+/* Copyright 2020 Edazpotato */
+
+/**
+*
+* Basicly coppied from my datapacks page lol
+*
+**/
+
+/* setup */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+}
+:root {
+	--primary-color: #031927;
+	--text-on-primary: #ffffff;
+	--secondary-color: #BA1200;
+	--text-on-secondary: #ffffff;
+	--bg-colour: #0A0908;
+	--surface-colour: #2D3A3A;
+	--text-colour: #ffffff;
+}
+
+/* main styles */
+
+/* custom tooltips: https://codepen.io/shimdim/pen/NjyNNb */
+[class$="_icon"] {
+	color: var(--text-colour);
+	cursor: pointer;
+}
+[data-title] {
+	position: relative;
+	cursor: help;
+	text-decoration: underline dotted var(--text-on-secondary);
+}
+[data-title]::before {
+	opacity: 0%;
+	transition: opacity 500ms;
+	content: attr(data-title);
+	position: absolute;
+	right: 2px;
+	display: inline-block;
+	padding: 3px 6px;
+	border-radius: 2px;
+	background: var(--secondary-color);
+	color: var(--text-on-secondary);
+	font-size: 12px;
+	font-family: sans-serif;
+	white-space: nowrap;
+}
+[data-title]:hover::before {
+	opacity: 100%;
+}
+
+a {
+	color: var(--primary-color);
+	transition-duration: 25ms;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: var(--secondary-color);
+	text-decoration: underline;
+}
+
+#app {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: var(--bg-colour);
+	color: var(--text-colour);
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20px;
+}
+
+header {
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	justify-self: flex-start;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	background-color: var(--primary-color);
+	color: var(--text-colour);
+	font-size: 2vw;
+}
+header h1 {
+	text-align: center;
+	font-weight: bold;
+}
+#help-btn {
+	align-self: flex-end;
+	font-size: 120%;
+}
+
+footer {
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	justify-self: flex-end;
+	text-align: center;
+	background-color: var(--surface-colour);
+	color: var(--text-colour);
+	font-size: 2vw;
+}
+
+#dp-list {
+	width: 100%;
+	min-height: 100%;
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	width: 350px;
+	height: 225px;
+	margin: 10px;
+	margin-top: 1.5vw;
+	background-color: var(--surface-colour);
+	padding: 2%;
+	box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.75);
+	border-radius: 2px;
+	transition-duration: 100ms;
+}
+.card:hover, .card:focus {
+	box-shadow: 0px 0px 40px -3px rgba(40,40,40,1);
+}
+
+.card-header {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 5%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+.card-header-right {
+	padding: 1vw;
+}
+.card-title {
+	font-size: 130%;
+	font-weight: bold;
+}
+
+.card-icon {
+	width: 60px;
+	height: 60px;
+	background-color: var(--bg-colour);
+	border-radius: 100%;
+}
+
+.card-content {
+	height: 50px;
+	width: 90%;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 80%;
+	opacity: 85%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	background-color: var(--bg-colour);
+}
+
+.card-tags {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	
+}
+.card-tag {
+	width: auto;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 8px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 60%;
+	background-color: var(--secondary-color);
+	color: var(--text-on-secondary);
+	font-weight: bold;
+}
+.card-footer-bottom {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+.card-btns {
+	flex: 1;
+	align-self: flex-end;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.card-btn {
+	flex: 1;
+}
+
+/* ALLLL the media queries! */
+@media (min-width: 1500px) {
+	header {
+		font-size: 0.5vw;
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+	}
+	footer {
+		font-size: 1vw;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+}
+
+@media (min-width: 1000px) {
+	header {
+		font-size: 1.5vw;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+	footer {
+		font-size: 1vw;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+}
+@media (max-width: 700px) {
+	header {
+		font-size: 3vw;
+	}
+	footer {
+		font-size: 2vw;
+	}
+	.card-icon {
+		width: 50px;
+		height: 50px;
+	}
+	.card-tag {
+		font-size: 10px;
+	}
+}
+@media (max-width: 400px) {
+	header {
+		font-size: 5vw;
+	}
+	footer {
+		font-size: 5vw;
+	}
+}
+/* loader */
+.loader {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--primary-color);
+	color: var(--text-on-primary);
+	font-size: 5vw;
+	flex-wrap: wrap;
+}
+[v-cloak], .loader {
+	display: none;
+}
+[v-cloak] .loader {
+	display: flex !important;
+}
