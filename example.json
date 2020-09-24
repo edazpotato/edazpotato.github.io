@@ -4,9 +4,9 @@
 		"version": 1.0
 	},
 	"random numbers": [
-		1.0
-		1.1
-		1.3
+		1.0,
+		1.1,
+		1.3,
 		2
 	],
 	"object": {
@@ -34,15 +34,16 @@
 			"more",
 			"arrays",
 			"!"
-		]
-		"this is true:"
-		true
-		false
+		],
+		"this is true:",
+		true,
+		false,
 		null
 	],
 	"string": "I'm a happy little string!",
 	"number": 69,
 	"a null value": null,
 	"I'm a boolean!": false,
-	"No you aren't!": true
+	"No you aren't!": true,
+	"IMPORTANT NOTE" "Don't forget ,c,o,m,m,a,s,!!!!!!!!!!!!!!!!!!!!!"
 }
