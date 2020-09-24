@@ -1,69 +1,88 @@
-<html lang="en">
-<head>
-<style>
-html, body, #app {
-  height: 100%;
-  width: 100%;
-  font-family: "Lucida Console", Monaco, monospace;
-  color: #007d08;
-  background-color: #000000;
-}
-pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
-.string { color: green; }
-.number { color: darkorange; }
-.boolean { color: blue; }
-.null { color: magenta; }
-.key { color: red; }
 
-</style>
-</head>
-<body>
-<pre>
-<code id="app">
-</code>
-</pre>
-<script>
-  async function doTheThings() {
-    var getParams = function (url) {
-      var params = {};
-      var parser = document.createElement('a');
-      parser.href = url;
-      var query = parser.search.substring(1);
-      var vars = query.split('&');
-      for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split('=');
-        params[pair[0]] = decodeURIComponent(pair[1]);
-      }
-      return params;
-    };
-    var params = getParams(window.location.href);
-    var el = doument.getElementById("app");
-    var url = params.url;
-    var res = await fetch(url);
-    var json = await res.json();
-    function syntaxHighlight(json) {
-      json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-      return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
-          var cls = 'number';
-          if (/^"/.test(match)) {
-              if (/:$/.test(match)) {
-                  cls = 'key';
-              } else {
-                  cls = 'string';
-              }
-          } else if (/true|false/.test(match)) {
-              cls = 'boolean';
-          } else if (/null/.test(match)) {
-              cls = 'null';
-          }
-          return '<span class="' + cls + '">' + match + '</span>';
-      });
-  }
-  var str = JSON.stringify(json, undefined, 4);
-  
-    el.innerText = syntaxHighlight(str);
-  }
-  doTheThings();
-</script>
-</body>
+
+<html lang="en">
+   <head>
+   	<title>Loading...</title>
+      <style>
+         * {
+         padding: 0;
+         margin: 0;
+         border: 0;
+         box-sizing: border-box;
+         font-family: "Lucida Console", Monaco, monospace;
+         color: #007d08;
+         background-color: #000000;
+         min-height: 100%;
+         min-width: 100%;
+         }
+         #app {
+         	 min-height: 98%;
+         	 min-width: 98%;
+         	margin: 1%;
+         	padding: 1%;
+         	border: 1px solid #ffffff;
+         }
+         .string { color: green; }
+         .number { color: darkorange; }
+         .boolean { color: blue; }
+         .null { color: magenta; }
+         .key { color: red; }
+      </style>
+   </head>
+   <body>
+   		<pre id="app">
+		</pre>
+      	<script>
+	        async function doTheThings() {
+	        	var el = document.getElementById("app");
+	        	try {
+	        		document.title = "Fetching..."
+		            var getParams = function(url) {
+		                var params = {};
+		                var parser = document.createElement('a');
+		                parser.href = url;
+		                var query = parser.search.substring(1);
+		                var vars = query.split('&');
+		                for (var i = 0; i < vars.length; i++) {
+		                    var pair = vars[i].split('=');
+		                    params[pair[0]] = decodeURIComponent(pair[1]);
+		                }
+		                return params;
+		            };
+	            	var params = getParams(window.location.href);
+             		var url = params.url;
+	                var res = await fetch(url);
+	                var json = await res.json();
+	        
+	                function syntaxHighlight(json) {
+	                    json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+	                    return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function(match) {
+	                        var cls = 'number';
+	                        if (/^"/.test(match)) {
+	                            if (/:$/.test(match)) {
+	                                cls = 'key';
+	                            } else {
+	                                cls = 'string';
+	                            }
+	                        } else if (/true|false/.test(match)) {
+	                            cls = 'boolean';
+	                        } else if (/null/.test(match)) {
+	                            cls = 'null';
+	                        }
+	                        return '<span class="' + cls + '">' + match + '</span>';
+	                    });
+	                }
+	                var str = JSON.stringify(json, undefined, 4);
+	        
+	                el.innerHTML = syntaxHighlight(str);
+	                document.title = "Fetched JSON!";
+	            } catch(e) {
+	            	el.innerHTML = '<span class="key">An error occured!</span><br/><span class="boolean"><i>Perhaps the data is no vaild JSON or you didn\'t provide a valid url in the <code class="string">url</code> query parameter</i></span><br/><br/><span class="number">Example usage: <code class="null">https://edazpotato.github.io/fetch?url=https://edazpotato.github.io/exaple.json</code></span>';
+	            	document.title = "Something went wrong while fetching!"
+	            }
+	        }
+        doTheThings();
+      	</script>
+   </body>
 </html>
+
