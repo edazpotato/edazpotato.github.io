@@ -1,7 +1,7 @@
 /* main stuff*/
 var appEl = document.getElementById("app");
 doTheThings();
-
+console.log("Hi, this is a thing I made so I can see syntax-hylighed json on my phone. If some stuff like css shows up weird too bad. Well, if you want to you can fix it in the github repo (https://github.com/edazpotato/edazpotato.github.io/blob/master/fetch/) but I honestly don't expect you to.")
 /* functions for validating and parseing data types */
 
 /*json */
@@ -34,28 +34,10 @@ function syntaxHighlightJson(json) {
 /* xml */
 function isXML(xmlStr) {
 	var parseXml;
-
-	if (typeof window.DOMParser != "undefined") {
-		parseXml = function(xmlStr) {
-			return (new window.DOMParser()).parseFromString(xmlStr, "text/xml");
-		};
-	} else if (typeof window.ActiveXObject != "undefined" && new window.ActiveXObject("Microsoft.XMLDOM")) {
-		parseXml = function(xmlStr) {
-			var xmlDoc = new window.ActiveXObject("Microsoft.XMLDOM");
-			xmlDoc.async = "false";
-			xmlDoc.loadXML(xmlStr);
-			return xmlDoc;
-		};
-	} else {
-		return false;
+	if (xmlStr.startsWith("<?xml") || xmlStr.startsWith("<")) {
+		return true;
 	}
-
-	try {
-		parseXml(xmlStr);
-	} catch (e) {
-		return false;
-	}
-	return true;
+	return false;
 }
 var prettifyXml = function(xml) {
 var reg = /(>)\s*(<)(\/*)/g; // updated Mar 30, 2015
@@ -114,9 +96,11 @@ var reg = /(>)\s*(<)(\/*)/g; // updated Mar 30, 2015
             else
                 formatted += padding + ln + '\n';
         }
+        // hylight xml
         // escape xml by replacing tags with html entities
         var escaped = formatted.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
-        return escaped;
+        var hylighted = escaped.replace(/&lt;/g, '<span class="key">&lt;').replace(/&gt;/g, '&gt;</span>')
+        return hylighted;
 }
 /* csv */
 function tableifyCSV(data) {
@@ -170,16 +154,16 @@ async function doTheThings() {
 			var str = JSON.stringify(json, undefined, 4);
 			appEl.innerHTML = "<pre>" + syntaxHighlightJson(str) + "</pre>";
 			document.title = "Fetched JSON!";
+		} else if (isXML(text)) {
+			var xml = text;
+			var prettyXml = prettifyXml(xml);
+			appEl.innerHTML = "<pre>" + prettyXml + "</pre>";
+			document.title = "Fetched XML! (Or maybe HTML)";
 		} else if (isCSV(text)) {
 			var csv = text;
 			var table = tableifyCSV(csv);
 			appEl.innerHTML = table;
 			document.title = "Fetched CSV!";
-		} else if (isXML(text)) {
-			var xml = text;
-			var prettyXml = prettifyXml(xml);
-			appEl.innerHTML = "<pre>" + prettyXml + "</pre>";
-			document.title = "Fetched XML!";
 		} else {
 			oopsie("The provided data is not in a supported data type (JSON, XML, CSV)")
 		}
