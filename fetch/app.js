@@ -158,7 +158,7 @@ async function doTheThings() {
 			var xml = text;
 			var prettyXml = prettifyXml(xml);
 			appEl.innerHTML = "<pre>" + prettyXml + "</pre>";
-			document.title = "Fetched XML! (Or maybe HTML)";
+			document.title = "Fetched XML! (Or maybe HTML??)";
 		} else if (isCSV(text)) {
 			var csv = text;
 			var table = tableifyCSV(csv);
