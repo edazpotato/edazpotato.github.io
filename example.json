@@ -1,0 +1,48 @@
+{
+	"info": {
+		"description": "An example JSON file!",
+		"version": 1.0
+	},
+	"random numbers": [
+		1.0
+		1.1
+		1.3
+		2
+	],
+	"object": {
+		"note": "I can hold anything! For example:",
+		"strings": "yes",
+		"numbers": "yes",
+		"booleans": true,
+		"nulls": null,
+		"arrays": [
+			1,
+			2,
+			3
+		],
+		"more objects!": {
+			"epic": true
+		}
+	},
+	"array": [
+		"I can hold things, but they won't have keys like an object",
+		{
+			"words": "Arrays can hold objects,"
+		},
+		[
+			"And"
+			"more",
+			"arrays",
+			"!"
+		]
+		"this is true:"
+		true
+		false
+		null
+	],
+	"string": "I'm a happy little string!",
+	"number": 69,
+	"a null value": null,
+	"I'm a boolean!": false,
+	"No you aren't!": true
+}
