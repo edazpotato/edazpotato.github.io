@@ -57,30 +57,69 @@ function isXML(xmlStr) {
 	}
 	return true;
 }
-var prettifyXml = function(sourceXml) {
-	var xmlDoc = new DOMParser().parseFromString(sourceXml, 'application/xml');
-	var xsltDoc = new DOMParser().parseFromString([
-		// describes how we want to modify the XML - indent everything
-		'<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform">',
-		'  <xsl:strip-space elements="*"/>',
-		'  <xsl:template match="para[content-style][not(text())]">', // change to just text() to strip space in text nodes
-		'    <xsl:value-of select="normalize-space(.)"/>',
-		'  </xsl:template>',
-		'  <xsl:template match="node()|@*">',
-		'    <xsl:copy><xsl:apply-templates select="node()|@*"/></xsl:copy>',
-		'  </xsl:template>',
-		'  <xsl:output indent="yes"/>',
-		'</xsl:stylesheet>',
-	].join('\n'), 'application/xml');
+var prettifyXml = function(xml) {
+var reg = /(>)\s*(<)(\/*)/g; // updated Mar 30, 2015
+        var wsexp = / *(.*) +\n/g;
+        var contexp = /(<.+>)(.+\n)/g;
+        xml = xml.replace(reg, '$1\n$2$3').replace(wsexp, '$1\n').replace(contexp, '$1\n$2');
+        var pad = 0;
+        var formatted = '';
+        var lines = xml.split('\n');
+        var indent = 0;
+        var lastType = 'other';
+        // 4 types of tags - single, closing, opening, other (text, doctype, comment) - 4*4 = 16 transitions 
+        var transitions = {
+            'single->single': 0,
+            'single->closing': -1,
+            'single->opening': 0,
+            'single->other': 0,
+            'closing->single': 0,
+            'closing->closing': -1,
+            'closing->opening': 0,
+            'closing->other': 0,
+            'opening->single': 1,
+            'opening->closing': 0,
+            'opening->opening': 1,
+            'opening->other': 1,
+            'other->single': 0,
+            'other->closing': -1,
+            'other->opening': 0,
+            'other->other': 0
+        };
 
-	var xsltProcessor = new XSLTProcessor();
-	xsltProcessor.importStylesheet(xsltDoc);
-	var resultDoc = xsltProcessor.transformToDocument(xmlDoc);
-	var resultXml = new XMLSerializer().serializeToString(resultDoc);
-	return resultXml;
+        for (var i = 0; i < lines.length; i++) {
+            var ln = lines[i];
+
+            // Luca Viggiani 2017-07-03: handle optional <?xml ... ?> declaration
+            if (ln.match(/\s*<\?xml/)) {
+                formatted += ln + "\n";
+                continue;
+            }
+            // ---
+
+            var single = Boolean(ln.match(/<.+\/>/)); // is this line a single tag? ex. <br />
+            var closing = Boolean(ln.match(/<\/.+>/)); // is this a closing tag? ex. </a>
+            var opening = Boolean(ln.match(/<[^!].*>/)); // is this even a tag (that's not <!something>)
+            var type = single ? 'single' : closing ? 'closing' : opening ? 'opening' : 'other';
+            var fromTo = lastType + '->' + type;
+            lastType = type;
+            var padding = '';
+
+            indent += transitions[fromTo];
+            for (var j = 0; j < indent; j++) {
+                padding += '\t';
+            }
+            if (fromTo == 'opening->closing')
+                formatted = formatted.substr(0, formatted.length - 1) + ln + '\n'; // substr removes line break (\n) from prev loop
+            else
+                formatted += padding + ln + '\n';
+        }
+        // escape xml by replacing tags with html entities
+        var escaped = formatted.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+        return escaped;
 }
 /* csv */
-function tabilifyCSV(data) {
+function tableifyCSV(data) {
 	var lines = data.split("\n");
 	var output = [];
 	var i;
@@ -89,6 +128,17 @@ function tabilifyCSV(data) {
 	                + lines[i].slice(0,-1).split(",").join("</td><td>")
 	                + "</td></tr>");
 	return "<table>" + output.join("") + "</table>";
+}
+function isCSV(csv) {
+	try {
+		var data = csv.split(",").filter(function(){return true;});
+		if (data.length >= 2) {
+			return true
+		}
+		return false
+	} catch(e) {
+		return false;
+	}
 }
 /* other functions */
 function oopsie(e) {
@@ -118,18 +168,18 @@ async function doTheThings() {
 		if (isJson(text)) {
 			var json = JSON.parse(text);
 			var str = JSON.stringify(json, undefined, 4);
-			appEl.innerHTML = syntaxHighlightJson(str);
+			appEl.innerHTML = "<pre>" + syntaxHighlightJson(str) + "</pre>";
 			document.title = "Fetched JSON!";
+		} else if (isCSV(text)) {
+			var csv = text;
+			var table = tableifyCSV(csv);
+			appEl.innerHTML = table;
+			document.title = "Fetched CSV!";
 		} else if (isXML(text)) {
 			var xml = text;
 			var prettyXml = prettifyXml(xml);
-			appEl.innerText = prettyXml;
+			appEl.innerHTML = "<pre>" + prettyXml + "</pre>";
 			document.title = "Fetched XML!";
-		} else if (isCSV(text)) {
-			var xml = text;
-			var table = tableifyCSV(xml);
-			appEl.innerHTML = table;
-			document.title = "Fetched CSV!";
 		} else {
 			oopsie("The provided data is not in a supported data type (JSON, XML, CSV)")
 		}

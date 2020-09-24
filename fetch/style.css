@@ -1,0 +1,57 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+   font-family: "Lucida Console", Monaco, monospace;
+   color: #007d08;
+   background-color: #000000;
+   min-height: 100%;
+   width: 100%;
+}
+
+#app {
+   min-height: 98%;
+   width: 98%;
+   margin: 1%;
+   padding: 1%;
+   border: 1px solid #ffffff;
+   overflow-wrap: break-word;
+}
+table {
+  width: 100%;
+  height: 100%;
+  display: table;
+  table-layout: fixed;
+}
+td {
+   width: 100%;
+   border: 2px solid #004a0b;
+   padding-left: 3%;
+   padding-top: 2%;
+   padding-bottom: 2%;
+   display: table-cell;
+   transition-duration: 100ms;
+}
+td:hover, td:focus {
+   background-color: #141414;
+}
+.string {
+   color: green;
+}
+
+.number {
+   color: darkorange;
+}
+
+.boolean {
+   color: blue;
+}
+
+.null {
+   color: magenta;
+}
+
+.key {
+   color: red;
+}
