@@ -77,7 +77,8 @@
 	                el.innerHTML = syntaxHighlight(str);
 	                document.title = "Fetched JSON!";
 	            } catch(e) {
-	            	el.innerHTML = '<span class="key">An error occured!</span><br/><span class="boolean"><i>Perhaps the data is no vaild JSON or you didn\'t provide a valid url in the <code class="string">url</code> query parameter</i></span><br/><br/><span class="number">Example usage: <code class="null">https://edazpotato.github.io/fetch?url=https://edazpotato.github.io/exaple.json</code></span>';
+	            	console.error("Fetch error: " + e);
+	            	el.innerHTML = '<span class="key">An error occured!</span><br/><span class="boolean"><i>Perhaps the data is no vaild JSON or you didn\'t provide a valid url in the <code class="string">url</code> query parameter</i></span><br/><br/><span class="number">Example usage: <code class="null">https://edazpotato.github.io/fetch?url=https://edazpotato.github.io/example.json</code></span>';
 	            	document.title = "Something went wrong while fetching!"
 	            }
 	        }
