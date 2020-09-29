@@ -1,6 +1,23 @@
 {
 	"packs": [
 		{
+			"title": "Maple Syrup",
+			"id": "maple-syrup",
+			"description": "Made for Code_Zealot's 2020 autum datapack competition, this datapack adds maple syrup to your minecraft world!",
+			"tags": [
+				"datapack",
+				"resourcepack"
+			],
+			"versions": [
+				"1.16+",
+				"1.16.3"
+			],
+			"date": "29/09/2020",
+			"video_url": "https://youtu.be/Dj8gQIxkGQs",
+			"icon_url": "icons/maple.png",
+			"file_url": "packs/Maple_syrup_1.16.3_UNZIP_ME.zip"
+		},
+		{
 			"title": "Magic Staves",
 			"id": "magic-staves",
 			"description": "A datapack that adds a bunch of magical staves to your world.",
