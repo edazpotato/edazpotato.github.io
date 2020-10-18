@@ -144,14 +144,14 @@ h1 {
 .button:hover, .button:focus {
 	opacity: 100%;
 }
+/* darkening ammount: 39.5 for https://pinetools.com/darken-color */
 .contact {
 	background-color: #F0C808;
 	box-shadow: 5px 5px 0px 2px #917904 !important;
 }
 .portfolio {
 	background-color: #FB3640;
-	box-shadow: 5px 5px 0px 2px #b5030c !important;
-	
+	box-shadow: 5px 5px 0px 2px #b5030c !important;	
 }
 .twitter {
 	background-color: #1DA1F2;
@@ -164,6 +164,10 @@ h1 {
 .discord {
 	background-color: #7289DA;
 	box-shadow: 5px 5px 0px 2px #29449f !important;
+}
+.alles {
+	background-color: #646560;
+	box-shadow: 5px 5px 0px 2px #3c3d3a !important;
 }
 
 @media (max-width: 600px) {
