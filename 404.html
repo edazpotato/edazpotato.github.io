@@ -30,6 +30,54 @@
                         height: 100%;
                         width: 100%;
                   }
+                  a {
+                        color: #2da7ed;
+                        text-decoration: none;
+                  }
+                  a:hover, a:focus {
+                        color: #289de0;
+                        text-decoration: underline;
+                  }
+                  .header {
+                        width: 100%;
+                        height: auto;
+                        box-shadow: 0px 0px 33px 5px rgba(0,0,0,0.75);
+                  }
+                  .header--links {
+                        list-style-type: none;
+                        overflow: hidden;
+                  }
+                  .header--link {
+                        float: left;
+                  }
+                  .header--link a {
+                        text-align: center;
+                        padding: 16px;
+                  }
+                  .main {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                  }
+                  .card {
+                        width: 500px;
+                        border-radius: 13px 13px 13px 13px;
+                        box-shadow: 0px 0px 33px 1px rgba(0,0,0,0.75);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                  }
+                  .card--header {
+                        width: 100%;
+                        height: auto;
+                        padding: 4px;
+                  }
+                  .card--content {
+                        width: 100%;
+                        height: 100%;
+                  }
             </style>
       </head>
       <body>
