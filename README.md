@@ -3,12 +3,12 @@
 This is the repository for my website.
 Feel free to poke through my code and see how things work.
 
-#### List of page curently on my website:
+#### Curently '*maintained*' pages:
 - [home page](https://edazpotato.github.io/)
 - [Portfolio](https://edazpotato.github.io/portfolio/)
 - [datapacks](https://edazpotato.github.io/datapacks/)
 - [NO](https://edazpotato.github.io/NO/)
-- [Old version of website](https://edazpotato.github.io/old)
+- [UZX bot](https://edazpotato.github.io/uzx)
 
 
 #### To make a page fart while you scroll through it, add this code at the bottom of the `<body>` tag
