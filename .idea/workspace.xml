@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f175dc8-5882-4a8c-8136-1542c5d5cca2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/V3/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/V3/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/V3/lib/mousetrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/V3/lib/picnic.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/V3/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-bin/apple-startup-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-bin/homepage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-bin/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-bin/micromodal.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-bin/oEmbed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-bin/particles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-bin/pjs-config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/650592_bucket_512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/discord.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/lightsaber.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/shirt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/twitter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/youtube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/no.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redir/discord/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redir/github/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redir/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redir/t-shirt/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redir/twitter/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redir/youtube/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="6f175dc8-5882-4a8c-8136-1542c5d5cca2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
