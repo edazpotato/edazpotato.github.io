@@ -16,8 +16,10 @@
   padding: 0;
   border: 0;
   font-family: Rubik;
+  /*
   color: #000000;
   background-color: #ffffff;
+  */
 }
 html, body {
   height: 100%;
@@ -68,6 +70,9 @@ html, body {
   font-style: italic;
 }
 @media (max-width: 400px) {
+  .link {
+    font-size: 60%;
+  }
   .avatar {
     width: 200px;
     height: 200px;
@@ -80,6 +85,9 @@ html, body {
   }
 }
 @media (max-width: 860px) {
+  .link {
+    font-size: 100%;
+  }
   .main {
     flex-direction: column;
   }
