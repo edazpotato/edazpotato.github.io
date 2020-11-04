@@ -1,11 +1,15 @@
+
 *{
   margin: 0;
   padding: 0;
   border: 0;
 }
-html, body {
+
+html,
+body {
   height: 100%;
 }
+
 body {
   background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #003dfd, #05c7e6, #4bd58d);
   background-size: 1200% 1200%;
@@ -14,47 +18,56 @@ body {
   -o-animation: rainbow 10s ease infinite;
   animation: rainbow 10s ease infinite;
 }
+
 .row {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
+
 .col {
   flex: 1;
   text-align: center;
 }
+
 @media (max-width: 400px) {
   .flex-grid {
     display: block;
   }
 }
+
 h1 {
   color: #ffffff;
   font-size: 30vh;
   font-family: sans-serif;
 }
+
 audio {
   position: absolute;
   top: 0;
   left: 0;
   display: none;
 }
+
 @-webkit-keyframes rainbow {
   0% { background-position: 0% 100% }
   50% { background-position: 100% 0% }
   100% { background-position: 0% 100% }
 }
+
 @-moz-keyframes rainbow {
   0% { background-position: 0% 100% }
   50% { background-position: 100% 0% }
   100% { background-position: 0% 100% }
 }
+
 @-o-keyframes rainbow {
   0% { background-position: 0% 100% }
   50% { background-position: 100% 0% }
   100% { background-position: 0% 100% }
 }
+
 @keyframes rainbow {
   0% { background-position: 0% 100% }
   50% { background-position: 100% 0% }
