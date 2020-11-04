@@ -1,3 +1,4 @@
+
 noscript {
 	font-size: 250%;
 	color: #ffffff;
@@ -12,7 +13,9 @@ noscript {
 	opacity: 1;
 }
 
-html, body {
+
+html,
+body {
 	height: 100%;
 	width: 100%;
 	/* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
@@ -37,13 +40,16 @@ html, body {
 	font-size: 2vw;
 	background-position: center center;
 }
+
 /* this stuff is for using webp */
+
 .no-webp #header, .no-js #header {
 	background-image: url(../assets/background.jpg);
 }
 .webp #header {
 	background-image: url(../assets/background.webp);
 }
+	
 
 
 #arrow {
@@ -89,9 +95,11 @@ html, body {
 	color: #ffffff;
 	margin: 4vw;
 }
+	
 p {
 	font-size: 2.5vw;
 }
+	
 h1 {
 	font-weight: bold;
 	font-size: 4vw;
@@ -104,11 +112,13 @@ h1 {
 	flex-wrap: wrap;
 	width: 80%;
 }
+	
 #datapacks {
 	position: absolute;
 	left: 0;
 	top: 0;
 }
+	
 #privacypolicy {
 	position: absolute;
 	left: 0;
@@ -124,15 +134,19 @@ h1 {
 	margin: 1vw;
 	font-size: 1vw;
 }
+	
 .white-link a {
 	color: #ffffff;
 	text-decoration: none;
 }
-.white-link a:hover, .white-link a:focus {
+
+.white-link a:hover,
+.white-link a:focus {
 	text-decoration: underline;
 }
 
 /* buttons */
+	
 .button {
 	border-radius: 3px;
 	padding: 1vw;
@@ -141,71 +155,91 @@ h1 {
 	opacity: 80%;
 	transition-duration: 400ms;
 }
-.button:hover, .button:focus {
+	
+.button:hover,
+.button:focus {
 	opacity: 100%;
 }
+
 /* darkening ammount: 39.5 for https://pinetools.com/darken-color */
+
 .contact {
 	background-color: #F0C808;
 	box-shadow: 5px 5px 0px 2px #917904 !important;
 }
+
 .portfolio {
 	background-color: #FB3640;
 	box-shadow: 5px 5px 0px 2px #b5030c !important;	
 }
+
 .twitter {
 	background-color: #1DA1F2;
 	box-shadow: 5px 5px 0px 2px #08639b !important;
 }
+
 .github {
 	background-color: #24292E;
 	box-shadow: 5px 5px 0px 2px #15181b !important;
 }
+
 .discord {
 	background-color: #7289DA;
 	box-shadow: 5px 5px 0px 2px #29449f !important;
 }
+
 .alles {
 	background-color: #23539B;
 	box-shadow: 5px 5px 0px 2px #15325d !important;
 }
 
 @media (max-width: 600px) {
+	
 	.button {
 		width: 34vw;
 		font-size: 6vw;
 		padding: 2vw;
 	}
+	
 	.links {
 		width: 90%;
 	}
+	
 	.top {
 		flex-direction: column;
 	}
+	
 	.avatar {
 		width: 45vw;
 		height: 45vw;
 	}
+	
 	.bio {
 		text-align: center;
 	}
+	
 	h1 {
 		font-size: 6vw;
 	}
+	
 	p {
 		font-size: 3.5vw;
 	}
+	
 	.white-link a {
 		font-size: 1.75vw;
 	}
+	
 	#datapacks {
 		display: none;
 	}
+	
 	#privacypolicy {
 		position: absolute;
 		left: 0;
 		top: 0;
 	}
+	
 	#imgcredit {
 		position: absolute;
 		left: 0;
