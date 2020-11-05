@@ -49,7 +49,7 @@ body {
 .webp #header {
 	background-image: url(../assets/background.webp);
 }
-	
+
 
 
 #arrow {
@@ -95,11 +95,11 @@ body {
 	color: #ffffff;
 	margin: 4vw;
 }
-	
+
 p {
 	font-size: 2.5vw;
 }
-	
+
 h1 {
 	font-weight: bold;
 	font-size: 4vw;
@@ -112,13 +112,13 @@ h1 {
 	flex-wrap: wrap;
 	width: 80%;
 }
-	
+
 #datapacks {
 	position: absolute;
 	left: 0;
 	top: 0;
 }
-	
+
 #privacypolicy {
 	position: absolute;
 	left: 0;
@@ -134,7 +134,7 @@ h1 {
 	margin: 1vw;
 	font-size: 1vw;
 }
-	
+
 .white-link a {
 	color: #ffffff;
 	text-decoration: none;
@@ -146,7 +146,7 @@ h1 {
 }
 
 /* buttons */
-	
+
 .button {
 	border-radius: 3px;
 	padding: 1vw;
@@ -155,7 +155,7 @@ h1 {
 	opacity: 80%;
 	transition-duration: 400ms;
 }
-	
+
 .button:hover,
 .button:focus {
 	opacity: 100%;
