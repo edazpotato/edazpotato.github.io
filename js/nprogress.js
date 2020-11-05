@@ -350,7 +350,7 @@
 
     return function(fn) {
       pending.push(fn);
-      if (pending.length == 1) next();
+      if (pending.length === 1) next();
     };
   })();
 
@@ -402,7 +402,7 @@
           prop, 
           value;
 
-      if (args.length == 2) {
+      if (args.length === 2) {
         for (prop in properties) {
           value = properties[prop];
           if (value !== undefined && properties.hasOwnProperty(prop)) applyCss(element, prop, value);
