@@ -5,7 +5,6 @@ Feel free to poke through my code and see how things work.
 
 #### Curently '*maintained*' pages:
 - [Homepage](https://edazpotato.github.io/)
-- [Portfolio](https://edazpotato.github.io/portfolio/)
 - [datapacks](https://edazpotato.github.io/datapacks/)
 - [NO](https://edazpotato.github.io/NO/)
 - [UZX Discord Bot](https://edazpotato.github.io/uzx)
@@ -20,7 +19,7 @@ Feel free to poke through my code and see how things work.
 
 ### License
 #### This project is licensed under the MIT license 
-- (see the [LICENSE](./LICENCE) file for more info)
+- (see the [LICENSE](LICENSE) file for more info)
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fedazpotato%2Fedazpotato.github.io.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fedazpotato%2Fedazpotato.github.io?ref=badge_large)
 
