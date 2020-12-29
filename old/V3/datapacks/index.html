@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <!-- important meta tags -->
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	  <title>Edazpotato's datapacks</title>
+	  <!-- neat meta generator: https://megatags.co/ -->
+	  <!-- meta tags for social media -->
+	  <!-- Search Engine -->
+	  <meta name="description" content="Here you can find all of the datapacks made by Eadzpotato, with a hastle free downloads and infomative videos.">
+	  <meta name="image" content="https://edazpotato.github.io/datapacks/images/social.png">
+	  <!-- Schema.org for Google -->
+	  <meta itemprop="name" content="Edazpotato's Datapacks">
+	  <meta itemprop="description" content="Here you can find all of the datapacks made by Eadzpotato, with a hastle free downloads and infomative videos.">
+	  <meta itemprop="image" content="https://edazpotato.github.io/datapacks/images/social.png">
+	  <!-- Twitter -->
+	  <meta name="twitter:card" content="summary_large_image">
+	  <meta name="twitter:title" content="Edazpotato's Datapacks">
+	  <meta name="twitter:description" content="Here you can find all of the datapacks made by Eadzpotato, with a hastle free downloads and infomative videos.">
+	  <meta name="twitter:site" content="@edazpotato">
+	  <meta name="twitter:creator" content="@edazpotato">
+	  <meta name="twitter:image:src" content="https://edazpotato.github.io/datapacks/images/social.png">
+	  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+	  <meta name="og:title" content="Edazpotato's Datapacks">
+	  <meta name="og:description" content="Here you can find all of the datapacks made by Eadzpotato, with a hastle free downloads and infomative videos.">
+	  <meta name="og:image" content="https://edazpotato.github.io/datapacks/images/social.png">
+	  <meta name="og:url" content="https://edazpotato.github.io/datapacks">
+	  <meta name="og:site_name" content="Edazpotato's Datapacks">
+	  <meta name="og:locale" content="en_NZ">
+	  <meta name="og:type" content="website">
+	
+	  <!-- css -->
+	  <link rel="stylesheet" href="css/styles.css">
+	  <!-- icons -->
+	  <link rel="stylesheet" href="css/dp_icons.css">
+  </head>
+  <body>
+    <noscript>
+      <strong>I'm sorry but this page doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="offline-message" style="display: none;">
+      <strong>I'm sorry, but this page doesn't work properly offline. Please make sure that you have a working connection to the internet to continue.</strong>
+    </div>
+    <div id="app">
+    	<header>
+    		<h1>Edazpotato's datapacks</h1>
+		<aside id="help-btn"><a href="#help" rel="noreferer" title="Click to get some serious help"><span class="help_circled_icon"></span></a></aside>
+    	</header>
+	<section class="loader" v-cloak>
+		<h1>Loading please wait...</h1>
+	</section>
+    	<main id="dp-list" v-cloak>
+    		<section v-for="pack of packs" :id="pack.id" class="card">
+    			<section class="card-header">
+    				<img :src="pack.icon_url" class="card-icon" :alt="pack.title + ' icon'">
+                    <section class="card-header-right">
+    				    <h4 class="card-title">{{ pack.title }}</h4>
+                        <section class="card-versions" :data-title="pack.versions.join(', ')">{{ pack.versions[0] }}</section>
+                    </section>
+    			</section>
+    			<section class="card-content">
+    				<p>{{ pack.description }}</p>
+    			</section>
+    			<section class="card-footer">
+    				<aside class="card-tags"><span v-for="tag of pack.tags" class="card-tag">{{ tag }}</span></aside>
+    				<section class="card-footer-bottom">
+    					<aside class="card-date">{{ pack.date }}</aside>
+              <section class="card-btns">
+                <aside v-if="'file_url' in pack" class="card-download-btn"><a :href="pack.file_url" target="_blank" rel="noreferer" download class="card-btn" title="Click to download this pack"><span class="download_icon"></span></a></aside>
+                <aside v-if="'video_url' in pack" class="card-video-btn"><a :href="pack.video_url" target="_blank" rel="noreferer" class="card-btn" title="Click to watch this pack's video"><span class="play_icon"></span></a></aside>
+              </section>
+    				</section>
+    			</section>
+    		</section>
+    	</main>
+    	<footer>
+    		Kindly hosted by <a href="https://github.com" target="_blank" rel="noreferer">Github</a> - Copyright {{ year || 2020 }} Edazpotato
+    	</footer>
+    </div>
+    <div id="scripts">
+    	<!-- libs -->
+    	<script src="js/vue.js"></script>
+    	<!-- my js -->
+    	<script src="js/app.js"></script>
+      <!-- offline detector -->
+      <script>
+        var offlineEl = document.getElementById("offline-message");
+        function toggleOfflineDisplay() {
+          if (offlineEl.style.display == "none") {
+            offlineEl.style.display = "block";
+          } else {
+            offlineEl.style.display = "none";
+          }
+        }
+        if (navigator.offline) {
+          toggleOfflineDisplay();
+        }
+        window.addEventListener("offline", toggleOfflineDisplay);
+        window.addEventListener("online", toggleOfflineDisplay);
+      </script>
+    </div>
+  </body>
+</html>
