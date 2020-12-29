@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://edaz.codes/</loc>
+  <lastmod>2020-12-29T05:30:14+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://edaz.codes/policies/</loc>
+  <lastmod>2020-12-29T05:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://edaz.codes/datapacks/</loc>
+  <lastmod>2020-12-29T05:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://edaz.codes/attic/</loc>
+  <lastmod>2020-12-29T05:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://edaz.codes/old/</loc>
+  <lastmod>2020-12-29T05:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+
+</urlset>
