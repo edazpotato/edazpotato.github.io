@@ -1,0 +1,87 @@
+==================================================================
+https://keybase.io/edaz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://edaz.codes
+  * I am edaz (https://keybase.io/edaz) on keybase.
+  * I have a public key with fingerprint 9EB6 941C 5AF5 ED66 5883  DF14 84D8 7E4D DD02 D50C
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01014a39b123211e8ba39c005448346f10611289c9408812de37dd08aaf0e3cf9a4d0a",
+      "fingerprint": "9eb6941c5af5ed665883df1484d87e4ddd02d50c",
+      "host": "keybase.io",
+      "key_id": "84d87e4ddd02d50c",
+      "kid": "01014a39b123211e8ba39c005448346f10611289c9408812de37dd08aaf0e3cf9a4d0a",
+      "uid": "da6c780069fbcc48936e34fbc9071b19",
+      "username": "edaz"
+    },
+    "merkle_root": {
+      "ctime": 1610000127,
+      "hash_meta": "35481e270a9e388c065323085e758655fab22d585f6ef62f63ca4cbbc8017046",
+      "seqno": 18622580
+    },
+    "revoke": {
+      "sig_ids": [
+        "16a1fb8281c411429b6833e69a150da5c6b975f453cad7a48facfaad65ab96780f"
+      ]
+    },
+    "service": {
+      "hostname": "edaz.codes",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1610000132,
+  "expire_in": 157680000,
+  "prev": "9a6b6ff19207d9ec8bb3cac2c360e70864f33d81990edbb76bd19462ef05ba3e",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMPNAnicrVNrbBVFGG0BS6lgEaxgUkS3KG1Ky8w+ZmdvQy1KQm2xEUyA2Opldme2
+XW5797J7W/skPMqzWFMSQEPRopLyuhAREENA2iJBKyKSWowpGoIKFSiCaYn04Wyj
+CTH+dP/szsz5zjnf2W9OjxsZFRdde2n5S10jOsZGt7cuK43y9zaPqhJ0m1YIvioh
+wIZfrJgyN+wPWFTwCQACKBNJ06EoiRAyrPOFAYAiy1iSkQkBglDEmqHJAGMoUiap
+lAJMiAmYZJgakSkgwgzBtIKFzAk5VjDMaTWmI02GhkJMhVGEFIwlakIZyxSrTKac
+QqQKMHhhke16FdycTlyWbtl8jy/8w/b+A/8/+y4dpqMEGSoGAGmmbhgy1iTEJJl/
+a0CFOtQ8oMucIClhHM0oqRRqZgglzAkUM79j22EvWCNseccQQcAfKKq8OeIW+UtY
+mPAqSZExZKIKiMYkjA2AFEmUAFaYqmCkKCbRRd4kVkzETCSaSDKIbOi6gQFUgYy4
+B5ctC9pcASNRVDDgFhxWZgeYp+5ahTwzV/DlCxARaOpYxNCQIZRFTUdYkhjSCFQA
+JYqBdE1VTFnhClQlMjaJYRJCkUJ0DfEcTOG1Gk/NKbOMYXLvJz3QfLph8xnihkKO
+HbYNu5jvF4XDIdfnxRKuCHnAN5ju/5vCr1tBygeEV5Qxx7XsIG+CI/+VmCTOEFh5
+yHKY3/IQioqwd+DpsDJvrAjSkWlCTQQq1ZiBdZ23YIiGhABTAUayKUkUQ00DjOq6
+inQKNRmJzAQKHxD2QIScNEwKOSfPLUjCpQ4TalpbCkZFRcdFxTw0wrs5UXFjxv9z
+n25UxQ/OTDEbBr98py1z6MW9mVv2f9WTZsyb3/HtptikZQdzntmmZi1enTy9es/7
+OKlxytVqlnC34vqGgpXPbfiQ7P4ElpXdnli/oG/8wq/Xkk43ZWjf7t6MzmmbcUz8
+cTE5//rbvi0PH360/vbWj1dmZ27t3dO8IhDo/DF8qz9x4M/COxdHlj/SmAdjr71y
+rqemztcSczv297h7PQ0zP5Xem963f+EPWdK07lVL6o50XRPnHFq9b/TJkyOWRt+Y
+PqaiqvbpRPuPzbsurwptunLMMHOPnnHGn+vOG0cvrI20+J0VS2Jg95aEOUcnNA/G
+jonOWDN31oRfd9atnzx7SkMGTltkzXYCG5XK+Ltz405nT74sjn3hbHTbid5tT34z
+lFE5tCrVGHh965FdtSs73fqdIPf8zeWnEgs7t38ff09I/en+LzefL2rvuISeXXRl
+YiTt0OH+8ty0k+nrdrfUO5mzvqB9uSk5p+adn1raP/r4E02tg/SpE+7FfevPJt85
+UDdQ2fZuE91e/tuOa23tRW/lrTnT+HOTw+jjt9ZEqmsin+UnXPC3fjTpzdSSFZGc
+pr0bpx78ru/+ogORdcderUvJ2958vq7bt7R90mPt862C0oMBs2/0zM+vu+n3khu7
+Liw8/nJSwqmegdUjly5YsLj/RGLSpr7MLF0pbusIXR1K23h/R07tnQ8iO6o7nS6y
+NjvL7j2b3+jbEPcXaasEag==
+=SRy7
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/edaz
+
+==================================================================
